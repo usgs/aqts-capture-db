@@ -16,7 +16,7 @@ before_install:
   - git clone https://github.com/docker/docker-bench-security.git
 
 install:
-  - docker build --tag $DOCKER_IMAGE ./database/ci
+  - docker build --build-arg LIQUIBASE_VERSION=3.8.5 --build-arg A_JDBC_JAR=postgresql-42.2.9.jar --build-arg LIQUIBASE_WORKSPACE=. --tag $DOCKER_IMAGE ./database/ci
   - docker run -d $DOCKER_IMAGE tail -f /dev/null
 
 script:
