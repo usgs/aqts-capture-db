@@ -1,0 +1,67 @@
+version: '3.7'
+services:
+
+  ciDB:
+    image: aqts_capture_db_ci
+    build:
+      context: .
+      dockerfile: ./database/ci/Dockerfile
+    networks:
+      aqts_capture:
+        ipv4_address: ${DB_CI_IPV4}
+    environment:
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - AQTS_DATABASE_NAME=${AQTS_DATABASE_NAME}
+      - AQTS_DB_OWNER_USERNAME=${AQTS_DB_OWNER_USERNAME}
+      - AQTS_DB_OWNER_PASSWORD=${AQTS_DB_OWNER_PASSWORD}
+      - AQTS_SCHEMA_NAME=${AQTS_SCHEMA_NAME}
+      - AQTS_SCHEMA_OWNER_USERNAME=${AQTS_SCHEMA_OWNER_USERNAME}
+      - AQTS_SCHEMA_OWNER_PASSWORD=${AQTS_SCHEMA_OWNER_PASSWORD}
+      - AQTS_DATABASE_ADDRESS=127.0.0.1
+    ports:
+      - ${DB_CI_PORT}:5432
+    container_name: ${AQTS_DATABASE_ADDRESS}_ci
+
+  db:
+    image: aqts_capture_db
+    build:
+      context: .
+    networks:
+      aqts_capture:
+        ipv4_address: ${DB_IPV4}
+    environment:
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    ports:
+      - ${DB_PORT}:5432
+    container_name: ${AQTS_DATABASE_ADDRESS}
+
+  liquibase:
+    image: aqts_capture_liquibase
+    depends_on:
+      - db
+    build:
+      context: ./liquibase
+      args:
+        - LIQUIBASE_VERSION=${LIQUIBASE_VERSION}
+        - A_JDBC_JAR=${JDBC_JAR}
+    networks:
+      aqts_capture:
+        ipv4_address: ${LIQUIBASE_IPV4}
+    environment:
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - AQTS_DATABASE_NAME=${AQTS_DATABASE_NAME}
+      - AQTS_DB_OWNER_USERNAME=${AQTS_DB_OWNER_USERNAME}
+      - AQTS_DB_OWNER_PASSWORD=${AQTS_DB_OWNER_PASSWORD}
+      - AQTS_SCHEMA_OWNER_USERNAME=${AQTS_SCHEMA_OWNER_USERNAME}
+      - AQTS_SCHEMA_OWNER_PASSWORD=${AQTS_SCHEMA_OWNER_PASSWORD}
+      - AQTS_SCHEMA_NAME=${AQTS_SCHEMA_NAME}
+      - AQTS_DATABASE_ADDRESS=${AQTS_DATABASE_ADDRESS}
+    volumes:
+      - ./liquibase/changeLogs:/home/java/workspace
+      - ./liquibase/scripts/dbInit:/docker-entrypoint-initdb.d
+    container_name: aqts_capture_liquibase
+
+networks:
+  aqts_capture:
+    external:
+      name: ${LOCAL_NETWORK_NAME}
