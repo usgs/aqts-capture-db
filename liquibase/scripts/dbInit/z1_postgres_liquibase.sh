@@ -20,7 +20,7 @@ ${LIQUIBASE_HOME}/liquibase \
 	-DAQTS_SCHEMA_OWNER_USERNAME=${AQTS_SCHEMA_OWNER_USERNAME} \
 	-DAQTS_SCHEMA_OWNER_PASSWORD=${AQTS_SCHEMA_OWNER_PASSWORD}
 
-# postgres to capture capture db table scripts
+# postgres to capture db scripts
 ${LIQUIBASE_HOME}/liquibase \
 	--classpath=${LIQUIBASE_HOME}/lib/${JDBC_JAR} \
 	--changeLogFile=${LIQUIBASE_WORKSPACE}/postgres/capture/changeLog.yml \

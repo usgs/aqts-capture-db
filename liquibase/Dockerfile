@@ -11,7 +11,7 @@ ARG A_JDBC_JAR
 ENV JDBC_JAR=$A_JDBC_JAR
 ENV LIQUIBASE_HOME $HOME
 ENV LIQUIBASE_WORKSPACE $LIQUIBASE_HOME/workspace
-ENV LOCALONLY "-c listen_addresses='127.0.0.1, ::1'"
+ENV LOCAL_ONLY "-c listen_addresses='127.0.0.1, ::1'"
 
 ADD https://github.com/liquibase/liquibase/releases/download/v$LIQUIBASE_VERSION/liquibase-$LIQUIBASE_VERSION.tar.gz $LIQUIBASE_HOME/
 
