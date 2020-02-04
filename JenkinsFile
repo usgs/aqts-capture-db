@@ -21,11 +21,9 @@ pipeline {
     stage('Download liquibase jar') {
       steps {
         sh '''mkdir $WORKSPACE/rc
-          if [ ! -f rc/liquibase ]; then
-            /usr/local/bin/aws s3 cp s3://owi-common-resources/resources/InstallFiles/liquibase/liquibase-$LIQUIBASE_VERSION.tar.gz $WORKSPACE/rc/liquibase.tar.gz
-            /usr/bin/tar xzf $WORKSPACE/rc/liquibase.tar.gz --overwrite -C $WORKSPACE/rc
-            /usr/local/bin/aws s3 cp s3://owi-common-resources/resources/InstallFiles/postgres/$JDBC_JAR $WORKSPACE/rc/lib/$JDBC_JAR
-          fi
+          /usr/local/bin/aws s3 cp s3://owi-common-resources/resources/InstallFiles/liquibase/liquibase-$LIQUIBASE_VERSION.tar.gz $WORKSPACE/rc/liquibase.tar.gz
+          /usr/bin/tar xzf $WORKSPACE/rc/liquibase.tar.gz --overwrite -C $WORKSPACE/rc
+          /usr/local/bin/aws s3 cp s3://owi-common-resources/resources/InstallFiles/postgres/$JDBC_JAR $WORKSPACE/rc/lib/$JDBC_JAR
         '''
       }
     }
