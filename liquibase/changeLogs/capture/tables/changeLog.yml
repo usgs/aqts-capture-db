@@ -1,0 +1,38 @@
+databaseChangeLog:
+  - preConditions:
+    - dbms:
+        type: postgresql
+    - runningAs:
+        username: ${AQTS_SCHEMA_OWNER_USERNAME}
+
+  - include:
+      file: "jsonData/changeLog.yml"
+      relativeToChangelogFile: true
+
+  - include:
+      file: "timeSeriesApprovals/changeLog.yml"
+      relativeToChangelogFile: true
+
+  - include:
+      file: "timeSeriesDescription/changeLog.yml"
+      relativeToChangelogFile: true
+
+  - include:
+      file: "timeSeriesGapTolerances/changeLog.yml"
+      relativeToChangelogFile: true
+
+  - include:
+      file: "timeSeriesGrades/changeLog.yml"
+      relativeToChangelogFile: true
+
+  - include:
+      file: "timeSeriesInterpolationTypes/changeLog.yml"
+      relativeToChangelogFile: true
+
+  - include:
+      file: "timeSeriesMethods/changeLog.yml"
+      relativeToChangelogFile: true
+
+  - include:
+      file: "timeSeriesPoints/changeLog.yml"
+      relativeToChangelogFile: true

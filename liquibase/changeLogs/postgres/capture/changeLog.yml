@@ -1,0 +1,19 @@
+databaseChangeLog:
+  - preConditions:
+    - dbms:
+        type: postgresql
+    - runningAs:
+        username: postgres
+
+  - changeSet:
+      author: eorosz
+      id: "create.project.schema.${AQTS_SCHEMA_NAME}"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - sqlCheck:
+            expectedResult: 0
+            sql: select count(*) from pg_namespace where nspname = '${AQTS_SCHEMA_NAME}';
+      changes:
+        - sql: create schema ${AQTS_SCHEMA_NAME} authorization ${AQTS_SCHEMA_OWNER_USERNAME};
+        - rollback: drop schema if exists ${AQTS_SCHEMA_NAME} cascade;

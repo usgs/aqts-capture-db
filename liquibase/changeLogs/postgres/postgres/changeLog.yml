@@ -1,0 +1,60 @@
+databaseChangeLog:
+  - preConditions:
+    - dbms:
+        type: postgresql
+    - runningAs:
+        username: postgres
+
+  - changeSet:
+      author: eorosz
+      id: "create.project.db.owner.role.${AQTS_DB_OWNER_USERNAME}"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - sqlCheck:
+            expectedResult: 0
+            sql: select count(*) from pg_roles where rolname = '${AQTS_DB_OWNER_USERNAME}';
+      changes:
+        - sql: create role ${AQTS_DB_OWNER_USERNAME} with login password '${AQTS_DB_OWNER_PASSWORD}';
+        - rollback: drop role if exists ${AQTS_DB_OWNER_USERNAME};
+
+  - changeSet:
+      author: eorosz
+      id: "grant.${AQTS_DB_OWNER_USERNAME}.to.postgres"
+      changes:
+        - sql: grant ${AQTS_DB_OWNER_USERNAME} to postgres;
+        - rollback: revoke ${AQTS_DB_OWNER_USERNAME} from postgres;
+
+  - changeSet:
+      author: eorosz
+      id: "create.project.owner.role.${AQTS_SCHEMA_OWNER_USERNAME}"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - sqlCheck:
+            expectedResult: 0
+            sql: select count(*) from pg_roles where rolname = '${AQTS_SCHEMA_OWNER_USERNAME}';
+      changes:
+        - sql: create role ${AQTS_SCHEMA_OWNER_USERNAME} with login password '${AQTS_SCHEMA_OWNER_PASSWORD}';
+        - rollback: drop role if exists ${AQTS_SCHEMA_OWNER_USERNAME};
+
+  - changeSet:
+      author: eorosz
+      id: "grant.${AQTS_SCHEMA_OWNER_USERNAME}.to.${AQTS_DB_OWNER_USERNAME}"
+      changes:
+        - sql: grant ${AQTS_SCHEMA_OWNER_USERNAME} to ${AQTS_DB_OWNER_USERNAME};
+        - rollback: revoke ${AQTS_SCHEMA_OWNER_USERNAME} from ${AQTS_DB_OWNER_USERNAME};
+
+  - changeSet:
+      author: eorosz
+      id: "create.project.database.${AQTS_DATABASE_NAME}"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - sqlCheck:
+            expectedResult: 0
+            sql: select count(*) from pg_database where datname = '${AQTS_DATABASE_NAME}';
+      runInTransaction: false
+      changes:
+        - sql: create database "${AQTS_DATABASE_NAME}" with owner = ${AQTS_DB_OWNER_USERNAME};
+        - rollback: drop database if exists "${AQTS_DATABASE_NAME}";

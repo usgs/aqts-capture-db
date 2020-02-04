@@ -1,0 +1,28 @@
+sudo: required
+
+env:
+  global:
+    - DOCKER_IMAGE=aqts-capture-db
+    - CLAIR_SCAN_VERSION=latest
+services:
+  - docker
+
+before_install:
+  - sudo apt-get update
+  - sudo apt-get -y -o Dpkg::Options::="--force-confnew" install docker-ce
+  - curl -L https://github.com/arminc/clair-scanner/releases/download/v8/clair-scanner_linux_amd64 > clair-scanner
+  - chmod +x clair-scanner
+  - sudo mv clair-scanner /usr/local/bin
+  - git clone https://github.com/docker/docker-bench-security.git
+
+install:
+  - docker build --build-arg LIQUIBASE_VERSION=3.8.5 --build-arg A_JDBC_JAR=postgresql-42.2.9.jar --tag $DOCKER_IMAGE --file ./database/ci/Dockerfile .
+  - docker run -d $DOCKER_IMAGE tail -f /dev/null
+
+script:
+  - |
+  - cd docker-bench-security
+  - sudo sh docker-bench-security.sh -c container_images
+  - docker run -d --name clairDatabase arminc/clair-db
+  - docker run -p 6060:6060 --link clairDatabase:postgres -d --name clair arminc/clair-local-scan:$CLAIR_SCAN_VERSION
+  - clair-scanner -c "http://127.0.0.1:6060" --ip "$(ip -4 addr show docker0 | grep -oP '(?<=inet\s)\d+(\.\d+){3}')" $DOCKER_IMAGE:latest || true
