@@ -8,7 +8,7 @@ pipeline {
     stage('Clean Workspace') {
       steps {
         script {
-          currentBuild.description = $DEPLOY_STAGE
+          currentBuild.description = env.DEPLOY_STAGE
         }
         cleanWs()
       }
