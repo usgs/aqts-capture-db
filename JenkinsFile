@@ -5,11 +5,15 @@ pipeline {
     }
   }
   stages {
-    stage('Clean Workspace') {
+    stage('Set Build Description') {
       steps {
         script {
-          currentBuild.description = env.DEPLOY_STAGE
+          currentBuild.description = "Deploy to ${env.DEPLOY_STAGE}"
         }
+      }
+    }
+    stage('Clean Workspace') {
+      steps {
         cleanWs()
       }
     }
