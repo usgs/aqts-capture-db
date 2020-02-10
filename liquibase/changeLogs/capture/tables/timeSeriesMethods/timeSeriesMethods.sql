@@ -4,6 +4,8 @@ create table if not exists ${AQTS_SCHEMA_NAME}.time_series_methods
 ,start_time                              timestamp with time zone
 ,end_time                                timestamp with time zone
 ,method_code                             text
+,response_time                           timestamp with time zone
+,response_version                        integer
 ,primary key (time_series_methods_id)
 ,constraint time_series_methods_ak unique (time_series_unique_id, start_time)
 );

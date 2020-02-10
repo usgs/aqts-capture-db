@@ -11,6 +11,8 @@ create table if not exists ${AQTS_SCHEMA_NAME}.time_series_description
 ,corrected_end_time                      timestamp with time zone
 ,location_identifier                     text
 ,computation_period_identifier           text
+,response_time                           timestamp with time zone
+,response_version                        integer
 ,primary key (time_series_description_id)
 ,constraint time_series_description_ak unique (time_series_unique_id)
 );

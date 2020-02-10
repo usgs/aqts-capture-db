@@ -4,6 +4,8 @@ create table if not exists ${AQTS_SCHEMA_NAME}.time_series_interpolation_types
 ,start_time                              timestamp with time zone
 ,end_time                                timestamp with time zone
 ,interpolation_type                      text
+,response_time                           timestamp with time zone
+,response_version                        integer
 ,primary key (time_series_interpolation_types_id)
 ,constraint time_series_interpolation_types_ak unique (time_series_unique_id, start_time)
 );
