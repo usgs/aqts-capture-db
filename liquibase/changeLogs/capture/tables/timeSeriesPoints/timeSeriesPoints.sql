@@ -12,8 +12,6 @@ create table if not exists ${AQTS_SCHEMA_NAME}.time_series_points
 ,response_time                           timestamp with time zone
 ,response_version                        integer
 ,location_identifier                     text
-,response_time                           timestamp with time zone
-,response_version                        integer
 ,primary key (time_series_points_id)
 ,constraint time_series_points_ak unique (time_series_unique_id, time_step)
 );
