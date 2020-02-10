@@ -1,5 +1,7 @@
 # Aquarius Timeseries Capture (AQTS) Database Setup
 
+[![Build Status](https://travis-ci.com/usgs/aqts-capture-db.svg?branch=master)](https://travis-ci.com/usgs/aqts-capture-db)
+
 This repository contains Liquibase scripts for creating the Aquarious Timeseries database.
 
 ## Docker

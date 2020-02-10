@@ -4,6 +4,8 @@ create table if not exists ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances
 ,start_time                              timestamp with time zone
 ,end_time                                timestamp with time zone
 ,tolerance_in_minutes                    integer
+,response_time                           timestamp with time zone
+,response_version                        integer
 ,primary key (time_series_gap_tolerances_id)
 ,constraint time_series_gap_tolerances_ak unique (time_series_unique_id, start_time)
 );
