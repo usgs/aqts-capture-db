@@ -6,12 +6,12 @@ create table if not exists ${AQTS_SCHEMA_NAME}.time_series_description
 ,parameter                               text
 ,parm_cd                                 text
 ,stat_cd                                 text
-,last_modified                           timestamp with time zone
-,corrected_start_time                    timestamp with time zone
-,corrected_end_time                      timestamp with time zone
+,last_modified                           timestamp
+,corrected_start_time                    timestamp
+,corrected_end_time                      timestamp
 ,location_identifier                     text
 ,computation_period_identifier           text
-,response_time                           timestamp with time zone
+,response_time                           timestamp
 ,response_version                        integer
 ,primary key (time_series_description_id)
 ,constraint time_series_description_ak unique (time_series_unique_id)
