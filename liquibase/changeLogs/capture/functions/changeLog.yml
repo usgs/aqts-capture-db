@@ -6,9 +6,5 @@ databaseChangeLog:
         username: ${AQTS_SCHEMA_OWNER_USERNAME}
 
   - include:
-      file: "tables/changeLog.yml"
-      relativeToChangelogFile: true
-
-  - include:
-      file: "functions/changeLog.yml"
+      file: "adjustTimestamp/changeLog.yml"
       relativeToChangelogFile: true
