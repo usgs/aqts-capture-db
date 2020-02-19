@@ -26,6 +26,10 @@ databaseChangeLog:
       relativeToChangelogFile: true
 
   - include:
+      file: "timeSeriesHeaderInfo/changeLog.yml"
+      relativeToChangelogFile: true
+
+  - include:
       file: "timeSeriesInterpolationTypes/changeLog.yml"
       relativeToChangelogFile: true
 
