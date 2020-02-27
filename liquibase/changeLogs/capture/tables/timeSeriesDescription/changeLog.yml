@@ -20,3 +20,133 @@ databaseChangeLog:
             path: timeSeriesDescription.sql
             relativeToChangelogFile: true
         - rollback: drop table if exists ${AQTS_SCHEMA_NAME}.time_series_description;
+
+  - changeSet:
+      author: ssoper
+      id: "alter.table.${AQTS_SCHEMA_NAME}.time_series_description.add.access_level"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: ${AQTS_SCHEMA_NAME}
+            tableName: time_series_description
+      changes:
+        - sql: alter table ${AQTS_SCHEMA_NAME}.time_series_description add column if not exists access_level text;
+        - rollback: alter table ${AQTS_SCHEMA_NAME}.time_series_description drop column access_level;
+
+  - changeSet:
+      author: ssoper
+      id: "alter.table.${AQTS_SCHEMA_NAME}.time_series_description.add.plot_meas"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: ${AQTS_SCHEMA_NAME}
+            tableName: time_series_description
+      changes:
+        - sql: alter table ${AQTS_SCHEMA_NAME}.time_series_description add column if not exists plot_meas text;
+        - rollback: alter table ${AQTS_SCHEMA_NAME}.time_series_description drop column plot_meas;
+
+  - changeSet:
+      author: ssoper
+      id: "alter.table.${AQTS_SCHEMA_NAME}.time_series_description.add.data_gap"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: ${AQTS_SCHEMA_NAME}
+            tableName: time_series_description
+      changes:
+        - sql: alter table ${AQTS_SCHEMA_NAME}.time_series_description add column if not exists data_gap numeric;
+        - rollback: alter table ${AQTS_SCHEMA_NAME}.time_series_description drop column data_gap;
+
+  - changeSet:
+      author: ssoper
+      id: "alter.table.${AQTS_SCHEMA_NAME}.time_series_description.add.active_flag"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: ${AQTS_SCHEMA_NAME}
+            tableName: time_series_description
+      changes:
+        - sql: alter table ${AQTS_SCHEMA_NAME}.time_series_description add column if not exists active_flag text;
+        - rollback: alter table ${AQTS_SCHEMA_NAME}.time_series_description drop column active_flag;
+
+  - changeSet:
+      author: ssoper
+      id: "alter.table.${AQTS_SCHEMA_NAME}.time_series_description.add.web_description"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: ${AQTS_SCHEMA_NAME}
+            tableName: time_series_description
+      changes:
+        - sql: alter table ${AQTS_SCHEMA_NAME}.time_series_description add column if not exists web_description text;
+        - rollback: alter table ${AQTS_SCHEMA_NAME}.time_series_description drop column web_description;
+
+  - changeSet:
+      author: ssoper
+      id: "alter.table.${AQTS_SCHEMA_NAME}.time_series_description.add.stat_begin_year"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: ${AQTS_SCHEMA_NAME}
+            tableName: time_series_description
+      changes:
+        - sql: alter table ${AQTS_SCHEMA_NAME}.time_series_description add column if not exists stat_begin_year text;
+        - rollback: alter table ${AQTS_SCHEMA_NAME}.time_series_description drop column stat_begin_year;
+
+  - changeSet:
+      author: ssoper
+      id: "alter.table.${AQTS_SCHEMA_NAME}.time_series_description.add.adaps_dd"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: ${AQTS_SCHEMA_NAME}
+            tableName: time_series_description
+      changes:
+        - sql: alter table ${AQTS_SCHEMA_NAME}.time_series_description add column if not exists adaps_dd numeric;
+        - rollback: alter table ${AQTS_SCHEMA_NAME}.time_series_description drop column adaps_dd;
+
+  - changeSet:
+      author: ssoper
+      id: "alter.table.${AQTS_SCHEMA_NAME}.time_series_description.add.primary_flag"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: ${AQTS_SCHEMA_NAME}
+            tableName: time_series_description
+      changes:
+        - sql: alter table ${AQTS_SCHEMA_NAME}.time_series_description add column if not exists primary_flag text;
+        - rollback: alter table ${AQTS_SCHEMA_NAME}.time_series_description drop column primary_flag;
+
+  - changeSet:
+      author: ssoper
+      id: "alter.table.${AQTS_SCHEMA_NAME}.time_series_description.add.transport_code"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: ${AQTS_SCHEMA_NAME}
+            tableName: time_series_description
+      changes:
+        - sql: alter table ${AQTS_SCHEMA_NAME}.time_series_description add column if not exists transport_code text;
+        - rollback: alter table ${AQTS_SCHEMA_NAME}.time_series_description drop column transport_code;
+
+  - changeSet:
+      author: ssoper
+      id: "alter.table.${AQTS_SCHEMA_NAME}.time_series_description.add.special_data_type"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: ${AQTS_SCHEMA_NAME}
+            tableName: time_series_description
+      changes:
+        - sql: alter table ${AQTS_SCHEMA_NAME}.time_series_description add column if not exists special_data_type text;
+        - rollback: alter table ${AQTS_SCHEMA_NAME}.time_series_description drop column special_data_type;

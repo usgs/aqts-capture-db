@@ -14,16 +14,6 @@ create table if not exists ${AQTS_SCHEMA_NAME}.time_series_description
 ,computation_period_identifier           text
 ,response_time                           timestamp
 ,response_version                        integer
-,access_level                            text
-,plot_meas                               text
-,data_gap                                integer
-,active_flag                             text
-,web_description                         text
-,stat_begin_year                         text
-,adaps_dd                                integer
-,primary_flag                            text
-,transport_code                          text
-,special_data_type                       text
 ,primary key (time_series_description_id)
 ,constraint time_series_description_ak unique (time_series_unique_id)
 );
