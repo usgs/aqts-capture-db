@@ -40,3 +40,6 @@ databaseChangeLog:
   - include:
       file: "timeSeriesPoints/changeLog.yml"
       relativeToChangelogFile: true
+  - include:
+      file: "timeSeriesQualifiers/changeLog.yml"
+      relativeToChangelogFile: true

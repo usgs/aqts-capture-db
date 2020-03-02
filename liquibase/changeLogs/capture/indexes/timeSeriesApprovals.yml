@@ -1,0 +1,20 @@
+databaseChangeLog:
+  - preConditions:
+    - dbms:
+        type: postgresql
+    - runningAs:
+        username: ${AQTS_SCHEMA_OWNER_USERNAME}
+
+  - changeSet:
+      author: drsteini
+      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_approvals_json_data_id"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - not:
+          - indexExists:
+              schemaName: ${AQTS_SCHEMA_NAME}
+              indexName: time_series_approvals_json_data_id
+      changes:
+        - sql: create index time_series_approvals_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_approvals (json_data_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_approvals_json_data_id;
