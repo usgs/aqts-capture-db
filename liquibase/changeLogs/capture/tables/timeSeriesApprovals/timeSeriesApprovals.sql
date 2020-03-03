@@ -9,5 +9,4 @@ create table if not exists ${AQTS_SCHEMA_NAME}.time_series_approvals
 ,level_description                       text
 ,date_applied_utc                        timestamp
 ,primary key (time_series_approvals_id)
-,constraint time_series_approvals_ak unique (json_data_id, start_time)
 );

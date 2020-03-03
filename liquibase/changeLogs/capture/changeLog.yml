@@ -10,5 +10,9 @@ databaseChangeLog:
       relativeToChangelogFile: true
 
   - include:
+      file: "indexes/changeLog.yml"
+      relativeToChangelogFile: true
+
+  - include:
       file: "functions/changeLog.yml"
       relativeToChangelogFile: true

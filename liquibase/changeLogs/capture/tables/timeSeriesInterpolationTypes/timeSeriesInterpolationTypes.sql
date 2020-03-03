@@ -5,5 +5,4 @@ create table if not exists ${AQTS_SCHEMA_NAME}.time_series_interpolation_types
 ,end_time                                timestamp
 ,interpolation_type                      text
 ,primary key (time_series_interpolation_types_id)
-,constraint time_series_interpolation_types_ak unique (json_data_id, start_time)
 );

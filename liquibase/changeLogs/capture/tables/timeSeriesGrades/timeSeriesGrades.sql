@@ -5,5 +5,4 @@ create table if not exists ${AQTS_SCHEMA_NAME}.time_series_grades
 ,end_time                                timestamp
 ,grade_code                              text
 ,primary key (time_series_grades_id)
-,constraint time_series_grades_ak unique (json_data_id, start_time)
 );
