@@ -27,10 +27,11 @@ databaseChangeLog:
       preConditions:
         - onFail: MARK_RAN
         - onError: HALT
-        - columnExists:
-            schemaName: ${AQTS_SCHEMA_NAME}
-            tableName: time_series_description
-            columnName: extended_attributes
+        - not:
+          - columnExists:
+              schemaName: ${AQTS_SCHEMA_NAME}
+              tableName: time_series_description
+              columnName: extended_attributes
       changes:
         - sql: alter table ${AQTS_SCHEMA_NAME}.time_series_description add column if not exists extended_attributes text;
         - rollback: alter table ${AQTS_SCHEMA_NAME}.time_series_description drop column extended_attributes;
