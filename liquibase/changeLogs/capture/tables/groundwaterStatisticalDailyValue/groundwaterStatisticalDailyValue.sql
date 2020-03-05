@@ -4,7 +4,6 @@ create table if not exists ${AQTS_SCHEMA_NAME}.groundwater_statistical_daily_val
 ,time_series_unique_id                   character varying (32)
 ,monitoring_location_identifier          character varying (21)
 ,observered_property_id                  character varying (5)
-,observered_property_name                text
 ,statistic_id                            character varying (5)
 ,time_step                               date
 ,unit_of_measure                         text
