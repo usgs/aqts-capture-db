@@ -8,13 +8,6 @@ databaseChangeLog:
   - changeSet:
       author: drsteini
       id: "create.index.${AQTS_SCHEMA_NAME}.time_series_grades_json_data_id"
-      preConditions:
-        - onFail: MARK_RAN
-        - onError: HALT
-        - not:
-          - indexExists:
-              schemaName: ${AQTS_SCHEMA_NAME}
-              indexName: time_series_grades_json_data_id
       changes:
-        - sql: create index ${AQTS_SCHEMA_NAME}.time_series_grades_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_grades (json_data_id);
+        - sql: create index if not exists time_series_grades_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_grades (json_data_id);
         - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_grades_json_data_id;
