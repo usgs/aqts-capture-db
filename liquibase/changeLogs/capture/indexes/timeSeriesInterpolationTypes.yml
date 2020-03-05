@@ -16,5 +16,5 @@ databaseChangeLog:
               schemaName: ${AQTS_SCHEMA_NAME}
               indexName: time_series_interpolation_types_json_data_id
       changes:
-        - sql: create index time_series_interpolation_types_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_interpolation_types (json_data_id);
+        - sql: create index ${AQTS_SCHEMA_NAME}.time_series_interpolation_types_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_interpolation_types (json_data_id);
         - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_interpolation_types_json_data_id;
