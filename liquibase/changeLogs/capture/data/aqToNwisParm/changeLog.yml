@@ -1,0 +1,23 @@
+databaseChangeLog:
+  - preConditions:
+    - dbms:
+        type: PostgreSQL
+    - runningAs:
+        username: ${AQTS_SCHEMA_OWNER_USERNAME}
+
+  - changeSet:
+      author: drsteini
+      id: "load.${AQTS_SCHEMA_NAME}.aq_to_nwis_parm"
+      runOnChange: true
+      changes:
+        - delete:
+            schemaName: ${AQTS_SCHEMA_NAME}
+            tableName: aq_to_nwis_parm
+        - loadData:
+            encoding: UTF-8
+            file: aqToNwisParm.tsv
+            relativeToChangelogFile: true
+            separator: \t
+            schemaName: ${AQTS_SCHEMA_NAME}
+            tableName: aq_to_nwis_parm
+        - rollback: select 'no rollback - you must restore previous aqToNwisParm.tsv and rerun manually'

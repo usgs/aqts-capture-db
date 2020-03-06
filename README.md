@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.com/usgs/aqts-capture-db.svg?branch=master)](https://travis-ci.com/usgs/aqts-capture-db)
 
-This repository contains Liquibase scripts for creating the Aquarious Timeseries database.
+This repository contains Liquibase scripts for creating the Aquarius Timeseries database.
 
 ## Docker
 Also included are Docker Compose scripts to:

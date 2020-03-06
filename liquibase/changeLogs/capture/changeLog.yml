@@ -16,3 +16,7 @@ databaseChangeLog:
   - include:
       file: "functions/changeLog.yml"
       relativeToChangelogFile: true
+
+  - include:
+      file: "data/changeLog.yml"
+      relativeToChangelogFile: true

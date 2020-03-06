@@ -33,5 +33,20 @@ databaseChangeLog:
               tableName: time_series_description
               columnName: extended_attributes
       changes:
-        - sql: alter table ${AQTS_SCHEMA_NAME}.time_series_description add column if not exists extended_attributes text;
+        - sql: alter table ${AQTS_SCHEMA_NAME}.time_series_description add column if not exists extended_attributes jsonb;
         - rollback: alter table ${AQTS_SCHEMA_NAME}.time_series_description drop column extended_attributes;
+
+  - changeSet:
+      author: drsteini
+      id: "alter.table.${AQTS_SCHEMA_NAME}.time_series_description.add.computation_identifier"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - not:
+          - columnExists:
+              schemaName: ${AQTS_SCHEMA_NAME}
+              tableName: time_series_description
+              columnName: computation_identifier
+      changes:
+        - sql: alter table ${AQTS_SCHEMA_NAME}.time_series_description add column if not exists computation_identifier text;
+        - rollback: alter table ${AQTS_SCHEMA_NAME}.time_series_description drop column computation_identifier;

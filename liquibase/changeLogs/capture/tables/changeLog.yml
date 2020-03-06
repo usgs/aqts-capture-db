@@ -6,6 +6,14 @@ databaseChangeLog:
         username: ${AQTS_SCHEMA_OWNER_USERNAME}
 
   - include:
+      file: "aqCompIdToStatCd/changeLog.yml"
+      relativeToChangelogFile: true
+
+  - include:
+      file: "aqToNwisParm/changeLog.yml"
+      relativeToChangelogFile: true
+
+  - include:
       file: "groundwaterStatisticalDailyValue/changeLog.yml"
       relativeToChangelogFile: true
 
