@@ -1,0 +1,32 @@
+computation_identifier	stat_cd
+120 day high mean	03120
+240 day high mean	03240
+3 day high mean	03003
+5.0 Percentile	01050
+80 Percentile	01800
+AM	00004
+Aggregate	?
+Count	?
+Equivalent Mean	00012
+EquivalentMean	00012
+Instantaneous	00011
+Inter Quartile	?
+Kurtosis	?
+Maximum	00001
+Max	00001
+Mean	00003
+Median	00008
+Minimum	00002
+Min	00002
+Mode	00007
+PM	00005
+Range	?
+Skewness	00013
+Standard Deviation	00009
+STD	00009
+Sum	00006
+TidalHigh	00021
+TidalHigherLow	00023
+TidalLow	00024
+TidalLowerHigh	00022
+Variance	00010
