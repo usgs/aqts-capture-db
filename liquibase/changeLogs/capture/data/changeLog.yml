@@ -12,3 +12,7 @@ databaseChangeLog:
   - include:
       file: "aqCompIdToStatCd/changeLog.yml"
       relativeToChangelogFile: true
+
+  - include:
+      file: "dataTypeMapping/changeLog.yml"
+      relativeToChangelogFile: true
