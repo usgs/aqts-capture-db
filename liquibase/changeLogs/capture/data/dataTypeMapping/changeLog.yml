@@ -1,0 +1,23 @@
+databaseChangeLog:
+  - preConditions:
+    - dbms:
+        type: PostgreSQL
+    - runningAs:
+        username: ${AQTS_SCHEMA_OWNER_USERNAME}
+
+  - changeSet:
+      author: drsteini
+      id: "load.${AQTS_SCHEMA_NAME}.data_type_mapping"
+      runOnChange: true
+      changes:
+        - delete:
+            schemaName: ${AQTS_SCHEMA_NAME}
+            tableName: data_type_mapping
+        - loadData:
+            encoding: UTF-8
+            file: dataTypeMapping.tsv
+            relativeToChangelogFile: true
+            separator: \t
+            schemaName: ${AQTS_SCHEMA_NAME}
+            tableName: data_type_mapping
+        - rollback: select 'no rollback - you must restore previous dataTypeMapping.tsv and rerun manually'
