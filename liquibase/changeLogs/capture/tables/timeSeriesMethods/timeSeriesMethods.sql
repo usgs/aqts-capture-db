@@ -4,5 +4,6 @@ create table if not exists ${AQTS_SCHEMA_NAME}.time_series_methods
 ,start_time                              timestamp
 ,end_time                                timestamp
 ,method_code                             text
-,primary key (time_series_methods_id)
-);
+,partition_number                        integer default extract( month from now() )
+)
+partition by list (partition_number);

@@ -11,3 +11,87 @@ databaseChangeLog:
       changes:
         - sql: create index if not exists time_series_approvals_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_approvals (json_data_id);
         - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_approvals_json_data_id;
+
+  - changeSet:
+      author: ssoper
+      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_approvals_january_json_data_id"
+      changes:
+        - sql: create index if not exists time_series_approvals_january_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_approvals_january (json_data_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_approvals_january_json_data_id;
+
+  - changeSet:
+      author: ssoper
+      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_approvals_february_json_data_id"
+      changes:
+        - sql: create index if not exists time_series_approvals_february_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_approvals_february (json_data_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_approvals_february_json_data_id;
+
+  - changeSet:
+      author: ssoper
+      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_approvals_march_json_data_id"
+      changes:
+        - sql: create index if not exists time_series_approvals_march_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_approvals_march (json_data_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_approvals_march_json_data_id;
+
+  - changeSet:
+      author: ssoper
+      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_approvals_april_json_data_id"
+      changes:
+        - sql: create index if not exists time_series_approvals_april_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_approvals_april (json_data_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_approvals_april_json_data_id;
+
+  - changeSet:
+      author: ssoper
+      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_approvals_may_json_data_id"
+      changes:
+        - sql: create index if not exists time_series_approvals_may_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_approvals_may (json_data_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_approvals_may_json_data_id;
+
+  - changeSet:
+      author: ssoper
+      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_approvals_june_json_data_id"
+      changes:
+        - sql: create index if not exists time_series_approvals_june_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_approvals_june (json_data_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_approvals_june_json_data_id;
+
+  - changeSet:
+      author: ssoper
+      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_approvals_july_json_data_id"
+      changes:
+        - sql: create index if not exists time_series_approvals_july_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_approvals_july (json_data_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_approvals_july_json_data_id;
+
+  - changeSet:
+      author: ssoper
+      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_approvals_august_json_data_id"
+      changes:
+        - sql: create index if not exists time_series_approvals_august_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_approvals_august (json_data_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_approvals_august_json_data_id;
+
+  - changeSet:
+      author: ssoper
+      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_approvals_september_json_data_id"
+      changes:
+        - sql: create index if not exists time_series_approvals_september_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_approvals_september (json_data_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_approvals_september_json_data_id;
+
+  - changeSet:
+      author: ssoper
+      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_approvals_october_json_data_id"
+      changes:
+        - sql: create index if not exists time_series_approvals_october_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_approvals_october (json_data_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_approvals_october_json_data_id;
+
+  - changeSet:
+      author: ssoper
+      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_approvals_november_json_data_id"
+      changes:
+        - sql: create index if not exists time_series_approvals_november_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_approvals_november (json_data_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_approvals_november_json_data_id;
+
+  - changeSet:
+      author: ssoper
+      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_approvals_december_json_data_id"
+      changes:
+        - sql: create index if not exists time_series_approvals_december_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_approvals_december (json_data_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_approvals_december_json_data_id;

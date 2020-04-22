@@ -4,6 +4,6 @@ create table if not exists ${AQTS_SCHEMA_NAME}.time_series_points
 ,time_step                               timestamp
 ,numeric_value                           decimal
 ,display_value                           text
-,primary key (time_series_points_id)
-,constraint time_series_points_ak unique (json_data_id, time_step)
-);
+,partition_number                        integer default extract( month from now() )
+)
+partition by list (partition_number);

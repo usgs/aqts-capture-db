@@ -10,6 +10,10 @@ databaseChangeLog:
       relativeToChangelogFile: true
 
   - include:
+      file: "partitions/changeLog.yml"
+      relativeToChangelogFile: true
+
+  - include:
       file: "indexes/changeLog.yml"
       relativeToChangelogFile: true
 
