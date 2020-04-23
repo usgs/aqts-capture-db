@@ -8,3 +8,7 @@ databaseChangeLog:
   - include:
       file: "adjustTimestamp/changeLog.yml"
       relativeToChangelogFile: true
+
+  - include:
+      file: "pruneTimeSeriesData/changeLog.yml"
+      relativeToChangelogFile: true

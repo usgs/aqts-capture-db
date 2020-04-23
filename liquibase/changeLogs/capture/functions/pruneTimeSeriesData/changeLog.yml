@@ -1,0 +1,16 @@
+databaseChangeLog:
+  - preConditions:
+      - dbms:
+          type: postgresql
+      - runningAs:
+          username: ${AQTS_SCHEMA_OWNER_USERNAME}
+
+  - changeSet:
+      author: ssoper
+      id: "create.function.${AQTS_SCHEMA_NAME}.prune_time_series_data"
+      changes:
+        - sqlFile:
+            path: pruneTimeSeriesData.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+        - rollback: drop function if exists ${AQTS_SCHEMA_NAME}.prune_time_series_data(character varying);

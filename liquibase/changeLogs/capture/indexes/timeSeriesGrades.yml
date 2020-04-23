@@ -6,13 +6,6 @@ databaseChangeLog:
         username: ${AQTS_SCHEMA_OWNER_USERNAME}
 
   - changeSet:
-      author: drsteini
-      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_grades_json_data_id"
-      changes:
-        - sql: create index if not exists time_series_grades_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_grades (json_data_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_grades_json_data_id;
-
-  - changeSet:
       author: ssoper
       id: "create.index.${AQTS_SCHEMA_NAME}.time_series_grades_january_json_data_id"
       changes:
