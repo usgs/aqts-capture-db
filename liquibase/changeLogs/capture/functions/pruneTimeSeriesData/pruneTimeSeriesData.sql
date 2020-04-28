@@ -15,6 +15,7 @@ begin
 	execute format('drop table if exists %I.time_series_header_info_%s', '${AQTS_SCHEMA_NAME}', month_name);
 	execute format('drop table if exists %I.time_series_interpolation_types_%s', '${AQTS_SCHEMA_NAME}', month_name);
 	execute format('drop table if exists %I.time_series_methods_%s', '${AQTS_SCHEMA_NAME}', month_name);
+	execute format('drop table if exists %I.time_series_points_%s', '${AQTS_SCHEMA_NAME}', month_name);
 	execute format('drop table if exists %I.time_series_qualifiers_%s', '${AQTS_SCHEMA_NAME}', month_name);
 
 	/* recreate the partitions */
@@ -25,6 +26,7 @@ begin
 	execute format('create table if not exists %I.time_series_header_info_%s partition of %I.time_series_header_info for values in (%L)', '${AQTS_SCHEMA_NAME}', month_name, '${AQTS_SCHEMA_NAME}', month_number);
 	execute format('create table if not exists %I.time_series_interpolation_types_%s partition of %I.time_series_interpolation_types for values in (%L)', '${AQTS_SCHEMA_NAME}', month_name, '${AQTS_SCHEMA_NAME}', month_number);
 	execute format('create table if not exists %I.time_series_methods_%s partition of %I.time_series_methods for values in (%L)', '${AQTS_SCHEMA_NAME}', month_name, '${AQTS_SCHEMA_NAME}', month_number);
+	execute format('create table if not exists %I.time_series_points_%s partition of %I.time_series_points for values in (%L)', '${AQTS_SCHEMA_NAME}', month_name, '${AQTS_SCHEMA_NAME}', month_number);
 	execute format('create table if not exists %I.time_series_qualifiers_%s partition of %I.time_series_qualifiers for values in (%L)', '${AQTS_SCHEMA_NAME}', month_name, '${AQTS_SCHEMA_NAME}', month_number);
 
 	/* recreate the indexes */
