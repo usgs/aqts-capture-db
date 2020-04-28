@@ -42,6 +42,7 @@ begin
 
 	/* time_series_header_info */
 	execute format('create unique index if not exists time_series_header_info_%s_time_series_header_info_id on %I.time_series_header_info_%s (time_series_header_info_id)', month_name, '${AQTS_SCHEMA_NAME}', month_name);
+	execute format('create unique index if not exists time_series_header_info_%s_ak on %I.time_series_header_info_%s (json_data_id, time_series_unique_id)', month_name, '${AQTS_SCHEMA_NAME}', month_name);
 
 	/* time_series_interpolation_types */
 	execute format('create unique index if not exists time_series_interpolation_types_%s_time_series_interpolation_types_id on %I.time_series_interpolation_types_%s (time_series_interpolation_types_id)', month_name, '${AQTS_SCHEMA_NAME}', month_name);
