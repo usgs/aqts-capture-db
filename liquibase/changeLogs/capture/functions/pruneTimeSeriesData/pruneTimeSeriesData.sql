@@ -50,6 +50,10 @@ begin
 	/* time_series_methods */
 	execute format('create unique index if not exists time_series_methods_%s_time_series_methods_id on %I.time_series_methods_%s (time_series_methods_id)', month_name, '${AQTS_SCHEMA_NAME}', month_name);
 
+	/* time_series_points */
+	execute format('create unique index if not exists time_series_points_%s_time_series_points_id on %I.time_series_points_%s (time_series_points_id)', month_name, '${AQTS_SCHEMA_NAME}', month_name);
+	execute format('create unique index if not exists time_series_points_%s_ak on %I.time_series_points_%s (json_data_id, time_step)', month_name, '${AQTS_SCHEMA_NAME}', month_name);
+
 	/* time_series_qualifiers */
 	execute format('create unique index if not exists time_series_qualifiers_%s_time_series_qualifiers_id on %I.time_series_qualifiers_%s (time_series_qualifiers_id)', month_name, '${AQTS_SCHEMA_NAME}', month_name);
 
