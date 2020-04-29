@@ -21,6 +21,13 @@ databaseChangeLog:
 
   - changeSet:
       author: ssoper
+      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_header_info_january_time_series_unique_id"
+      changes:
+        - sql: create index if not exists time_series_header_info_january_time_series_unique_id on ${AQTS_SCHEMA_NAME}.time_series_header_info_january (time_series_unique_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_header_info_january_time_series_unique_id;
+
+  - changeSet:
+      author: ssoper
       id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_header_info_february_time_series_header_info_id"
       changes:
         - sql: create unique index if not exists time_series_header_info_february_time_series_header_info_id on ${AQTS_SCHEMA_NAME}.time_series_header_info_february (time_series_header_info_id);
@@ -32,6 +39,13 @@ databaseChangeLog:
       changes:
         - sql: create unique index if not exists time_series_header_info_february_ak on ${AQTS_SCHEMA_NAME}.time_series_header_info_february (json_data_id, time_series_unique_id);
         - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_header_info_february_ak;
+
+  - changeSet:
+      author: ssoper
+      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_header_info_february_time_series_unique_id"
+      changes:
+        - sql: create index if not exists time_series_header_info_february_time_series_unique_id on ${AQTS_SCHEMA_NAME}.time_series_header_info_february (time_series_unique_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_header_info_february_time_series_unique_id;
 
   - changeSet:
       author: ssoper
@@ -49,6 +63,13 @@ databaseChangeLog:
 
   - changeSet:
       author: ssoper
+      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_header_info_march_time_series_unique_id"
+      changes:
+        - sql: create index if not exists time_series_header_info_march_time_series_unique_id on ${AQTS_SCHEMA_NAME}.time_series_header_info_march (time_series_unique_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_header_info_march_time_series_unique_id;
+
+  - changeSet:
+      author: ssoper
       id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_header_info_april_time_series_header_info_id"
       changes:
         - sql: create unique index if not exists time_series_header_info_april_time_series_header_info_id on ${AQTS_SCHEMA_NAME}.time_series_header_info_april (time_series_header_info_id);
@@ -60,6 +81,13 @@ databaseChangeLog:
       changes:
         - sql: create unique index if not exists time_series_header_info_april_ak on ${AQTS_SCHEMA_NAME}.time_series_header_info_april (json_data_id, time_series_unique_id);
         - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_header_info_april_ak;
+
+  - changeSet:
+      author: ssoper
+      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_header_info_april_time_series_unique_id"
+      changes:
+        - sql: create index if not exists time_series_header_info_april_time_series_unique_id on ${AQTS_SCHEMA_NAME}.time_series_header_info_april (time_series_unique_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_header_info_april_time_series_unique_id;
 
   - changeSet:
       author: ssoper
@@ -77,6 +105,13 @@ databaseChangeLog:
 
   - changeSet:
       author: ssoper
+      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_header_info_may_time_series_unique_id"
+      changes:
+        - sql: create index if not exists time_series_header_info_may_time_series_unique_id on ${AQTS_SCHEMA_NAME}.time_series_header_info_may (time_series_unique_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_header_info_may_time_series_unique_id;
+
+  - changeSet:
+      author: ssoper
       id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_header_info_june_time_series_header_info_id"
       changes:
         - sql: create unique index if not exists time_series_header_info_june_time_series_header_info_id on ${AQTS_SCHEMA_NAME}.time_series_header_info_june (time_series_header_info_id);
@@ -88,6 +123,13 @@ databaseChangeLog:
       changes:
         - sql: create unique index if not exists time_series_header_info_june_ak on ${AQTS_SCHEMA_NAME}.time_series_header_info_june (json_data_id, time_series_unique_id);
         - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_header_info_june_ak;
+
+  - changeSet:
+      author: ssoper
+      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_header_info_june_time_series_unique_id"
+      changes:
+        - sql: create index if not exists time_series_header_info_june_time_series_unique_id on ${AQTS_SCHEMA_NAME}.time_series_header_info_june (time_series_unique_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_header_info_june_time_series_unique_id;
 
   - changeSet:
       author: ssoper
@@ -105,6 +147,13 @@ databaseChangeLog:
 
   - changeSet:
       author: ssoper
+      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_header_info_july_time_series_unique_id"
+      changes:
+        - sql: create index if not exists time_series_header_info_july_time_series_unique_id on ${AQTS_SCHEMA_NAME}.time_series_header_info_july (time_series_unique_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_header_info_july_time_series_unique_id;
+
+  - changeSet:
+      author: ssoper
       id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_header_info_august_time_series_header_info_id"
       changes:
         - sql: create unique index if not exists time_series_header_info_august_time_series_header_info_id on ${AQTS_SCHEMA_NAME}.time_series_header_info_august (time_series_header_info_id);
@@ -116,6 +165,13 @@ databaseChangeLog:
       changes:
         - sql: create unique index if not exists time_series_header_info_august_ak on ${AQTS_SCHEMA_NAME}.time_series_header_info_august (json_data_id, time_series_unique_id);
         - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_header_info_august_ak;
+
+  - changeSet:
+      author: ssoper
+      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_header_info_august_time_series_unique_id"
+      changes:
+        - sql: create index if not exists time_series_header_info_august_time_series_unique_id on ${AQTS_SCHEMA_NAME}.time_series_header_info_august (time_series_unique_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_header_info_august_time_series_unique_id;
 
   - changeSet:
       author: ssoper
@@ -133,6 +189,13 @@ databaseChangeLog:
 
   - changeSet:
       author: ssoper
+      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_header_info_september_time_series_unique_id"
+      changes:
+        - sql: create index if not exists time_series_header_info_september_time_series_unique_id on ${AQTS_SCHEMA_NAME}.time_series_header_info_september (time_series_unique_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_header_info_september_time_series_unique_id;
+
+  - changeSet:
+      author: ssoper
       id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_header_info_october_time_series_header_info_id"
       changes:
         - sql: create unique index if not exists time_series_header_info_october_time_series_header_info_id on ${AQTS_SCHEMA_NAME}.time_series_header_info_october (time_series_header_info_id);
@@ -144,6 +207,13 @@ databaseChangeLog:
       changes:
         - sql: create unique index if not exists time_series_header_info_october_ak on ${AQTS_SCHEMA_NAME}.time_series_header_info_october (json_data_id, time_series_unique_id);
         - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_header_info_october_ak;
+
+  - changeSet:
+      author: ssoper
+      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_header_info_october_time_series_unique_id"
+      changes:
+        - sql: create index if not exists time_series_header_info_october_time_series_unique_id on ${AQTS_SCHEMA_NAME}.time_series_header_info_october (time_series_unique_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_header_info_october_time_series_unique_id;
 
   - changeSet:
       author: ssoper
@@ -161,6 +231,13 @@ databaseChangeLog:
 
   - changeSet:
       author: ssoper
+      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_header_info_november_time_series_unique_id"
+      changes:
+        - sql: create index if not exists time_series_header_info_november_time_series_unique_id on ${AQTS_SCHEMA_NAME}.time_series_header_info_november (time_series_unique_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_header_info_november_time_series_unique_id;
+
+  - changeSet:
+      author: ssoper
       id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_header_info_december_time_series_header_info_id"
       changes:
         - sql: create unique index if not exists time_series_header_info_december_time_series_header_info_id on ${AQTS_SCHEMA_NAME}.time_series_header_info_december (time_series_header_info_id);
@@ -172,3 +249,10 @@ databaseChangeLog:
       changes:
         - sql: create unique index if not exists time_series_header_info_december_ak on ${AQTS_SCHEMA_NAME}.time_series_header_info_december (json_data_id, time_series_unique_id);
         - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_header_info_december_ak;
+
+  - changeSet:
+      author: ssoper
+      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_header_info_december_time_series_unique_id"
+      changes:
+        - sql: create index if not exists time_series_header_info_december_time_series_unique_id on ${AQTS_SCHEMA_NAME}.time_series_header_info_december (time_series_unique_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_header_info_december_time_series_unique_id;

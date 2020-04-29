@@ -14,10 +14,24 @@ databaseChangeLog:
 
   - changeSet:
       author: ssoper
+      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_methods_january_json_data_id"
+      changes:
+        - sql: create index if not exists time_series_methods_january_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_methods_january (json_data_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_methods_january_json_data_id;
+
+  - changeSet:
+      author: ssoper
       id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_methods_february_time_series_methods_id"
       changes:
         - sql: create unique index if not exists time_series_methods_february_time_series_methods_id on ${AQTS_SCHEMA_NAME}.time_series_methods_february (time_series_methods_id);
         - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_methods_february_time_series_methods_id;
+
+  - changeSet:
+      author: ssoper
+      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_methods_february_json_data_id"
+      changes:
+        - sql: create index if not exists time_series_methods_february_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_methods_february (json_data_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_methods_february_json_data_id;
 
   - changeSet:
       author: ssoper
@@ -28,10 +42,24 @@ databaseChangeLog:
 
   - changeSet:
       author: ssoper
+      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_methods_march_json_data_id"
+      changes:
+        - sql: create index if not exists time_series_methods_march_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_methods_march (json_data_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_methods_march_json_data_id;
+
+  - changeSet:
+      author: ssoper
       id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_methods_april_time_series_methods_id"
       changes:
         - sql: create unique index if not exists time_series_methods_april_time_series_methods_id on ${AQTS_SCHEMA_NAME}.time_series_methods_april (time_series_methods_id);
         - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_methods_april_time_series_methods_id;
+
+  - changeSet:
+      author: ssoper
+      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_methods_april_json_data_id"
+      changes:
+        - sql: create index if not exists time_series_methods_april_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_methods_april (json_data_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_methods_april_json_data_id;
 
   - changeSet:
       author: ssoper
@@ -42,10 +70,24 @@ databaseChangeLog:
 
   - changeSet:
       author: ssoper
+      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_methods_may_json_data_id"
+      changes:
+        - sql: create index if not exists time_series_methods_may_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_methods_may (json_data_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_methods_may_json_data_id;
+
+  - changeSet:
+      author: ssoper
       id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_methods_june_time_series_methods_id"
       changes:
         - sql: create unique index if not exists time_series_methods_june_time_series_methods_id on ${AQTS_SCHEMA_NAME}.time_series_methods_june (time_series_methods_id);
         - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_methods_june_time_series_methods_id;
+
+  - changeSet:
+      author: ssoper
+      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_methods_june_json_data_id"
+      changes:
+        - sql: create index if not exists time_series_methods_june_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_methods_june (json_data_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_methods_june_json_data_id;
 
   - changeSet:
       author: ssoper
@@ -56,10 +98,24 @@ databaseChangeLog:
 
   - changeSet:
       author: ssoper
+      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_methods_july_json_data_id"
+      changes:
+        - sql: create index if not exists time_series_methods_july_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_methods_july (json_data_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_methods_july_json_data_id;
+
+  - changeSet:
+      author: ssoper
       id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_methods_august_time_series_methods_id"
       changes:
         - sql: create unique index if not exists time_series_methods_august_time_series_methods_id on ${AQTS_SCHEMA_NAME}.time_series_methods_august (time_series_methods_id);
         - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_methods_august_time_series_methods_id;
+
+  - changeSet:
+      author: ssoper
+      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_methods_august_json_data_id"
+      changes:
+        - sql: create index if not exists time_series_methods_august_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_methods_august (json_data_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_methods_august_json_data_id;
 
   - changeSet:
       author: ssoper
@@ -70,10 +126,24 @@ databaseChangeLog:
 
   - changeSet:
       author: ssoper
+      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_methods_september_json_data_id"
+      changes:
+        - sql: create index if not exists time_series_methods_september_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_methods_september (json_data_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_methods_september_json_data_id;
+
+  - changeSet:
+      author: ssoper
       id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_methods_october_time_series_methods_id"
       changes:
         - sql: create unique index if not exists time_series_methods_october_time_series_methods_id on ${AQTS_SCHEMA_NAME}.time_series_methods_october (time_series_methods_id);
         - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_methods_october_time_series_methods_id;
+
+  - changeSet:
+      author: ssoper
+      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_methods_october_json_data_id"
+      changes:
+        - sql: create index if not exists time_series_methods_october_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_methods_october (json_data_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_methods_october_json_data_id;
 
   - changeSet:
       author: ssoper
@@ -84,7 +154,21 @@ databaseChangeLog:
 
   - changeSet:
       author: ssoper
+      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_methods_november_json_data_id"
+      changes:
+        - sql: create index if not exists time_series_methods_november_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_methods_november (json_data_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_methods_november_json_data_id;
+
+  - changeSet:
+      author: ssoper
       id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_methods_december_time_series_methods_id"
       changes:
         - sql: create unique index if not exists time_series_methods_december_time_series_methods_id on ${AQTS_SCHEMA_NAME}.time_series_methods_december (time_series_methods_id);
         - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_methods_december_time_series_methods_id;
+
+  - changeSet:
+      author: ssoper
+      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_methods_december_json_data_id"
+      changes:
+        - sql: create index if not exists time_series_methods_december_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_methods_december (json_data_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_methods_december_json_data_id;
