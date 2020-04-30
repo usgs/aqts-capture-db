@@ -13,4 +13,4 @@ databaseChangeLog:
             path: pruneTimeSeriesData.sql
             relativeToChangelogFile: true
             splitStatements: false
-        - rollback: drop function if exists ${AQTS_SCHEMA_NAME}.prune_time_series_data(character varying);
+        - rollback: drop function if exists ${AQTS_SCHEMA_NAME}.prune_time_series_data(date);

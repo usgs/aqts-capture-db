@@ -1,10 +1,10 @@
-create or replace function ${AQTS_SCHEMA_NAME}.prune_time_series_data(date timestamp)
+create or replace function ${AQTS_SCHEMA_NAME}.prune_time_series_data(pruneDate date)
 returns void
 language plpgsql
 as $$
 declare
-	month_number integer := extract( month from date );
-	month_name varchar := trim(to_char(date, 'month'));
+	month_number integer := extract( month from pruneDate );
+	month_name varchar := trim(to_char(pruneDate, 'month'));
 begin
 
 	/* drop the partitions */
