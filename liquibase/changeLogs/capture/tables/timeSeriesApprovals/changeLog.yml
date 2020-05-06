@@ -20,3 +20,88 @@ databaseChangeLog:
             path: timeSeriesApprovals.sql
             relativeToChangelogFile: true
         - rollback: drop table if exists ${AQTS_SCHEMA_NAME}.time_series_approvals;
+
+  - changeSet:
+      author: ssoper
+      id: "create.table.${AQTS_SCHEMA_NAME}.time_series_approvals_january.partition"
+      changes:
+        - sql: create table if not exists ${AQTS_SCHEMA_NAME}.time_series_approvals_january partition of ${AQTS_SCHEMA_NAME}.time_series_approvals for values in (1);
+        - rollback: drop table if exists ${AQTS_SCHEMA_NAME}.time_series_approvals_january;
+
+  - changeSet:
+      author: ssoper
+      id: "create.table.${AQTS_SCHEMA_NAME}.time_series_approvals_february.partition"
+      changes:
+        - sql: create table if not exists ${AQTS_SCHEMA_NAME}.time_series_approvals_february partition of ${AQTS_SCHEMA_NAME}.time_series_approvals for values in (2);
+        - rollback: drop table if exists ${AQTS_SCHEMA_NAME}.time_series_approvals_february;
+
+  - changeSet:
+      author: ssoper
+      id: "create.table.${AQTS_SCHEMA_NAME}.time_series_approvals_march.partition"
+      changes:
+        - sql: create table if not exists ${AQTS_SCHEMA_NAME}.time_series_approvals_march partition of ${AQTS_SCHEMA_NAME}.time_series_approvals for values in (3);
+        - rollback: drop table if exists ${AQTS_SCHEMA_NAME}.time_series_approvals_march;
+
+  - changeSet:
+      author: ssoper
+      id: "create.table.${AQTS_SCHEMA_NAME}.time_series_approvals_april.partition"
+      changes:
+        - sql: create table if not exists ${AQTS_SCHEMA_NAME}.time_series_approvals_april partition of ${AQTS_SCHEMA_NAME}.time_series_approvals for values in (4);
+        - rollback: drop table if exists ${AQTS_SCHEMA_NAME}.time_series_approvals_april;
+
+  - changeSet:
+      author: ssoper
+      id: "create.table.${AQTS_SCHEMA_NAME}.time_series_approvals_may.partition"
+      changes:
+        - sql: create table if not exists ${AQTS_SCHEMA_NAME}.time_series_approvals_may partition of ${AQTS_SCHEMA_NAME}.time_series_approvals for values in (5);
+        - rollback: drop table if exists ${AQTS_SCHEMA_NAME}.time_series_approvals_may;
+
+  - changeSet:
+      author: ssoper
+      id: "create.table.${AQTS_SCHEMA_NAME}.time_series_approvals_june.partition"
+      changes:
+        - sql: create table if not exists ${AQTS_SCHEMA_NAME}.time_series_approvals_june partition of ${AQTS_SCHEMA_NAME}.time_series_approvals for values in (6);
+        - rollback: drop table if exists ${AQTS_SCHEMA_NAME}.time_series_approvals_june;
+
+
+  - changeSet:
+      author: ssoper
+      id: "create.table.${AQTS_SCHEMA_NAME}.time_series_approvals_july.partition"
+      changes:
+        - sql: create table if not exists ${AQTS_SCHEMA_NAME}.time_series_approvals_july partition of ${AQTS_SCHEMA_NAME}.time_series_approvals for values in (7);
+        - rollback: drop table if exists ${AQTS_SCHEMA_NAME}.time_series_approvals_july;
+
+  - changeSet:
+      author: ssoper
+      id: "create.table.${AQTS_SCHEMA_NAME}.time_series_approvals_august.partition"
+      changes:
+        - sql: create table if not exists ${AQTS_SCHEMA_NAME}.time_series_approvals_august partition of ${AQTS_SCHEMA_NAME}.time_series_approvals for values in (8);
+        - rollback: drop table if exists ${AQTS_SCHEMA_NAME}.time_series_approvals_august;
+
+  - changeSet:
+      author: ssoper
+      id: "create.table.${AQTS_SCHEMA_NAME}.time_series_approvals_september.partition"
+      changes:
+        - sql: create table if not exists ${AQTS_SCHEMA_NAME}.time_series_approvals_september partition of ${AQTS_SCHEMA_NAME}.time_series_approvals for values in (9);
+        - rollback: drop table if exists ${AQTS_SCHEMA_NAME}.time_series_approvals_september;
+
+  - changeSet:
+      author: ssoper
+      id: "create.table.${AQTS_SCHEMA_NAME}.time_series_approvals_october.partition"
+      changes:
+        - sql: create table if not exists ${AQTS_SCHEMA_NAME}.time_series_approvals_october partition of ${AQTS_SCHEMA_NAME}.time_series_approvals for values in (10);
+        - rollback: drop table if exists ${AQTS_SCHEMA_NAME}.time_series_approvals_october;
+
+  - changeSet:
+      author: ssoper
+      id: "create.table.${AQTS_SCHEMA_NAME}.time_series_approvals_november.partition"
+      changes:
+        - sql: create table if not exists ${AQTS_SCHEMA_NAME}.time_series_approvals_november partition of ${AQTS_SCHEMA_NAME}.time_series_approvals for values in (11);
+        - rollback: drop table if exists ${AQTS_SCHEMA_NAME}.time_series_approvals_november;
+
+  - changeSet:
+      author: ssoper
+      id: "create.table.${AQTS_SCHEMA_NAME}.time_series_approvals_december.partition"
+      changes:
+        - sql: create table if not exists ${AQTS_SCHEMA_NAME}.time_series_approvals_december partition of ${AQTS_SCHEMA_NAME}.time_series_approvals for values in (12);
+        - rollback: drop table if exists ${AQTS_SCHEMA_NAME}.time_series_approvals_december;

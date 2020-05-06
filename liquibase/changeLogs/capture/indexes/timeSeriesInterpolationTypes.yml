@@ -6,8 +6,169 @@ databaseChangeLog:
         username: ${AQTS_SCHEMA_OWNER_USERNAME}
 
   - changeSet:
-      author: drsteini
-      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_interpolation_types_json_data_id"
+      author: ssoper
+      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_interpolation_types_january_time_series_interpolation_types_id"
       changes:
-        - sql: create index if not exists time_series_interpolation_types_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_interpolation_types (json_data_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_interpolation_types_json_data_id;
+        - sql: create unique index if not exists time_series_interpolation_types_january_time_series_interpolation_types_id on ${AQTS_SCHEMA_NAME}.time_series_interpolation_types_january (time_series_interpolation_types_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_interpolation_types_january_time_series_interpolation_types_id;
+
+  - changeSet:
+      author: ssoper
+      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_interpolation_types_january_json_data_id"
+      changes:
+        - sql: create index if not exists time_series_interpolation_types_january_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_interpolation_types_january (json_data_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_interpolation_types_january_json_data_id;
+
+  - changeSet:
+      author: ssoper
+      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_interpolation_types_february_time_series_interpolation_types_id"
+      changes:
+        - sql: create unique index if not exists time_series_interpolation_types_february_time_series_interpolation_types_id on ${AQTS_SCHEMA_NAME}.time_series_interpolation_types_february (time_series_interpolation_types_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_interpolation_types_february_time_series_interpolation_types_id;
+
+  - changeSet:
+      author: ssoper
+      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_interpolation_types_february_json_data_id"
+      changes:
+        - sql: create index if not exists time_series_interpolation_types_february_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_interpolation_types_february (json_data_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_interpolation_types_february_json_data_id;
+
+  - changeSet:
+      author: ssoper
+      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_interpolation_types_march_time_series_interpolation_types_id"
+      changes:
+        - sql: create unique index if not exists time_series_interpolation_types_march_time_series_interpolation_types_id on ${AQTS_SCHEMA_NAME}.time_series_interpolation_types_march (time_series_interpolation_types_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_interpolation_types_march_time_series_interpolation_types_id;
+
+  - changeSet:
+      author: ssoper
+      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_interpolation_types_march_json_data_id"
+      changes:
+        - sql: create index if not exists time_series_interpolation_types_march_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_interpolation_types_march (json_data_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_interpolation_types_march_json_data_id;
+
+  - changeSet:
+      author: ssoper
+      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_interpolation_types_april_time_series_interpolation_types_id"
+      changes:
+        - sql: create unique index if not exists time_series_interpolation_types_april_time_series_interpolation_types_id on ${AQTS_SCHEMA_NAME}.time_series_interpolation_types_april (time_series_interpolation_types_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_interpolation_types_april_time_series_interpolation_types_id;
+
+  - changeSet:
+      author: ssoper
+      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_interpolation_types_april_json_data_id"
+      changes:
+        - sql: create index if not exists time_series_interpolation_types_april_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_interpolation_types_april (json_data_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_interpolation_types_april_json_data_id;
+
+  - changeSet:
+      author: ssoper
+      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_interpolation_types_may_time_series_interpolation_types_id"
+      changes:
+        - sql: create unique index if not exists time_series_interpolation_types_may_time_series_interpolation_types_id on ${AQTS_SCHEMA_NAME}.time_series_interpolation_types_may (time_series_interpolation_types_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_interpolation_types_may_time_series_interpolation_types_id;
+
+  - changeSet:
+      author: ssoper
+      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_interpolation_types_may_json_data_id"
+      changes:
+        - sql: create index if not exists time_series_interpolation_types_may_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_interpolation_types_may (json_data_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_interpolation_types_may_json_data_id;
+
+  - changeSet:
+      author: ssoper
+      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_interpolation_types_june_time_series_interpolation_types_id"
+      changes:
+        - sql: create unique index if not exists time_series_interpolation_types_june_time_series_interpolation_types_id on ${AQTS_SCHEMA_NAME}.time_series_interpolation_types_june (time_series_interpolation_types_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_interpolation_types_june_time_series_interpolation_types_id;
+
+  - changeSet:
+      author: ssoper
+      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_interpolation_types_june_json_data_id"
+      changes:
+        - sql: create index if not exists time_series_interpolation_types_june_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_interpolation_types_june (json_data_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_interpolation_types_june_json_data_id;
+
+  - changeSet:
+      author: ssoper
+      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_interpolation_types_july_time_series_interpolation_types_id"
+      changes:
+        - sql: create unique index if not exists time_series_interpolation_types_july_time_series_interpolation_types_id on ${AQTS_SCHEMA_NAME}.time_series_interpolation_types_july (time_series_interpolation_types_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_interpolation_types_july_time_series_interpolation_types_id;
+
+  - changeSet:
+      author: ssoper
+      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_interpolation_types_july_json_data_id"
+      changes:
+        - sql: create index if not exists time_series_interpolation_types_july_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_interpolation_types_july (json_data_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_interpolation_types_july_json_data_id;
+
+  - changeSet:
+      author: ssoper
+      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_interpolation_types_august_time_series_interpolation_types_id"
+      changes:
+        - sql: create unique index if not exists time_series_interpolation_types_august_time_series_interpolation_types_id on ${AQTS_SCHEMA_NAME}.time_series_interpolation_types_august (time_series_interpolation_types_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_interpolation_types_august_time_series_interpolation_types_id;
+
+  - changeSet:
+      author: ssoper
+      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_interpolation_types_august_json_data_id"
+      changes:
+        - sql: create index if not exists time_series_interpolation_types_august_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_interpolation_types_august (json_data_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_interpolation_types_august_json_data_id;
+
+  - changeSet:
+      author: ssoper
+      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_interpolation_types_september_time_series_interpolation_types_id"
+      changes:
+        - sql: create unique index if not exists time_series_interpolation_types_september_time_series_interpolation_types_id on ${AQTS_SCHEMA_NAME}.time_series_interpolation_types_september (time_series_interpolation_types_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_interpolation_types_september_time_series_interpolation_types_id;
+
+  - changeSet:
+      author: ssoper
+      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_interpolation_types_september_json_data_id"
+      changes:
+        - sql: create index if not exists time_series_interpolation_types_september_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_interpolation_types_september (json_data_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_interpolation_types_september_json_data_id;
+
+  - changeSet:
+      author: ssoper
+      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_interpolation_types_october_time_series_interpolation_types_id"
+      changes:
+        - sql: create unique index if not exists time_series_interpolation_types_october_time_series_interpolation_types_id on ${AQTS_SCHEMA_NAME}.time_series_interpolation_types_october (time_series_interpolation_types_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_interpolation_types_october_time_series_interpolation_types_id;
+
+  - changeSet:
+      author: ssoper
+      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_interpolation_types_october_json_data_id"
+      changes:
+        - sql: create index if not exists time_series_interpolation_types_october_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_interpolation_types_october (json_data_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_interpolation_types_october_json_data_id;
+
+  - changeSet:
+      author: ssoper
+      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_interpolation_types_november_time_series_interpolation_types_id"
+      changes:
+        - sql: create unique index if not exists time_series_interpolation_types_november_time_series_interpolation_types_id on ${AQTS_SCHEMA_NAME}.time_series_interpolation_types_november (time_series_interpolation_types_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_interpolation_types_november_time_series_interpolation_types_id;
+
+  - changeSet:
+      author: ssoper
+      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_interpolation_types_november_json_data_id"
+      changes:
+        - sql: create index if not exists time_series_interpolation_types_november_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_interpolation_types_november (json_data_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_interpolation_types_november_json_data_id;
+
+  - changeSet:
+      author: ssoper
+      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_interpolation_types_december_time_series_interpolation_types_id"
+      changes:
+        - sql: create unique index if not exists time_series_interpolation_types_december_time_series_interpolation_types_id on ${AQTS_SCHEMA_NAME}.time_series_interpolation_types_december (time_series_interpolation_types_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_interpolation_types_december_time_series_interpolation_types_id;
+
+  - changeSet:
+      author: ssoper
+      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_interpolation_types_december_json_data_id"
+      changes:
+        - sql: create index if not exists time_series_interpolation_types_december_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_interpolation_types_december (json_data_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_interpolation_types_december_json_data_id;

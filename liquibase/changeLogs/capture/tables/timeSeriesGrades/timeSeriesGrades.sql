@@ -4,5 +4,6 @@ create table if not exists ${AQTS_SCHEMA_NAME}.time_series_grades
 ,start_time                              timestamp
 ,end_time                                timestamp
 ,grade_code                              text
-,primary key (time_series_grades_id)
-);
+,partition_number                        integer default extract( month from now() )
+)
+partition by list (partition_number);
