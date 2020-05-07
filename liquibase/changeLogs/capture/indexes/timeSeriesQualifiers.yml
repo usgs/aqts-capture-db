@@ -7,10 +7,10 @@ databaseChangeLog:
 
   - changeSet:
       author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_qualifiers_january_time_series_qualifiers_id"
+      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_qualifiers_january_pk"
       changes:
-        - sql: create unique index if not exists time_series_qualifiers_january_time_series_qualifiers_id on ${AQTS_SCHEMA_NAME}.time_series_qualifiers_january (time_series_qualifiers_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_qualifiers_january_time_series_qualifiers_id;
+        - sql: create unique index if not exists time_series_qualifiers_january_pk on ${AQTS_SCHEMA_NAME}.time_series_qualifiers_january (time_series_qualifiers_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_qualifiers_january_pk;
 
   - changeSet:
       author: ssoper
@@ -21,10 +21,10 @@ databaseChangeLog:
 
   - changeSet:
       author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_qualifiers_february_time_series_qualifiers_id"
+      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_qualifiers_february_pk"
       changes:
-        - sql: create unique index if not exists time_series_qualifiers_february_time_series_qualifiers_id on ${AQTS_SCHEMA_NAME}.time_series_qualifiers_february (time_series_qualifiers_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_qualifiers_february_time_series_qualifiers_id;
+        - sql: create unique index if not exists time_series_qualifiers_february_pk on ${AQTS_SCHEMA_NAME}.time_series_qualifiers_february (time_series_qualifiers_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_qualifiers_february_pk;
 
   - changeSet:
       author: ssoper
@@ -35,10 +35,10 @@ databaseChangeLog:
 
   - changeSet:
       author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_qualifiers_march_time_series_qualifiers_id"
+      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_qualifiers_march_pk"
       changes:
-        - sql: create unique index if not exists time_series_qualifiers_march_time_series_qualifiers_id on ${AQTS_SCHEMA_NAME}.time_series_qualifiers_march (time_series_qualifiers_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_qualifiers_march_time_series_qualifiers_id;
+        - sql: create unique index if not exists time_series_qualifiers_march_pk on ${AQTS_SCHEMA_NAME}.time_series_qualifiers_march (time_series_qualifiers_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_qualifiers_march_pk;
 
   - changeSet:
       author: ssoper
@@ -49,10 +49,10 @@ databaseChangeLog:
 
   - changeSet:
       author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_qualifiers_april_time_series_qualifiers_id"
+      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_qualifiers_april_pk"
       changes:
-        - sql: create unique index if not exists time_series_qualifiers_april_time_series_qualifiers_id on ${AQTS_SCHEMA_NAME}.time_series_qualifiers_april (time_series_qualifiers_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_qualifiers_april_time_series_qualifiers_id;
+        - sql: create unique index if not exists time_series_qualifiers_april_pk on ${AQTS_SCHEMA_NAME}.time_series_qualifiers_april (time_series_qualifiers_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_qualifiers_april_pk;
 
   - changeSet:
       author: ssoper
@@ -63,10 +63,10 @@ databaseChangeLog:
 
   - changeSet:
       author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_qualifiers_may_time_series_qualifiers_id"
+      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_qualifiers_may_pk"
       changes:
-        - sql: create unique index if not exists time_series_qualifiers_may_time_series_qualifiers_id on ${AQTS_SCHEMA_NAME}.time_series_qualifiers_may (time_series_qualifiers_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_qualifiers_may_time_series_qualifiers_id;
+        - sql: create unique index if not exists time_series_qualifiers_may_pk on ${AQTS_SCHEMA_NAME}.time_series_qualifiers_may (time_series_qualifiers_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_qualifiers_may_pk;
 
   - changeSet:
       author: ssoper
@@ -77,10 +77,10 @@ databaseChangeLog:
 
   - changeSet:
       author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_qualifiers_june_time_series_qualifiers_id"
+      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_qualifiers_june_pk"
       changes:
-        - sql: create unique index if not exists time_series_qualifiers_june_time_series_qualifiers_id on ${AQTS_SCHEMA_NAME}.time_series_qualifiers_june (time_series_qualifiers_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_qualifiers_june_time_series_qualifiers_id;
+        - sql: create unique index if not exists time_series_qualifiers_june_pk on ${AQTS_SCHEMA_NAME}.time_series_qualifiers_june (time_series_qualifiers_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_qualifiers_june_pk;
 
   - changeSet:
       author: ssoper
@@ -91,10 +91,10 @@ databaseChangeLog:
 
   - changeSet:
       author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_qualifiers_july_time_series_qualifiers_id"
+      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_qualifiers_july_pk"
       changes:
-        - sql: create unique index if not exists time_series_qualifiers_july_time_series_qualifiers_id on ${AQTS_SCHEMA_NAME}.time_series_qualifiers_july (time_series_qualifiers_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_qualifiers_july_time_series_qualifiers_id;
+        - sql: create unique index if not exists time_series_qualifiers_july_pk on ${AQTS_SCHEMA_NAME}.time_series_qualifiers_july (time_series_qualifiers_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_qualifiers_july_pk;
 
   - changeSet:
       author: ssoper
@@ -105,10 +105,10 @@ databaseChangeLog:
 
   - changeSet:
       author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_qualifiers_august_time_series_qualifiers_id"
+      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_qualifiers_august_pk"
       changes:
-        - sql: create unique index if not exists time_series_qualifiers_august_time_series_qualifiers_id on ${AQTS_SCHEMA_NAME}.time_series_qualifiers_august (time_series_qualifiers_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_qualifiers_august_time_series_qualifiers_id;
+        - sql: create unique index if not exists time_series_qualifiers_august_pk on ${AQTS_SCHEMA_NAME}.time_series_qualifiers_august (time_series_qualifiers_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_qualifiers_august_pk;
 
   - changeSet:
       author: ssoper
@@ -119,10 +119,10 @@ databaseChangeLog:
 
   - changeSet:
       author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_qualifiers_september_time_series_qualifiers_id"
+      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_qualifiers_september_pk"
       changes:
-        - sql: create unique index if not exists time_series_qualifiers_september_time_series_qualifiers_id on ${AQTS_SCHEMA_NAME}.time_series_qualifiers_september (time_series_qualifiers_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_qualifiers_september_time_series_qualifiers_id;
+        - sql: create unique index if not exists time_series_qualifiers_september_pk on ${AQTS_SCHEMA_NAME}.time_series_qualifiers_september (time_series_qualifiers_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_qualifiers_september_pk;
 
   - changeSet:
       author: ssoper
@@ -133,10 +133,10 @@ databaseChangeLog:
 
   - changeSet:
       author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_qualifiers_october_time_series_qualifiers_id"
+      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_qualifiers_october_pk"
       changes:
-        - sql: create unique index if not exists time_series_qualifiers_october_time_series_qualifiers_id on ${AQTS_SCHEMA_NAME}.time_series_qualifiers_october (time_series_qualifiers_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_qualifiers_october_time_series_qualifiers_id;
+        - sql: create unique index if not exists time_series_qualifiers_october_pk on ${AQTS_SCHEMA_NAME}.time_series_qualifiers_october (time_series_qualifiers_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_qualifiers_october_pk;
 
   - changeSet:
       author: ssoper
@@ -147,10 +147,10 @@ databaseChangeLog:
 
   - changeSet:
       author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_qualifiers_november_time_series_qualifiers_id"
+      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_qualifiers_november_pk"
       changes:
-        - sql: create unique index if not exists time_series_qualifiers_november_time_series_qualifiers_id on ${AQTS_SCHEMA_NAME}.time_series_qualifiers_november (time_series_qualifiers_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_qualifiers_november_time_series_qualifiers_id;
+        - sql: create unique index if not exists time_series_qualifiers_november_pk on ${AQTS_SCHEMA_NAME}.time_series_qualifiers_november (time_series_qualifiers_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_qualifiers_november_pk;
 
   - changeSet:
       author: ssoper
@@ -161,10 +161,10 @@ databaseChangeLog:
 
   - changeSet:
       author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_qualifiers_december_time_series_qualifiers_id"
+      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_qualifiers_december_pk"
       changes:
-        - sql: create unique index if not exists time_series_qualifiers_december_time_series_qualifiers_id on ${AQTS_SCHEMA_NAME}.time_series_qualifiers_december (time_series_qualifiers_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_qualifiers_december_time_series_qualifiers_id;
+        - sql: create unique index if not exists time_series_qualifiers_december_pk on ${AQTS_SCHEMA_NAME}.time_series_qualifiers_december (time_series_qualifiers_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_qualifiers_december_pk;
 
   - changeSet:
       author: ssoper
