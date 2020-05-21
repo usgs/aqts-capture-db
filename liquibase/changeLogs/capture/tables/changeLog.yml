@@ -18,6 +18,14 @@ databaseChangeLog:
       relativeToChangelogFile: true
 
   - include:
+      file: "fieldVisitHeaderInfo/changeLog.yml"
+      relativeToChangelogFile: true
+
+  - include:
+      file: "fieldVisitReadings/changeLog.yml"
+      relativeToChangelogFile: true
+
+  - include:
       file: "groundwaterStatisticalDailyValue/changeLog.yml"
       relativeToChangelogFile: true
 
