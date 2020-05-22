@@ -14,7 +14,7 @@ create table if not exists ${AQTS_SCHEMA_NAME}.field_visit_readings
 	,comments                                text
 	,publish                                 text
 	,is_valid                                text
-	,reference_points_unique_id              text
+	,reference_point_unique_id               text
 	,use_location_datum_as_reference         text
 	,reading_qualifier                       text
 	,reading_qualifiers                      jsonb
