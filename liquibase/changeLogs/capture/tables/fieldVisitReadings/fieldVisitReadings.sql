@@ -11,7 +11,7 @@ create table if not exists ${AQTS_SCHEMA_NAME}.field_visit_readings
 	,model                                   text
 	,serial_number                           text
 	,field_visit_time                        timestamp
-	,comments                                text
+	,field_visit_comments                    text
 	,publish                                 text
 	,is_valid                                text
 	,reference_point_unique_id               text
