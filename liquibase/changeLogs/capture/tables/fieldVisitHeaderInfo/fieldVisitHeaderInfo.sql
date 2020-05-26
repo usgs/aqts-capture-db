@@ -9,7 +9,7 @@ create table if not exists ${AQTS_SCHEMA_NAME}.field_visit_header_info
 	,remarks                                 text
 	,weather                                 text
 	,is_valid                                text
-	,completed_work                          jsonb
+	,completed_work                          text
 	,last_modified                           timestamp
 	,partition_number                        integer default extract( month from now() )
 )

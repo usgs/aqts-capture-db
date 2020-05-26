@@ -3,9 +3,9 @@ create table if not exists ${AQTS_SCHEMA_NAME}.field_visit_readings
 	,json_data_id                            bigint
 	,parameter                               text
 	,monitoring_method                       text
-	,field_visit_value                       jsonb
+	,field_visit_value                       text
 	,unit                                    text
-	,uncertainty                             jsonb
+	,uncertainty                             text
 	,reading_type                            text
 	,manufacturer                            text
 	,model                                   text
@@ -17,8 +17,8 @@ create table if not exists ${AQTS_SCHEMA_NAME}.field_visit_readings
 	,reference_point_unique_id               text
 	,use_location_datum_as_reference         text
 	,reading_qualifier                       text
-	,reading_qualifiers                      jsonb
-	,ground_water_measurement                jsonb
+	,reading_qualifiers                      text
+	,ground_water_measurement                text
 	,partition_number                        integer default extract( month from now() )
 )
 partition by list (partition_number);
