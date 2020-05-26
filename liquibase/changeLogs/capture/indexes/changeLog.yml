@@ -6,6 +6,14 @@ databaseChangeLog:
         username: ${AQTS_SCHEMA_OWNER_USERNAME}
 
   - include:
+      file: "fieldVisitHeaderInfo.yml"
+      relativeToChangelogFile: true
+
+  - include:
+      file: "fieldVisitReadings.yml"
+      relativeToChangelogFile: true
+
+  - include:
       file: "jsonData.yml"
       relativeToChangelogFile: true
 
