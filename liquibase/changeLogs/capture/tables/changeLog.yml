@@ -18,6 +18,10 @@ databaseChangeLog:
       relativeToChangelogFile: true
 
   - include:
+      file: "discreteGroundWaterAQTS/changeLog.yml"
+      relativeToChangelogFile: true
+
+  - include:
       file: "fieldVisitHeaderInfo/changeLog.yml"
       relativeToChangelogFile: true
 

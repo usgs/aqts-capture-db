@@ -1,0 +1,22 @@
+databaseChangeLog:
+  - preConditions:
+      - dbms:
+          type: postgresql
+      - runningAs:
+          username: ${AQTS_SCHEMA_OWNER_USERNAME}
+
+  - changeSet:
+      author: ssoper
+      id: "create.table.${AQTS_SCHEMA_NAME}.discrete_ground_water_aqts"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - not:
+            - tableExists:
+                schemaName: ${AQTS_SCHEMA_NAME}
+                tableName: discrete_ground_water_aqts
+      changes:
+        - sqlFile:
+            path: discreteGroundWaterAQTS.sql
+            relativeToChangelogFile: true
+        - rollback: drop table if exists ${AQTS_SCHEMA_NAME}.discrete_ground_water_aqts;
