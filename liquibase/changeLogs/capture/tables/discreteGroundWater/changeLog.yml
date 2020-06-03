@@ -7,16 +7,16 @@ databaseChangeLog:
 
   - changeSet:
       author: ssoper
-      id: "create.table.${AQTS_SCHEMA_NAME}.discrete_ground_water_aqts"
+      id: "create.table.${AQTS_SCHEMA_NAME}.discrete_ground_water"
       preConditions:
         - onFail: MARK_RAN
         - onError: HALT
         - not:
             - tableExists:
                 schemaName: ${AQTS_SCHEMA_NAME}
-                tableName: discrete_ground_water_aqts
+                tableName: discrete_ground_water
       changes:
         - sqlFile:
-            path: discreteGroundWaterAQTS.sql
+            path: discreteGroundWater.sql
             relativeToChangelogFile: true
-        - rollback: drop table if exists ${AQTS_SCHEMA_NAME}.discrete_ground_water_aqts;
+        - rollback: drop table if exists ${AQTS_SCHEMA_NAME}.discrete_ground_water;
