@@ -11,6 +11,7 @@ create unlogged table if not exists ${AQTS_SCHEMA_NAME}.discrete_ground_water
 ,completed_work                          text
 ,last_modified                           timestamp
 ,parameter                               text
+,parm_cd                                 text
 ,monitoring_method                       text
 ,field_visit_value                       text
 ,unit                                    text
