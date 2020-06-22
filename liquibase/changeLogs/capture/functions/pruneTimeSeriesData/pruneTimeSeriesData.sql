@@ -17,6 +17,8 @@ begin
 	execute format('drop table if exists %I.time_series_methods_%s', '${AQTS_SCHEMA_NAME}', month_name);
 	execute format('drop table if exists %I.time_series_points_%s', '${AQTS_SCHEMA_NAME}', month_name);
 	execute format('drop table if exists %I.time_series_qualifiers_%s', '${AQTS_SCHEMA_NAME}', month_name);
+	execute format('drop table if exists %I.field_visit_header_info_%s', '${AQTS_SCHEMA_NAME}', month_name);
+	execute format('drop table if exists %I.field_visit_readings_%s', '${AQTS_SCHEMA_NAME}', month_name);
 
 	/* recreate the partitions */
 	execute format('create table if not exists %I.json_data_%s partition of %I.json_data for values in (%L)', '${AQTS_SCHEMA_NAME}', month_name, '${AQTS_SCHEMA_NAME}', month_number);
@@ -28,6 +30,8 @@ begin
 	execute format('create table if not exists %I.time_series_methods_%s partition of %I.time_series_methods for values in (%L)', '${AQTS_SCHEMA_NAME}', month_name, '${AQTS_SCHEMA_NAME}', month_number);
 	execute format('create table if not exists %I.time_series_points_%s partition of %I.time_series_points for values in (%L)', '${AQTS_SCHEMA_NAME}', month_name, '${AQTS_SCHEMA_NAME}', month_number);
 	execute format('create table if not exists %I.time_series_qualifiers_%s partition of %I.time_series_qualifiers for values in (%L)', '${AQTS_SCHEMA_NAME}', month_name, '${AQTS_SCHEMA_NAME}', month_number);
+	execute format('create table if not exists %I.field_visit_header_info_%s partition of %I.field_visit_header_info for values in (%L)', '${AQTS_SCHEMA_NAME}', month_name, '${AQTS_SCHEMA_NAME}', month_number);
+	execute format('create table if not exists %I.field_visit_readings_%s partition of %I.field_visit_readings for values in (%L)', '${AQTS_SCHEMA_NAME}', month_name, '${AQTS_SCHEMA_NAME}', month_number);
 
 	/* recreate the indexes */
 	/* json_data */
@@ -66,5 +70,12 @@ begin
 	execute format('create unique index if not exists time_series_qualifiers_%s_pk on %I.time_series_qualifiers_%s (time_series_qualifiers_id)', month_name, '${AQTS_SCHEMA_NAME}', month_name);
 	execute format('create index if not exists time_series_qualifiers_%s_json_data_id on %I.time_series_qualifiers_%s (json_data_id)', month_name, '${AQTS_SCHEMA_NAME}', month_name);
 
+	/* field_visit_header_info */
+	execute format('create unique index if not exists field_visit_header_info_%s_pk on %I.field_visit_header_info_%s (field_visit_header_info_id)', month_name, '${AQTS_SCHEMA_NAME}', month_name);
+	execute format('create index if not exists field_visit_header_info_%s_json_data_id on %I.field_visit_header_info_%s (json_data_id)', month_name, '${AQTS_SCHEMA_NAME}', month_name);
+
+	/* field_visit_readings */
+	execute format('create unique index if not exists field_visit_readings_%s_pk on %I.field_visit_readings_%s (field_visit_readings_id)', month_name, '${AQTS_SCHEMA_NAME}', month_name);
+	execute format('create index if not exists field_visit_readings_%s_json_data_id on %I.field_visit_readings_%s (json_data_id)', month_name, '${AQTS_SCHEMA_NAME}', month_name);
 end
 $$
