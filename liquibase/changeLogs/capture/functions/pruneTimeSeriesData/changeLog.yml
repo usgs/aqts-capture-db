@@ -8,6 +8,7 @@ databaseChangeLog:
   - changeSet:
       author: ssoper
       id: "create.function.${AQTS_SCHEMA_NAME}.prune_time_series_data"
+      runOnChange: true
       changes:
         - sqlFile:
             path: pruneTimeSeriesData.sql
