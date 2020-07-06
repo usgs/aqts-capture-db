@@ -38,7 +38,7 @@ begin
 	execute format('create unique index if not exists json_data_%s_pk on %I.json_data_%s (json_data_id)', month_name, '${AQTS_SCHEMA_NAME}', month_name);
 
 	/* time_series_approvals */
-	execute format('create unique index if not exists time_series_approvals_%s_pk on %I.time_series_approvals_%s (time_series_approvals_id)', month_name, '${AQTS_SCHEMA_NAME}', month_name);
+-- 	execute format('create unique index if not exists time_series_approvals_%s_pk on %I.time_series_approvals_%s (time_series_approvals_id)', month_name, '${AQTS_SCHEMA_NAME}', month_name);
 	execute format('create index if not exists time_series_approvals_%s_json_data_id on %I.time_series_approvals_%s (json_data_id)', month_name, '${AQTS_SCHEMA_NAME}', month_name);
 
 	/* time_series_gap_tolerances */
