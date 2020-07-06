@@ -6,4 +6,4 @@ update_configs:
     ignored_updates:
       - match:
           dependency_name: "postgres"
-          version_requirement: "10.7-alpine"
+          version_requirement: "11.8-alpine"
