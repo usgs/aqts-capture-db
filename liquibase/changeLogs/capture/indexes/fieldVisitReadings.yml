@@ -7,168 +7,175 @@ databaseChangeLog:
 
   - changeSet:
       author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.field_visit_readings_january_pk"
+      id: "create.index.${AQTS_SCHEMA_NAME}.field_visit_readings_json_data_id"
       changes:
-        - sql: create unique index if not exists field_visit_readings_january_pk on ${AQTS_SCHEMA_NAME}.field_visit_readings_january (field_visit_readings_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.field_visit_readings_january_pk;
-
-  - changeSet:
-      author: ssoper
-      id: "create.index.${AQTS_SCHEMA_NAME}.field_visit_readings_january_json_data_id"
-      changes:
-        - sql: create index if not exists field_visit_readings_january_json_data_id on ${AQTS_SCHEMA_NAME}.field_visit_readings_january (json_data_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.field_visit_readings_january_json_data_id;
-
-  - changeSet:
-      author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.field_visit_readings_february_pk"
-      changes:
-        - sql: create unique index if not exists field_visit_readings_february_pk on ${AQTS_SCHEMA_NAME}.field_visit_readings_february (field_visit_readings_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.field_visit_readings_february_pk;
-
-  - changeSet:
-      author: ssoper
-      id: "create.index.${AQTS_SCHEMA_NAME}.field_visit_readings_february_json_data_id"
-      changes:
-        - sql: create index if not exists field_visit_readings_february_json_data_id on ${AQTS_SCHEMA_NAME}.field_visit_readings_february (json_data_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.field_visit_readings_february_json_data_id;
-
-  - changeSet:
-      author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.field_visit_readings_march_pk"
-      changes:
-        - sql: create unique index if not exists field_visit_readings_march_pk on ${AQTS_SCHEMA_NAME}.field_visit_readings_march (field_visit_readings_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.field_visit_readings_march_pk;
-
-  - changeSet:
-      author: ssoper
-      id: "create.index.${AQTS_SCHEMA_NAME}.field_visit_readings_march_json_data_id"
-      changes:
-        - sql: create index if not exists field_visit_readings_march_json_data_id on ${AQTS_SCHEMA_NAME}.field_visit_readings_march (json_data_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.field_visit_readings_march_json_data_id;
-
-  - changeSet:
-      author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.field_visit_readings_april_pk"
-      changes:
-        - sql: create unique index if not exists field_visit_readings_april_pk on ${AQTS_SCHEMA_NAME}.field_visit_readings_april (field_visit_readings_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.field_visit_readings_april_pk;
-
-  - changeSet:
-      author: ssoper
-      id: "create.index.${AQTS_SCHEMA_NAME}.field_visit_readings_april_json_data_id"
-      changes:
-        - sql: create index if not exists field_visit_readings_april_json_data_id on ${AQTS_SCHEMA_NAME}.field_visit_readings_april (json_data_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.field_visit_readings_april_json_data_id;
-
-  - changeSet:
-      author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.field_visit_readings_may_pk"
-      changes:
-        - sql: create unique index if not exists field_visit_readings_may_pk on ${AQTS_SCHEMA_NAME}.field_visit_readings_may (field_visit_readings_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.field_visit_readings_may_pk;
-
-  - changeSet:
-      author: ssoper
-      id: "create.index.${AQTS_SCHEMA_NAME}.field_visit_readings_may_json_data_id"
-      changes:
-        - sql: create index if not exists field_visit_readings_may_json_data_id on ${AQTS_SCHEMA_NAME}.field_visit_readings_may (json_data_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.field_visit_readings_may_json_data_id;
-
-  - changeSet:
-      author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.field_visit_readings_june_pk"
-      changes:
-        - sql: create unique index if not exists field_visit_readings_june_pk on ${AQTS_SCHEMA_NAME}.field_visit_readings_june (field_visit_readings_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.field_visit_readings_june_pk;
-
-  - changeSet:
-      author: ssoper
-      id: "create.index.${AQTS_SCHEMA_NAME}.field_visit_readings_june_json_data_id"
-      changes:
-        - sql: create index if not exists field_visit_readings_june_json_data_id on ${AQTS_SCHEMA_NAME}.field_visit_readings_june (json_data_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.field_visit_readings_june_json_data_id;
-
-  - changeSet:
-      author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.field_visit_readings_july_pk"
-      changes:
-        - sql: create unique index if not exists field_visit_readings_july_pk on ${AQTS_SCHEMA_NAME}.field_visit_readings_july (field_visit_readings_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.field_visit_readings_july_pk;
-
-  - changeSet:
-      author: ssoper
-      id: "create.index.${AQTS_SCHEMA_NAME}.field_visit_readings_july_json_data_id"
-      changes:
-        - sql: create index if not exists field_visit_readings_july_json_data_id on ${AQTS_SCHEMA_NAME}.field_visit_readings_july (json_data_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.field_visit_readings_july_json_data_id;
-
-  - changeSet:
-      author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.field_visit_readings_august_pk"
-      changes:
-        - sql: create unique index if not exists field_visit_readings_august_pk on ${AQTS_SCHEMA_NAME}.field_visit_readings_august (field_visit_readings_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.field_visit_readings_august_pk;
-
-  - changeSet:
-      author: ssoper
-      id: "create.index.${AQTS_SCHEMA_NAME}.field_visit_readings_august_json_data_id"
-      changes:
-        - sql: create index if not exists field_visit_readings_august_json_data_id on ${AQTS_SCHEMA_NAME}.field_visit_readings_august (json_data_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.field_visit_readings_august_json_data_id;
-
-  - changeSet:
-      author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.field_visit_readings_september_pk"
-      changes:
-        - sql: create unique index if not exists field_visit_readings_september_pk on ${AQTS_SCHEMA_NAME}.field_visit_readings_september (field_visit_readings_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.field_visit_readings_september_pk;
-
-  - changeSet:
-      author: ssoper
-      id: "create.index.${AQTS_SCHEMA_NAME}.field_visit_readings_september_json_data_id"
-      changes:
-        - sql: create index if not exists field_visit_readings_september_json_data_id on ${AQTS_SCHEMA_NAME}.field_visit_readings_september (json_data_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.field_visit_readings_september_json_data_id;
-
-  - changeSet:
-      author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.field_visit_readings_october_pk"
-      changes:
-        - sql: create unique index if not exists field_visit_readings_october_pk on ${AQTS_SCHEMA_NAME}.field_visit_readings_october (field_visit_readings_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.field_visit_readings_october_pk;
-
-  - changeSet:
-      author: ssoper
-      id: "create.index.${AQTS_SCHEMA_NAME}.field_visit_readings_october_json_data_id"
-      changes:
-        - sql: create index if not exists field_visit_readings_october_json_data_id on ${AQTS_SCHEMA_NAME}.field_visit_readings_october (json_data_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.field_visit_readings_october_json_data_id;
-
-  - changeSet:
-      author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.field_visit_readings_november_pk"
-      changes:
-        - sql: create unique index if not exists field_visit_readings_november_pk on ${AQTS_SCHEMA_NAME}.field_visit_readings_november (field_visit_readings_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.field_visit_readings_november_pk;
-
-  - changeSet:
-      author: ssoper
-      id: "create.index.${AQTS_SCHEMA_NAME}.field_visit_readings_november_json_data_id"
-      changes:
-        - sql: create index if not exists field_visit_readings_november_json_data_id on ${AQTS_SCHEMA_NAME}.field_visit_readings_november (json_data_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.field_visit_readings_november_json_data_id;
-
-  - changeSet:
-      author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.field_visit_readings_december_pk"
-      changes:
-        - sql: create unique index if not exists field_visit_readings_december_pk on ${AQTS_SCHEMA_NAME}.field_visit_readings_december (field_visit_readings_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.field_visit_readings_december_pk;
-
-  - changeSet:
-      author: ssoper
-      id: "create.index.${AQTS_SCHEMA_NAME}.field_visit_readings_december_json_data_id"
-      changes:
-        - sql: create index if not exists field_visit_readings_december_json_data_id on ${AQTS_SCHEMA_NAME}.field_visit_readings_december (json_data_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.field_visit_readings_december_json_data_id;
+        - sql: create index if not exists field_visit_readings_json_data_id on ${AQTS_SCHEMA_NAME}.field_visit_readings (json_data_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.field_visit_readings_json_data_id;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.unique.index.${AQTS_SCHEMA_NAME}.field_visit_readings_january_pk"
+#      changes:
+#        - sql: create unique index if not exists field_visit_readings_january_pk on ${AQTS_SCHEMA_NAME}.field_visit_readings_january (field_visit_readings_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.field_visit_readings_january_pk;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.index.${AQTS_SCHEMA_NAME}.field_visit_readings_january_json_data_id"
+#      changes:
+#        - sql: create index if not exists field_visit_readings_january_json_data_id on ${AQTS_SCHEMA_NAME}.field_visit_readings_january (json_data_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.field_visit_readings_january_json_data_id;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.unique.index.${AQTS_SCHEMA_NAME}.field_visit_readings_february_pk"
+#      changes:
+#        - sql: create unique index if not exists field_visit_readings_february_pk on ${AQTS_SCHEMA_NAME}.field_visit_readings_february (field_visit_readings_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.field_visit_readings_february_pk;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.index.${AQTS_SCHEMA_NAME}.field_visit_readings_february_json_data_id"
+#      changes:
+#        - sql: create index if not exists field_visit_readings_february_json_data_id on ${AQTS_SCHEMA_NAME}.field_visit_readings_february (json_data_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.field_visit_readings_february_json_data_id;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.unique.index.${AQTS_SCHEMA_NAME}.field_visit_readings_march_pk"
+#      changes:
+#        - sql: create unique index if not exists field_visit_readings_march_pk on ${AQTS_SCHEMA_NAME}.field_visit_readings_march (field_visit_readings_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.field_visit_readings_march_pk;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.index.${AQTS_SCHEMA_NAME}.field_visit_readings_march_json_data_id"
+#      changes:
+#        - sql: create index if not exists field_visit_readings_march_json_data_id on ${AQTS_SCHEMA_NAME}.field_visit_readings_march (json_data_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.field_visit_readings_march_json_data_id;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.unique.index.${AQTS_SCHEMA_NAME}.field_visit_readings_april_pk"
+#      changes:
+#        - sql: create unique index if not exists field_visit_readings_april_pk on ${AQTS_SCHEMA_NAME}.field_visit_readings_april (field_visit_readings_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.field_visit_readings_april_pk;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.index.${AQTS_SCHEMA_NAME}.field_visit_readings_april_json_data_id"
+#      changes:
+#        - sql: create index if not exists field_visit_readings_april_json_data_id on ${AQTS_SCHEMA_NAME}.field_visit_readings_april (json_data_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.field_visit_readings_april_json_data_id;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.unique.index.${AQTS_SCHEMA_NAME}.field_visit_readings_may_pk"
+#      changes:
+#        - sql: create unique index if not exists field_visit_readings_may_pk on ${AQTS_SCHEMA_NAME}.field_visit_readings_may (field_visit_readings_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.field_visit_readings_may_pk;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.index.${AQTS_SCHEMA_NAME}.field_visit_readings_may_json_data_id"
+#      changes:
+#        - sql: create index if not exists field_visit_readings_may_json_data_id on ${AQTS_SCHEMA_NAME}.field_visit_readings_may (json_data_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.field_visit_readings_may_json_data_id;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.unique.index.${AQTS_SCHEMA_NAME}.field_visit_readings_june_pk"
+#      changes:
+#        - sql: create unique index if not exists field_visit_readings_june_pk on ${AQTS_SCHEMA_NAME}.field_visit_readings_june (field_visit_readings_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.field_visit_readings_june_pk;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.index.${AQTS_SCHEMA_NAME}.field_visit_readings_june_json_data_id"
+#      changes:
+#        - sql: create index if not exists field_visit_readings_june_json_data_id on ${AQTS_SCHEMA_NAME}.field_visit_readings_june (json_data_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.field_visit_readings_june_json_data_id;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.unique.index.${AQTS_SCHEMA_NAME}.field_visit_readings_july_pk"
+#      changes:
+#        - sql: create unique index if not exists field_visit_readings_july_pk on ${AQTS_SCHEMA_NAME}.field_visit_readings_july (field_visit_readings_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.field_visit_readings_july_pk;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.index.${AQTS_SCHEMA_NAME}.field_visit_readings_july_json_data_id"
+#      changes:
+#        - sql: create index if not exists field_visit_readings_july_json_data_id on ${AQTS_SCHEMA_NAME}.field_visit_readings_july (json_data_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.field_visit_readings_july_json_data_id;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.unique.index.${AQTS_SCHEMA_NAME}.field_visit_readings_august_pk"
+#      changes:
+#        - sql: create unique index if not exists field_visit_readings_august_pk on ${AQTS_SCHEMA_NAME}.field_visit_readings_august (field_visit_readings_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.field_visit_readings_august_pk;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.index.${AQTS_SCHEMA_NAME}.field_visit_readings_august_json_data_id"
+#      changes:
+#        - sql: create index if not exists field_visit_readings_august_json_data_id on ${AQTS_SCHEMA_NAME}.field_visit_readings_august (json_data_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.field_visit_readings_august_json_data_id;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.unique.index.${AQTS_SCHEMA_NAME}.field_visit_readings_september_pk"
+#      changes:
+#        - sql: create unique index if not exists field_visit_readings_september_pk on ${AQTS_SCHEMA_NAME}.field_visit_readings_september (field_visit_readings_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.field_visit_readings_september_pk;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.index.${AQTS_SCHEMA_NAME}.field_visit_readings_september_json_data_id"
+#      changes:
+#        - sql: create index if not exists field_visit_readings_september_json_data_id on ${AQTS_SCHEMA_NAME}.field_visit_readings_september (json_data_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.field_visit_readings_september_json_data_id;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.unique.index.${AQTS_SCHEMA_NAME}.field_visit_readings_october_pk"
+#      changes:
+#        - sql: create unique index if not exists field_visit_readings_october_pk on ${AQTS_SCHEMA_NAME}.field_visit_readings_october (field_visit_readings_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.field_visit_readings_october_pk;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.index.${AQTS_SCHEMA_NAME}.field_visit_readings_october_json_data_id"
+#      changes:
+#        - sql: create index if not exists field_visit_readings_october_json_data_id on ${AQTS_SCHEMA_NAME}.field_visit_readings_october (json_data_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.field_visit_readings_october_json_data_id;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.unique.index.${AQTS_SCHEMA_NAME}.field_visit_readings_november_pk"
+#      changes:
+#        - sql: create unique index if not exists field_visit_readings_november_pk on ${AQTS_SCHEMA_NAME}.field_visit_readings_november (field_visit_readings_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.field_visit_readings_november_pk;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.index.${AQTS_SCHEMA_NAME}.field_visit_readings_november_json_data_id"
+#      changes:
+#        - sql: create index if not exists field_visit_readings_november_json_data_id on ${AQTS_SCHEMA_NAME}.field_visit_readings_november (json_data_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.field_visit_readings_november_json_data_id;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.unique.index.${AQTS_SCHEMA_NAME}.field_visit_readings_december_pk"
+#      changes:
+#        - sql: create unique index if not exists field_visit_readings_december_pk on ${AQTS_SCHEMA_NAME}.field_visit_readings_december (field_visit_readings_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.field_visit_readings_december_pk;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.index.${AQTS_SCHEMA_NAME}.field_visit_readings_december_json_data_id"
+#      changes:
+#        - sql: create index if not exists field_visit_readings_december_json_data_id on ${AQTS_SCHEMA_NAME}.field_visit_readings_december (json_data_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.field_visit_readings_december_json_data_id;

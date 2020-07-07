@@ -5,170 +5,170 @@ databaseChangeLog:
       - runningAs:
           username: ${AQTS_SCHEMA_OWNER_USERNAME}
 
-  - changeSet:
-      author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_points_january_pk"
-      changes:
-        - sql: create unique index if not exists time_series_points_january_pk on ${AQTS_SCHEMA_NAME}.time_series_points_january (time_series_points_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_points_january_pk;
-
-  - changeSet:
-      author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_points_january_ak"
-      changes:
-        - sql: create unique index if not exists time_series_points_january_ak on ${AQTS_SCHEMA_NAME}.time_series_points_january (json_data_id, time_step);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_points_january_ak;
-
-  - changeSet:
-      author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_points_february_pk"
-      changes:
-        - sql: create unique index if not exists time_series_points_february_pk on ${AQTS_SCHEMA_NAME}.time_series_points_february (time_series_points_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_points_february_pk;
-
-  - changeSet:
-      author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_points_february_ak"
-      changes:
-        - sql: create unique index if not exists time_series_points_february_ak on ${AQTS_SCHEMA_NAME}.time_series_points_february (json_data_id, time_step);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_points_february_ak;
-
-  - changeSet:
-      author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_points_march_pk"
-      changes:
-        - sql: create unique index if not exists time_series_points_march_pk on ${AQTS_SCHEMA_NAME}.time_series_points_march (time_series_points_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_points_march_pk;
-
-  - changeSet:
-      author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_points_march_ak"
-      changes:
-        - sql: create unique index if not exists time_series_points_march_ak on ${AQTS_SCHEMA_NAME}.time_series_points_march (json_data_id, time_step);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_points_march_ak;
-
-  - changeSet:
-      author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_points_april_pk"
-      changes:
-        - sql: create unique index if not exists time_series_points_april_pk on ${AQTS_SCHEMA_NAME}.time_series_points_april (time_series_points_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_points_april_pk;
-
-  - changeSet:
-      author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_points_april_ak"
-      changes:
-        - sql: create unique index if not exists time_series_points_april_ak on ${AQTS_SCHEMA_NAME}.time_series_points_april (json_data_id, time_step);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_points_april_ak;
-
-  - changeSet:
-      author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_points_may_pk"
-      changes:
-        - sql: create unique index if not exists time_series_points_may_pk on ${AQTS_SCHEMA_NAME}.time_series_points_may (time_series_points_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_points_may_pk;
-
-  - changeSet:
-      author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_points_may_ak"
-      changes:
-        - sql: create unique index if not exists time_series_points_may_ak on ${AQTS_SCHEMA_NAME}.time_series_points_may (json_data_id, time_step);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_points_may_ak;
-
-  - changeSet:
-      author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_points_june_pk"
-      changes:
-        - sql: create unique index if not exists time_series_points_june_pk on ${AQTS_SCHEMA_NAME}.time_series_points_june (time_series_points_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_points_june_pk;
-
-  - changeSet:
-      author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_points_june_ak"
-      changes:
-        - sql: create unique index if not exists time_series_points_june_ak on ${AQTS_SCHEMA_NAME}.time_series_points_june (json_data_id, time_step);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_points_june_ak;
-
-  - changeSet:
-      author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_points_july_pk"
-      changes:
-        - sql: create unique index if not exists time_series_points_july_pk on ${AQTS_SCHEMA_NAME}.time_series_points_july (time_series_points_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_points_july_pk;
-
-  - changeSet:
-      author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_points_july_ak"
-      changes:
-        - sql: create unique index if not exists time_series_points_july_ak on ${AQTS_SCHEMA_NAME}.time_series_points_july (json_data_id, time_step);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_points_july_ak;
-
-  - changeSet:
-      author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_points_august_pk"
-      changes:
-        - sql: create unique index if not exists time_series_points_august_pk on ${AQTS_SCHEMA_NAME}.time_series_points_august (time_series_points_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_points_august_pk;
-
-  - changeSet:
-      author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_points_august_ak"
-      changes:
-        - sql: create unique index if not exists time_series_points_august_ak on ${AQTS_SCHEMA_NAME}.time_series_points_august (json_data_id, time_step);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_points_august_ak;
-
-  - changeSet:
-      author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_points_september_pk"
-      changes:
-        - sql: create unique index if not exists time_series_points_september_pk on ${AQTS_SCHEMA_NAME}.time_series_points_september (time_series_points_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_points_september_pk;
-
-  - changeSet:
-      author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_points_september_ak"
-      changes:
-        - sql: create unique index if not exists time_series_points_september_ak on ${AQTS_SCHEMA_NAME}.time_series_points_september (json_data_id, time_step);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_points_september_ak;
-
-  - changeSet:
-      author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_points_october_pk"
-      changes:
-        - sql: create unique index if not exists time_series_points_october_pk on ${AQTS_SCHEMA_NAME}.time_series_points_october (time_series_points_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_points_october_pk;
-
-  - changeSet:
-      author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_points_october_ak"
-      changes:
-        - sql: create unique index if not exists time_series_points_october_ak on ${AQTS_SCHEMA_NAME}.time_series_points_october (json_data_id, time_step);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_points_october_ak;
-
-  - changeSet:
-      author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_points_november_pk"
-      changes:
-        - sql: create unique index if not exists time_series_points_november_pk on ${AQTS_SCHEMA_NAME}.time_series_points_november (time_series_points_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_points_november_pk;
-
-  - changeSet:
-      author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_points_november_ak"
-      changes:
-        - sql: create unique index if not exists time_series_points_november_ak on ${AQTS_SCHEMA_NAME}.time_series_points_november (json_data_id, time_step);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_points_november_ak;
-
-  - changeSet:
-      author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_points_december_pk"
-      changes:
-        - sql: create unique index if not exists time_series_points_december_pk on ${AQTS_SCHEMA_NAME}.time_series_points_december (time_series_points_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_points_december_pk;
-
-  - changeSet:
-      author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_points_december_ak"
-      changes:
-        - sql: create unique index if not exists time_series_points_december_ak on ${AQTS_SCHEMA_NAME}.time_series_points_december (json_data_id, time_step);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_points_december_ak;
+#  - changeSet:
+#      author: ssoper
+#      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_points_january_pk"
+#      changes:
+#        - sql: create unique index if not exists time_series_points_january_pk on ${AQTS_SCHEMA_NAME}.time_series_points_january (time_series_points_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_points_january_pk;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_points_january_ak"
+#      changes:
+#        - sql: create unique index if not exists time_series_points_january_ak on ${AQTS_SCHEMA_NAME}.time_series_points_january (json_data_id, time_step);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_points_january_ak;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_points_february_pk"
+#      changes:
+#        - sql: create unique index if not exists time_series_points_february_pk on ${AQTS_SCHEMA_NAME}.time_series_points_february (time_series_points_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_points_february_pk;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_points_february_ak"
+#      changes:
+#        - sql: create unique index if not exists time_series_points_february_ak on ${AQTS_SCHEMA_NAME}.time_series_points_february (json_data_id, time_step);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_points_february_ak;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_points_march_pk"
+#      changes:
+#        - sql: create unique index if not exists time_series_points_march_pk on ${AQTS_SCHEMA_NAME}.time_series_points_march (time_series_points_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_points_march_pk;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_points_march_ak"
+#      changes:
+#        - sql: create unique index if not exists time_series_points_march_ak on ${AQTS_SCHEMA_NAME}.time_series_points_march (json_data_id, time_step);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_points_march_ak;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_points_april_pk"
+#      changes:
+#        - sql: create unique index if not exists time_series_points_april_pk on ${AQTS_SCHEMA_NAME}.time_series_points_april (time_series_points_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_points_april_pk;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_points_april_ak"
+#      changes:
+#        - sql: create unique index if not exists time_series_points_april_ak on ${AQTS_SCHEMA_NAME}.time_series_points_april (json_data_id, time_step);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_points_april_ak;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_points_may_pk"
+#      changes:
+#        - sql: create unique index if not exists time_series_points_may_pk on ${AQTS_SCHEMA_NAME}.time_series_points_may (time_series_points_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_points_may_pk;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_points_may_ak"
+#      changes:
+#        - sql: create unique index if not exists time_series_points_may_ak on ${AQTS_SCHEMA_NAME}.time_series_points_may (json_data_id, time_step);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_points_may_ak;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_points_june_pk"
+#      changes:
+#        - sql: create unique index if not exists time_series_points_june_pk on ${AQTS_SCHEMA_NAME}.time_series_points_june (time_series_points_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_points_june_pk;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_points_june_ak"
+#      changes:
+#        - sql: create unique index if not exists time_series_points_june_ak on ${AQTS_SCHEMA_NAME}.time_series_points_june (json_data_id, time_step);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_points_june_ak;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_points_july_pk"
+#      changes:
+#        - sql: create unique index if not exists time_series_points_july_pk on ${AQTS_SCHEMA_NAME}.time_series_points_july (time_series_points_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_points_july_pk;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_points_july_ak"
+#      changes:
+#        - sql: create unique index if not exists time_series_points_july_ak on ${AQTS_SCHEMA_NAME}.time_series_points_july (json_data_id, time_step);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_points_july_ak;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_points_august_pk"
+#      changes:
+#        - sql: create unique index if not exists time_series_points_august_pk on ${AQTS_SCHEMA_NAME}.time_series_points_august (time_series_points_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_points_august_pk;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_points_august_ak"
+#      changes:
+#        - sql: create unique index if not exists time_series_points_august_ak on ${AQTS_SCHEMA_NAME}.time_series_points_august (json_data_id, time_step);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_points_august_ak;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_points_september_pk"
+#      changes:
+#        - sql: create unique index if not exists time_series_points_september_pk on ${AQTS_SCHEMA_NAME}.time_series_points_september (time_series_points_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_points_september_pk;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_points_september_ak"
+#      changes:
+#        - sql: create unique index if not exists time_series_points_september_ak on ${AQTS_SCHEMA_NAME}.time_series_points_september (json_data_id, time_step);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_points_september_ak;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_points_october_pk"
+#      changes:
+#        - sql: create unique index if not exists time_series_points_october_pk on ${AQTS_SCHEMA_NAME}.time_series_points_october (time_series_points_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_points_october_pk;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_points_october_ak"
+#      changes:
+#        - sql: create unique index if not exists time_series_points_october_ak on ${AQTS_SCHEMA_NAME}.time_series_points_october (json_data_id, time_step);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_points_october_ak;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_points_november_pk"
+#      changes:
+#        - sql: create unique index if not exists time_series_points_november_pk on ${AQTS_SCHEMA_NAME}.time_series_points_november (time_series_points_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_points_november_pk;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_points_november_ak"
+#      changes:
+#        - sql: create unique index if not exists time_series_points_november_ak on ${AQTS_SCHEMA_NAME}.time_series_points_november (json_data_id, time_step);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_points_november_ak;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_points_december_pk"
+#      changes:
+#        - sql: create unique index if not exists time_series_points_december_pk on ${AQTS_SCHEMA_NAME}.time_series_points_december (time_series_points_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_points_december_pk;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_points_december_ak"
+#      changes:
+#        - sql: create unique index if not exists time_series_points_december_ak on ${AQTS_SCHEMA_NAME}.time_series_points_december (json_data_id, time_step);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_points_december_ak;

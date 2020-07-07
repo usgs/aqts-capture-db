@@ -6,6 +6,7 @@ create table if not exists ${AQTS_SCHEMA_NAME}.time_series_qualifiers
 ,qualifier_user                          text
 ,identifier                              text
 ,date_applied_utc                        timestamp
-,partition_number                        integer default extract( month from now() )
+,partition_number                        integer
+,primary key (time_series_qualifiers_id, partition_number)
 )
 partition by list (partition_number);

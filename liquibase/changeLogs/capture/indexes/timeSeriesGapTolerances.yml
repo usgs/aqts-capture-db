@@ -7,168 +7,175 @@ databaseChangeLog:
 
   - changeSet:
       author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_january_pk"
+      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_json_data_id"
       changes:
-        - sql: create unique index if not exists time_series_gap_tolerances_january_pk on ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_january (time_series_gap_tolerances_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_january_pk;
-
-  - changeSet:
-      author: ssoper
-      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_january_json_data_id"
-      changes:
-        - sql: create index if not exists time_series_gap_tolerances_january_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_january (json_data_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_january_json_data_id;
-
-  - changeSet:
-      author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_february_pk"
-      changes:
-        - sql: create unique index if not exists time_series_gap_tolerances_february_pk on ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_february (time_series_gap_tolerances_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_february_pk;
-
-  - changeSet:
-      author: ssoper
-      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_february_json_data_id"
-      changes:
-        - sql: create index if not exists time_series_gap_tolerances_february_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_february (json_data_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_february_json_data_id;
-
-  - changeSet:
-      author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_march_pk"
-      changes:
-        - sql: create unique index if not exists time_series_gap_tolerances_march_pk on ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_march (time_series_gap_tolerances_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_march_pk;
-
-  - changeSet:
-      author: ssoper
-      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_march_json_data_id"
-      changes:
-        - sql: create index if not exists time_series_gap_tolerances_march_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_march (json_data_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_march_json_data_id;
-
-  - changeSet:
-      author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_april_pk"
-      changes:
-        - sql: create unique index if not exists time_series_gap_tolerances_april_pk on ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_april (time_series_gap_tolerances_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_april_pk;
-
-  - changeSet:
-      author: ssoper
-      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_april_json_data_id"
-      changes:
-        - sql: create index if not exists time_series_gap_tolerances_april_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_april (json_data_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_april_json_data_id;
-
-  - changeSet:
-      author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_may_pk"
-      changes:
-        - sql: create unique index if not exists time_series_gap_tolerances_may_pk on ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_may (time_series_gap_tolerances_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_may_pk;
-
-  - changeSet:
-      author: ssoper
-      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_may_json_data_id"
-      changes:
-        - sql: create index if not exists time_series_gap_tolerances_may_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_may (json_data_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_may_json_data_id;
-
-  - changeSet:
-      author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_june_pk"
-      changes:
-        - sql: create unique index if not exists time_series_gap_tolerances_june_pk on ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_june (time_series_gap_tolerances_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_june_pk;
-
-  - changeSet:
-      author: ssoper
-      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_june_json_data_id"
-      changes:
-        - sql: create index if not exists time_series_gap_tolerances_june_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_june (json_data_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_june_json_data_id;
-
-  - changeSet:
-      author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_july_pk"
-      changes:
-        - sql: create unique index if not exists time_series_gap_tolerances_july_pk on ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_july (time_series_gap_tolerances_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_july_pk;
-
-  - changeSet:
-      author: ssoper
-      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_july_json_data_id"
-      changes:
-        - sql: create index if not exists time_series_gap_tolerances_july_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_july (json_data_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_july_json_data_id;
-
-  - changeSet:
-      author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_august_pk"
-      changes:
-        - sql: create unique index if not exists time_series_gap_tolerances_august_pk on ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_august (time_series_gap_tolerances_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_august_pk;
-
-  - changeSet:
-      author: ssoper
-      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_august_json_data_id"
-      changes:
-        - sql: create index if not exists time_series_gap_tolerances_august_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_august (json_data_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_august_json_data_id;
-
-  - changeSet:
-      author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_september_pk"
-      changes:
-        - sql: create unique index if not exists time_series_gap_tolerances_september_pk on ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_september (time_series_gap_tolerances_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_september_pk;
-
-  - changeSet:
-      author: ssoper
-      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_september_json_data_id"
-      changes:
-        - sql: create index if not exists time_series_gap_tolerances_september_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_september (json_data_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_september_json_data_id;
-
-  - changeSet:
-      author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_october_pk"
-      changes:
-        - sql: create unique index if not exists time_series_gap_tolerances_october_pk on ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_october (time_series_gap_tolerances_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_october_pk;
-
-  - changeSet:
-      author: ssoper
-      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_october_json_data_id"
-      changes:
-        - sql: create index if not exists time_series_gap_tolerances_october_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_october (json_data_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_october_json_data_id;
-
-  - changeSet:
-      author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_november_pk"
-      changes:
-        - sql: create unique index if not exists time_series_gap_tolerances_november_pk on ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_november (time_series_gap_tolerances_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_november_pk;
-
-  - changeSet:
-      author: ssoper
-      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_november_json_data_id"
-      changes:
-        - sql: create index if not exists time_series_gap_tolerances_november_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_november (json_data_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_november_json_data_id;
-
-  - changeSet:
-      author: ssoper
-      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_december_pk"
-      changes:
-        - sql: create unique index if not exists time_series_gap_tolerances_december_pk on ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_december (time_series_gap_tolerances_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_december_pk;
-
-  - changeSet:
-      author: ssoper
-      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_december_json_data_id"
-      changes:
-        - sql: create index if not exists time_series_gap_tolerances_december_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_december (json_data_id);
-        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_december_json_data_id;
+        - sql: create index if not exists time_series_gap_tolerances_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances (json_data_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_json_data_id;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_january_pk"
+#      changes:
+#        - sql: create unique index if not exists time_series_gap_tolerances_january_pk on ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_january (time_series_gap_tolerances_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_january_pk;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_january_json_data_id"
+#      changes:
+#        - sql: create index if not exists time_series_gap_tolerances_january_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_january (json_data_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_january_json_data_id;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_february_pk"
+#      changes:
+#        - sql: create unique index if not exists time_series_gap_tolerances_february_pk on ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_february (time_series_gap_tolerances_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_february_pk;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_february_json_data_id"
+#      changes:
+#        - sql: create index if not exists time_series_gap_tolerances_february_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_february (json_data_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_february_json_data_id;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_march_pk"
+#      changes:
+#        - sql: create unique index if not exists time_series_gap_tolerances_march_pk on ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_march (time_series_gap_tolerances_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_march_pk;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_march_json_data_id"
+#      changes:
+#        - sql: create index if not exists time_series_gap_tolerances_march_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_march (json_data_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_march_json_data_id;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_april_pk"
+#      changes:
+#        - sql: create unique index if not exists time_series_gap_tolerances_april_pk on ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_april (time_series_gap_tolerances_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_april_pk;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_april_json_data_id"
+#      changes:
+#        - sql: create index if not exists time_series_gap_tolerances_april_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_april (json_data_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_april_json_data_id;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_may_pk"
+#      changes:
+#        - sql: create unique index if not exists time_series_gap_tolerances_may_pk on ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_may (time_series_gap_tolerances_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_may_pk;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_may_json_data_id"
+#      changes:
+#        - sql: create index if not exists time_series_gap_tolerances_may_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_may (json_data_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_may_json_data_id;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_june_pk"
+#      changes:
+#        - sql: create unique index if not exists time_series_gap_tolerances_june_pk on ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_june (time_series_gap_tolerances_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_june_pk;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_june_json_data_id"
+#      changes:
+#        - sql: create index if not exists time_series_gap_tolerances_june_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_june (json_data_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_june_json_data_id;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_july_pk"
+#      changes:
+#        - sql: create unique index if not exists time_series_gap_tolerances_july_pk on ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_july (time_series_gap_tolerances_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_july_pk;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_july_json_data_id"
+#      changes:
+#        - sql: create index if not exists time_series_gap_tolerances_july_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_july (json_data_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_july_json_data_id;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_august_pk"
+#      changes:
+#        - sql: create unique index if not exists time_series_gap_tolerances_august_pk on ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_august (time_series_gap_tolerances_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_august_pk;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_august_json_data_id"
+#      changes:
+#        - sql: create index if not exists time_series_gap_tolerances_august_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_august (json_data_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_august_json_data_id;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_september_pk"
+#      changes:
+#        - sql: create unique index if not exists time_series_gap_tolerances_september_pk on ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_september (time_series_gap_tolerances_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_september_pk;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_september_json_data_id"
+#      changes:
+#        - sql: create index if not exists time_series_gap_tolerances_september_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_september (json_data_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_september_json_data_id;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_october_pk"
+#      changes:
+#        - sql: create unique index if not exists time_series_gap_tolerances_october_pk on ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_october (time_series_gap_tolerances_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_october_pk;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_october_json_data_id"
+#      changes:
+#        - sql: create index if not exists time_series_gap_tolerances_october_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_october (json_data_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_october_json_data_id;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_november_pk"
+#      changes:
+#        - sql: create unique index if not exists time_series_gap_tolerances_november_pk on ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_november (time_series_gap_tolerances_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_november_pk;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_november_json_data_id"
+#      changes:
+#        - sql: create index if not exists time_series_gap_tolerances_november_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_november (json_data_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_november_json_data_id;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.unique.index.${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_december_pk"
+#      changes:
+#        - sql: create unique index if not exists time_series_gap_tolerances_december_pk on ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_december (time_series_gap_tolerances_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_december_pk;
+#
+#  - changeSet:
+#      author: ssoper
+#      id: "create.index.${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_december_json_data_id"
+#      changes:
+#        - sql: create index if not exists time_series_gap_tolerances_december_json_data_id on ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_december (json_data_id);
+#        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.time_series_gap_tolerances_december_json_data_id;
