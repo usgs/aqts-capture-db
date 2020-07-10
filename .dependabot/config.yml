@@ -1,9 +1,0 @@
-version: 1
-update_configs:
-  - package_manager: "docker"
-    directory: "/"
-    update_schedule: "weekly"
-    ignored_updates:
-      - match:
-          dependency_name: "postgres"
-          version_requirement: "11.8-alpine"
