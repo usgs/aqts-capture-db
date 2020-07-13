@@ -20,6 +20,7 @@ create table if not exists ${AQTS_SCHEMA_NAME}.field_visit_readings
 ,reading_qualifier                       text
 ,reading_qualifiers                      text
 ,ground_water_measurement                text
-,partition_number                        integer default extract( month from now() )
+,partition_number                        integer
+,primary key (field_visit_readings_id, partition_number)
 )
 partition by list (partition_number);

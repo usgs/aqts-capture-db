@@ -10,6 +10,8 @@ create table if not exists ${AQTS_SCHEMA_NAME}.time_series_header_info
 ,response_time                           timestamp
 ,response_version                        integer
 ,location_identifier                     text
-,partition_number                        integer default extract( month from now() )
+,partition_number                        integer
+,primary key (time_series_header_info_id, partition_number)
+,constraint time_series_header_info_ak unique (json_data_id, time_series_unique_id, partition_number)
 )
 partition by list (partition_number);

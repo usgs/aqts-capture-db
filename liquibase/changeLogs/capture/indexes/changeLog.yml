@@ -14,10 +14,6 @@ databaseChangeLog:
       relativeToChangelogFile: true
 
   - include:
-      file: "jsonData.yml"
-      relativeToChangelogFile: true
-
-  - include:
       file: "timeSeriesApprovals.yml"
       relativeToChangelogFile: true
 
@@ -39,10 +35,6 @@ databaseChangeLog:
 
   - include:
       file: "timeSeriesMethods.yml"
-      relativeToChangelogFile: true
-
-  - include:
-      file: "timeSeriesPoints.yml"
       relativeToChangelogFile: true
 
   - include:

@@ -10,5 +10,6 @@ create table if not exists ${AQTS_SCHEMA_NAME}.json_data
 ,parameters                              jsonb                 not null
 ,json_content                            jsonb                 not null
 ,partition_number                        integer               default extract( month from now() )
+,primary key (json_data_id, partition_number)
 )
 partition by list (partition_number);

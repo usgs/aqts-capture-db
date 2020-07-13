@@ -33,49 +33,5 @@ begin
 	execute format('create table if not exists %I.field_visit_header_info_%s partition of %I.field_visit_header_info for values in (%L)', '${AQTS_SCHEMA_NAME}', month_name, '${AQTS_SCHEMA_NAME}', month_number);
 	execute format('create table if not exists %I.field_visit_readings_%s partition of %I.field_visit_readings for values in (%L)', '${AQTS_SCHEMA_NAME}', month_name, '${AQTS_SCHEMA_NAME}', month_number);
 
-	/* recreate the indexes */
-	/* json_data */
-	execute format('create unique index if not exists json_data_%s_pk on %I.json_data_%s (json_data_id)', month_name, '${AQTS_SCHEMA_NAME}', month_name);
-
-	/* time_series_approvals */
-	execute format('create unique index if not exists time_series_approvals_%s_pk on %I.time_series_approvals_%s (time_series_approvals_id)', month_name, '${AQTS_SCHEMA_NAME}', month_name);
-	execute format('create index if not exists time_series_approvals_%s_json_data_id on %I.time_series_approvals_%s (json_data_id)', month_name, '${AQTS_SCHEMA_NAME}', month_name);
-
-	/* time_series_gap_tolerances */
-	execute format('create unique index if not exists time_series_gap_tolerances_%s_pk on %I.time_series_gap_tolerances_%s (time_series_gap_tolerances_id)', month_name, '${AQTS_SCHEMA_NAME}', month_name);
-	execute format('create index if not exists time_series_gap_tolerances_%s_json_data_id on %I.time_series_gap_tolerances_%s (json_data_id)', month_name, '${AQTS_SCHEMA_NAME}', month_name);
-
-	/* time_series_grades */
-	execute format('create unique index if not exists time_series_grades_%s_pk on %I.time_series_grades_%s (time_series_grades_id)', month_name, '${AQTS_SCHEMA_NAME}', month_name);
-	execute format('create index if not exists time_series_grades_%s_json_data_id on %I.time_series_grades_%s (json_data_id)', month_name, '${AQTS_SCHEMA_NAME}', month_name);
-
-	/* time_series_header_info */
-	execute format('create unique index if not exists time_series_header_info_%s_pk on %I.time_series_header_info_%s (time_series_header_info_id)', month_name, '${AQTS_SCHEMA_NAME}', month_name);
-	execute format('create unique index if not exists time_series_header_info_%s_ak on %I.time_series_header_info_%s (json_data_id, time_series_unique_id)', month_name, '${AQTS_SCHEMA_NAME}', month_name);
-	execute format('create index if not exists time_series_header_info_%s_time_series_unique_id on %I.time_series_header_info_%s (time_series_unique_id)', month_name, '${AQTS_SCHEMA_NAME}', month_name);
-
-	/* time_series_interpolation_types */
-	execute format('create unique index if not exists time_series_interpolation_types_%s_pk on %I.time_series_interpolation_types_%s (time_series_interpolation_types_id)', month_name, '${AQTS_SCHEMA_NAME}', month_name);
-	execute format('create index if not exists time_series_interpolation_types_%s_json_data_id on %I.time_series_interpolation_types_%s (json_data_id)', month_name, '${AQTS_SCHEMA_NAME}', month_name);
-
-	/* time_series_methods */
-	execute format('create unique index if not exists time_series_methods_%s_pk on %I.time_series_methods_%s (time_series_methods_id)', month_name, '${AQTS_SCHEMA_NAME}', month_name);
-	execute format('create index if not exists time_series_methods_%s_json_data_id on %I.time_series_methods_%s (json_data_id)', month_name, '${AQTS_SCHEMA_NAME}', month_name);
-
-	/* time_series_points */
-	execute format('create unique index if not exists time_series_points_%s_pk on %I.time_series_points_%s (time_series_points_id)', month_name, '${AQTS_SCHEMA_NAME}', month_name);
-	execute format('create unique index if not exists time_series_points_%s_ak on %I.time_series_points_%s (json_data_id, time_step)', month_name, '${AQTS_SCHEMA_NAME}', month_name);
-
-	/* time_series_qualifiers */
-	execute format('create unique index if not exists time_series_qualifiers_%s_pk on %I.time_series_qualifiers_%s (time_series_qualifiers_id)', month_name, '${AQTS_SCHEMA_NAME}', month_name);
-	execute format('create index if not exists time_series_qualifiers_%s_json_data_id on %I.time_series_qualifiers_%s (json_data_id)', month_name, '${AQTS_SCHEMA_NAME}', month_name);
-
-	/* field_visit_header_info */
-	execute format('create unique index if not exists field_visit_header_info_%s_pk on %I.field_visit_header_info_%s (field_visit_header_info_id)', month_name, '${AQTS_SCHEMA_NAME}', month_name);
-	execute format('create index if not exists field_visit_header_info_%s_json_data_id on %I.field_visit_header_info_%s (json_data_id)', month_name, '${AQTS_SCHEMA_NAME}', month_name);
-
-	/* field_visit_readings */
-	execute format('create unique index if not exists field_visit_readings_%s_pk on %I.field_visit_readings_%s (field_visit_readings_id)', month_name, '${AQTS_SCHEMA_NAME}', month_name);
-	execute format('create index if not exists field_visit_readings_%s_json_data_id on %I.field_visit_readings_%s (json_data_id)', month_name, '${AQTS_SCHEMA_NAME}', month_name);
 end
 $$
