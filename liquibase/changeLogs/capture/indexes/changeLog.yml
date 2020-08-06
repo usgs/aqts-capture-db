@@ -6,11 +6,19 @@ databaseChangeLog:
         username: ${AQTS_SCHEMA_OWNER_USERNAME}
 
   - include:
+      file: "datumConvertedValues.yml"
+      relativeToChangelogFile: true
+
+  - include:
       file: "fieldVisitHeaderInfo.yml"
       relativeToChangelogFile: true
 
   - include:
       file: "fieldVisitReadings.yml"
+      relativeToChangelogFile: true
+
+  - include:
+      file: "fieldVisitReadingsByLoc.yml"
       relativeToChangelogFile: true
 
   - include:
