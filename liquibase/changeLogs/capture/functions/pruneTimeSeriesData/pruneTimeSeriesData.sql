@@ -34,8 +34,8 @@ begin
 	execute format('create table if not exists %I.time_series_qualifiers_%s partition of %I.time_series_qualifiers for values in (%L)', '${AQTS_SCHEMA_NAME}', month_name, '${AQTS_SCHEMA_NAME}', month_number);
 	execute format('create table if not exists %I.field_visit_header_info_%s partition of %I.field_visit_header_info for values in (%L)', '${AQTS_SCHEMA_NAME}', month_name, '${AQTS_SCHEMA_NAME}', month_number);
 	execute format('create table if not exists %I.field_visit_readings_%s partition of %I.field_visit_readings for values in (%L)', '${AQTS_SCHEMA_NAME}', month_name, '${AQTS_SCHEMA_NAME}', month_number);
-	execute format('create table if not exists %I.field_visit_readings_%s partition of %I.field_visit_readings_by_loc for values in (%L)', '${AQTS_SCHEMA_NAME}', month_name, '${AQTS_SCHEMA_NAME}', month_number);
-	execute format('create table if not exists %I.field_visit_readings_%s partition of %I.datum_converted_values for values in (%L)', '${AQTS_SCHEMA_NAME}', month_name, '${AQTS_SCHEMA_NAME}', month_number);
+	execute format('create table if not exists %I.field_visit_readings_by_loc_%s partition of %I.field_visit_readings_by_loc for values in (%L)', '${AQTS_SCHEMA_NAME}', month_name, '${AQTS_SCHEMA_NAME}', month_number);
+	execute format('create table if not exists %I.datum_converted_values_%s partition of %I.datum_converted_values for values in (%L)', '${AQTS_SCHEMA_NAME}', month_name, '${AQTS_SCHEMA_NAME}', month_number);
 
 end
 $$
