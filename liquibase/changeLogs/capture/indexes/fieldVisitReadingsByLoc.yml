@@ -1,0 +1,13 @@
+databaseChangeLog:
+  - preConditions:
+      - dbms:
+          type: postgresql
+      - runningAs:
+          username: ${AQTS_SCHEMA_OWNER_USERNAME}
+
+  - changeSet:
+      author: eorosz
+      id: "create.index.${AQTS_SCHEMA_NAME}.field_visit_readings_by_loc_json_data_id"
+      changes:
+        - sql: create index if not exists field_visit_readings_by_loc_json_data_id on ${AQTS_SCHEMA_NAME}.field_visit_readings_by_loc (partition_number, json_data_id);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.field_visit_readings_by_loc_json_data_id;

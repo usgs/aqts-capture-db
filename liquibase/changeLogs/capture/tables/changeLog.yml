@@ -18,6 +18,10 @@ databaseChangeLog:
       relativeToChangelogFile: true
 
   - include:
+      file: "datumConvertedValues/changeLog.yml"
+      relativeToChangelogFile: true
+
+  - include:
       file: "discreteGroundWater/changeLog.yml"
       relativeToChangelogFile: true
 
@@ -27,6 +31,10 @@ databaseChangeLog:
 
   - include:
       file: "fieldVisitReadings/changeLog.yml"
+      relativeToChangelogFile: true
+
+  - include:
+      file: "fieldVisitReadingsByLoc/changeLog.yml"
       relativeToChangelogFile: true
 
   - include:
