@@ -1,731 +1,731 @@
-parameter	parm_cd
-ADVM S/N ratio|number	99237
-ADVM std dev|number	99239
-ADVM std error, vel|cm/s	99242
-ADVM std error, vel|ft/s	99240
-ANC, wu, estim by regression|mg/l	99400
-ANC, wu,fxdEP,CaCO3,fld|mg/l	00410
-Absolute pressure|ftH2O	72165
-Absolute pressure|mmHg	72241
-Absolute pressure|psi	72203
-Absorbance, 254 nm, intens|AU/cm	50624
-Absorbance, 254 nm|AU	32327
-Absorbance, 350 nm|AU	32328
-Acoustic noise level|count	72296
-Air gap|ft	72320
-Air pressure|ftH2O	72164
-Air pressure|inH2O	62605
-Air pressure|inHg	62603
-Air pressure|kPa	62607
-Air pressure|mbar	75969
-Air pressure|mmHg	00025
-Alachlor, wu|ug/l	77825
-Albedo|None	72207
-Altitude above MSL|ft	00042
-Altitude, LSD|ft	72000
-Aluminum, wf|ug/l	01106
-Aluminum, wu,recov|ug/l	01105
-Ammonia, dissolved as N|lbs/day	62961
-Ammonia, dissolved as N|tons/day	91014
-Ammonia, wf as N|mg/l	00608
-Ammonia, wf, estim regress|mg/l	99412
-Ammonia, wu as NH4|mg/l	71845
-Ammonia, wu as N|mg/l	00610
-Ammonia, wu, field as N|mg/l	99123
-Ammonia, wu|lbs/day	91048
-Area, cross_section|ft^2	82632
-Area, cross_section|m^2	72191
-Atmos press, corr|inH2O	62604
-Atmos press, corr|inHg	62602
-Atmos press, corr|kPa	62606
-Atrazine, dissolved|g/d	50007
-Atrazine, wf, estim regress|ug/l	99408
-Atrazine, wf|ug/l	39632
-Attenuation corrected backscatter|count	72297
-Attenuation turbidty|_ATU	63678
-Autosampler count|Count	99234
-Available memory|Kbytes	99257
-BLUE_GREEN ALGAE|Cell/ml	98232
-BOD, 5 day, 20 deg|mg/l	00310
-BOD, 5day,20degC, wu|tons/day	91016
-BP, uncorrected|psi	72204
-Backscatter turbidty|_BU	63677
-Bed sedmnt <4mm, fd|%	69000
-Bedload sediment|tons/day	80225
-Bedload transport rate, regression|Mg/d	72298
-Bedload transport rate, regression|tons/day	72299
-Bicarbonate, diss|tons/day	81205
-Bicarbonate, wu,fx,f|mg/l	00440
-Bighead carp, tagged|count/hr	31720
-Bighead carp, unique|count/hr	31725
-Blocked exposure tim|s	72155
-Bromide, wf|mg/l	71870
-Bulk conductance, sl|dS/m	72205
-Burst coeff of var|%	72262
-Burst standard dev as N|mg/l	72261
-CDOM, wf, field|QSE	32314
-CDOM|mg/l	32289
-CO2 at water surface|ppmv	72240
-CO2, water, diss, in situ|mg/l	99141
-Cadmium, wf|ug/l	01025
-Cadmium, wu|ug/l	01027
-Calcium, dissolved|tons/day	81201
-Calcium, wf, estim|mg/l	99399
-Calcium, wf|mg/l	00915
-Cations minus anions|mEq	00401
-Chl uncor, regress|ug/l	32334
-Chloride, dissolved|tons/day	70290
-Chloride, slb, dd|mg/kg	82476
-Chloride, wf, estim|mg/l	99404
-Chloride, wf|mg/l	00940
-Chloride, wu|mg/l	99220
-Chlorine residual,wu|mg/l	50060
-ChlorineFreeAvail,wu|mg/l	50064
-Chloro a, phyto, cf|ug/l	70953
-Chlorophyll a, fluor|ug/l	92217
-Chlorophyll a, fm,c|ug/l	32209
-Chlorophyll a, regress|ug/l	32317
-Chlorophyll a, total|ug/l	32284
-Chlorophyll a, tri,u|ug/l	32210
-Chlorophyll a,fm,unc|ug/l	32217
-Chlorophylls,phy,unc|ug/l	32234
-Chlrphyl a, cryptoph|ug/l	32287
-Chlrphyl a, cyanobac|ug/l	32286
-Chlrphyl a, diatoms|ug/l	32288
-Chlrphyl a, green al|ug/l	32285
-Circuit quality|code	99259
-Cloud cover|%	00032
-Collector lid cycles|number	72158
-Color|PCU	00080
-Compaction, aquifer system|ft	50012
-Compaction, sediment|ft	70309
-Copper, wf|ug/l	01040
-Copper, wu,recov|ug/l	01042
-Cyanobac PC, regress|Cell/ml	32335
-Cyanobac PC, water, in situ|Cell/ml	95202
-Cyanobac PE, regress|Cell/ml	32339
-Cyanobac PE, water, in situ|Cell/ml	32338
-DCP battery voltage|V	70969
-DEPRECATED ANC, wu,fxdEP,CaCO3,lab|mg/l	90410
-DEPRECATED Carbon dioxide, water|mg/l	00405
-DEPRECATED Chlorophyll a, IVF|ug/l	65231
-DEPRECATED Chlorophyll fluoresce, in situ|RFU	32283
-DEPRECATED Chlorophyll, in situ|ug/l	62361
-DEPRECATED Chlorophylls fluoresce,in situ|RFU	32320
-DEPRECATED Chlorophylls,in situ|ug/l	32318
-DEPRECATED Cyanobact, Hydrolab|Cell/ml	95201
-DEPRECATED Cyanobacteria, IVF|IVFU	95204
-DEPRECATED Cyanobacteria, SCUFA|ug/l	95203
-DEPRECATED PCB 51, bs<2mm|ug/kg	62393
-DEPRECATED Sample volume, schedule 1394|ml	99940
-DEPRECATED Set number, schedule 2001|number	99818
-DEPRECATED SpecCond,25degC,fld|uS/cm	00094
-DEPRECATED Tidal stage code|code	00067
-DEPRECATED Turbidity, FormAttenu|_FAU	63683
-DEPRECATED Turbidity, Hellige|mg/l	00075
-DEPRECATED Turbidity, Jackson|_JTU	00070
-DO sensor charge|number	99233
-DOC,water,insitu,reg|mg/l	99134
-Dark measurement|Count	32325
-Datalogger scan time|s	72156
-Datum offset, elevWL|ft	72277
-Depth to bottom|ft	81903
-Depth, hole, LSD|ft	72001
-Depth, sensor, uncorrected|ft	99268
-Depth, sensor, uncorrected|m	99269
-Depth, sensor|ft	72147
-Depth, sensor|m	72148
-Depth, water column|ft	72199
-Depth, water column|m	72178
-Depth, well, LSD|ft	72008
-DepthTopSmplngIntrvl|m	82047
-DiagCodeTatlrAcousti|number	50294
-Dial reading|number	82072
-Dielectric permittiv|None	72259
-Direction,StreamFlow|deg	70227
-Discharge factor|None	72258
-Discharge, GW|cm/d	72177
-Discharge, cumulative|Acre-ft	72272
-Discharge, instant|ft^3/s	00061
-Discharge, instant|m^3/s	30209
-Discharge,tide fltrd|US Gal/min	72139
-Discharge,tide fltrd|ft^3/s	72137
-Discharge,tide fltrd|m^3/s	72138
-Discharge|US Gal/min	50042
-Discharge|ft^3/d	72243
-Discharge|ft^3/s	00060
-Discharge|m^3/s	30208
-Diss oxygen saturtn|%	00301
-Diss solids at 105C|mg/l	00515
-Diss solids dry at 180C|mg/l	70300
-Diss solids, calcd|mg/l	70301
-Diss solids, estim|mg/l	99401
-Dissolved oxygen|mg/l	00300
-Dissolved solids conc|tons/Acre-ft	70303
-Dissolved solids|tons/day	70302
-DistObsPntSamplngLoc|ft	50417
-DistObsPntStrmBot|ft	50415
-DistObsrvPntSampLoc|ft	49956
-Distance from outlet|ft	72029
-Distance to 1st bin|None	99966
-Distance, snow surf|cm	99243
-Dry exposure time|s	72153
-E coli, by regr|Count/100ml	99407
-ET method|code	72161
-EXTERNAL ONLY Arsenic, wf|ug/l	01000
-EXTERNAL ONLY Chlorophyll a, phyto, cs meth|ug/l	70951
-EXTERNAL ONLY E coli, DSTM, water|MPN/100ml	50468
-EXTERNAL ONLY Pheophytin a, phytoplankton|ug/l	62360
-EXTERNAL ONLY Phycocyanins, wf|ug/l	52905
-EXTERNAL ONLY Total coliforms, DSTM, water|MPN/100ml	50569
-EXTERNAL ONLY pH, wf, lab|pH Units	00408
-Elapsed time, storm|hr	00135
-Electric current|A	99258
-ElectricalResistance|Ohm	99231
-Elev, NAVD88, BPcorr|ft	72292
-Elevation of sample|ft	72106
-Elevation, GW, ASVD02|ft	72227
-Elevation, GW, ASVD62|ft	72226
-Elevation, GW, GUVD04|ft	72229
-Elevation, GW, GUVD63|ft	72228
-Elevation, GW, HILOCAL|ft	72230
-Elevation, GW, MSL|ft	72150
-Elevation, GW, NAVD88|ft	62611
-Elevation, GW, NAVD88|m	62613
-Elevation, GW, NGVD29|ft	62610
-Elevation, GW, NGVD29|m	62612
-Elevation, GW, NMVD03|ft	72231
-Elevation, GW, PRVD02|ft	72232
-Elevation, NAVD88|ft	72335
-Elevation, NAVD88|m	72336
-Elevation, NGVD29|ft	72020
-Elevation, NGVD29|m	30211
-Elevation, correct BP, NGVD29|ft	62600
-Elevation, lake/res, IGLD|ft	72214
-Elevation, lake/res, IGLD|m	72215
-Elevation, lake/res, NAVD88|ft	62615
-Elevation, lake/res, NAVD88|m	62617
-Elevation, lake/res, NGVD29|ft	62614
-Elevation, lake/res, NGVD29|m	62616
-Elevation, lake/res, USBRKB|ft	72275
-Elevation, ocean/est, NAVD88|ft	62620
-Elevation, ocean/est, NAVD88|m	62622
-Elevation, ocean/est, NGVD29|ft	62619
-Elevation, ocean/est, NGVD29|m	62621
-Elevation, scour hole, NGVD|ft	72274
-Elevation, water, inc, NGVD29|ft	62601
-Enterococci, DSTM, water|MPN/100ml	99601
-Equip alarm status|code	99235
-Evaporation Rate|in/day	00050
-Evaporation,accumltd|in	00197
-Evaporation|mm	72200
-Evapotranspiration rate|in/day	72135
-Evapotranspiration rate|mm/d	72159
-Evapotranspiration, total|in	72180
-Fall rated|ft	72256
-Fall ratio|None	72257
-Fecal coli, by regr|Count/100ml	99406
-Fit RMSE|None	72260
-Float Garbage, svrty|code	01320
-Flow rate, instantaneous|M US Gal/d	50051
-Flow rate, instantaneous|US Gal/min	00059
-Flow rate, well|US Gal/d	00056
-Flow rate, well|US Gal/min	00058
-Flow rate|l/s	74072
-Flow total, CmpstPer|K US Gal	50052
-Flow total, CmpstPer|ft^3	72327
-Flow, conduit or TP|M US Gal/d	50050
-Flow|None	00164
-Fluorescence Trnsmsn|%	32290
-Fluorescence,650_700|%	64094
-Fluoride, wf|mg/l	00950
-Gage height|ft	00065
-Gage height|m	99065
-GageHeightAboveDatum|m	30207
-Gain control, AVM|dB	50292
-Gas bubbles,severity|code	01310
-Gate opening, height|ft	45592
-Gate opening, height|m	45591
-Gate opening, width|ft	45585
-Gate openings|ft	45700
-Good velc sampl, AVM|%	50293
-Good/ total ET|number	72160
-Half hours with ET|Count	72248
-Hardness, water, as CaCO3|mg/l	00900
-HeatFluxDenstyChange|W/m^2	72134
-Horizontal width|m	72236
-Hyb asian carp, tag|count/hr	31722
-Hyb asian carp, unq|count/hr	31727
-Hydrolyzable_P, diss|lbs/day	83551
-Hydrolyzable_P,f,est as P|mg/l	99423
-Hydrostatic head dif|mm	72136
-Ice thickness|ft	82130
-Illumination|lm/ft^2	30267
-Incident light total|uE/m^2	00201
-Incident light|uE/m^2/s	00200
-IndividualsInSample|number	81614
-Inorganic_N w, diss as N|mg/l	51186
-Inorganic_N, w, diss as N|tons/day	51187
-Instrument heading|deg	99969
-Instrument pitch|None	99970
-Instrument roll|None	99971
-Intake width|mm	72237
-Iron, wf|ug/l	01046
-Iron, wu,recov|ug/l	01045
-Isodrin, sur OCSS,ss|%	99991
-LOI of susp solids, rate|tons/day	91056
-LOI of susp solids|mg/l	00535
-Lake/res elev, NYBCD|ft	72264
-Lake/res elev, NYBCD|m	72265
-Lake/reservoir stage|m	62618
-Latent_heat flux|W/m^2	62968
-Latitude of sample|dms	91110
-Length of exposure|d	00022
-Light measurement|Count	32326
-LockageCntOfOpenings|Count	45586
-Loctn ADVM cell begin|ft	99198
-Loctn ADVM cell begin|m	99199
-Loctn ADVM cell end|ft	99238
-Loctn ADVM cell end|m	99241
-Loctn in X_sec,depth|%	00005
-Longitude of sample|dms	91111
-Longwave radtn, down|W/m^2	72175
-Longwave radtn, up|W/m^2	72174
-Lower 90% limit, SSC|mg/l	99247
-Lower 90% limit, SSL|tons/day	99253
-Lower 95% limit, SSC|mg/l	99249
-Lower 95% limit, SSL|tons/day	99255
-Magnesium, dissolved|tons/day	81202
-Magnesium, wf|mg/l	00925
-Manganese, wu, regression|ug/l	99099
-Marsh mat elevation|ft	72250
-Matric potential|cm	72167
-Maximum wave height|m	72288
-Mean depth of stream|ft	00064
-Mean water velocity|ft/s	72255
-Mean water velocity|mph	72294
-Mean wave direction|deg	72289
-Mean wave height|m	72284
-Mean wave period|s	72285
-Measurement absorb|AU/cm	72225
-Metolachlor, diss|g/d	50006
-Metolachlor, wf|ug/l	39415
-Missed exposure time|s	72154
-Modeled ET data|%	72249
-Moisture content, dw|%	00495
-Moisture content, soil fract|number	72181
-MoistureContent,soil|%	46311
-Mult carp spp, tag|count/hr	31723
-Mult carp spp, unq|count/hr	31728
-NH3 (un_ionized), wu as N|mg/l	00619
-NH3+orgN, wf, estim regress|mg/l	99413
-NH3+orgN, wu as N|lbs/day	91057
-NH3+orgN, wu, conc as N|mg/l	00625
-NH3+organic_N, wu|tons/day	91013
-NO3+NO2, dissolved as N|lbs/day	91061
-NO3+NO2, w, total as N|tons/day	83554
-NO3+NO2, wf as N|mg/l	00631
-NO3+NO2, wu as N|lbs/day	91049
-NO3+NO2, wu, conc as N|mg/l	00630
-NO3+NO2,water,insitu as N|mg/l	99133
-NO3:PO4 mole ratio|None	99139
-Net longwave radtn|W/m^2	72202
-Net radiation upward|W/m^2	72193
-Net radiation|W/m^2	72124
-Net shortwave radtn|W/m^2	72201
-Net solar radiation|W/m^2	62609
-Nitrate, dissolved|tons/day	91006
-Nitrate, in situ as N|mg/l	99137
-Nitrate, in situ|umol/l	99136
-Nitrate, w, in situ|mg/l	51290
-Nitrate, wf as N|mg/l	00618
-Nitrate, wf, estim regress|mg/l	99411
-Nitrate, wu as N|mg/l	00620
-Nitrate, wu, conc, field|umol/l	99130
-Nitrate, wu, field as N|mg/l	99124
-Nitrate, wu, field|mg/l	51185
-Nitrate, wu|mg/l	71850
-Nitrite, dissolved|tons/day	91012
-Nitrite, wf as N|mg/l	00613
-No of outliers, AQT|number	99228
-No of outliers, NOS|number	72280
-No of pings per meas|number	99967
-No of sampling pts|Count	00063
-No. of sampling pts.|count	00063
-Number of dry days|d	00132
-OPDC|number	72157
-Observed elev diff|ft	99067
-Open pressure|psi	81912
-Opposite direction|%	72326
-Organic carbon, diss|tons/day	83552
-Organic carbon, ss,t|mg/l	00689
-Organic carbon, ss|tons/day	83553
-Organic carbon, wf|mg/l	00681
-Organic carbon, wu|mg/l	00680
-Organic nitrogen, wu|lbs/day	91047
-OrthoPO4, in situ as P|mg/l	51289
-OrthoPO4, wf, field as P|mg/l	51288
-Orthophosphate, diss as PO4|lbs/day	83556
-Orthophosphate, diss as P|lbs/day	83555
-Orthophosphate, diss|lbs/day	91060
-Orthophosphate, wf as P|mg/l	00671
-Orthophosphate, wf, estim|mg/l	99415
-Orthophosphate, wf,f|mg/l	99122
-Orthophosphate, wu as P|mg/l	70507
-Orthophosphate, wu, estim|mg/l	99414
-Orthophosphate, wu|lbs/day	91059
-PAR, average|umol/m2/s	99988
-PAR, total|mmol/m^2	99989
-PCBs, wu, rate|g/d	04116
-PCBs, wu|ug/l	39516
-PET(PriestleyTaylor)|mm/hr	72129
-PET, Penman method|mm/hr	72130
-PLHF, Penman method|W/m^2	72128
-Pavement friction|code	99266
-Pavement surface condition|code	99265
-Pavement surface temperature|degC	72329
-Peak wave direction|deg	72290
-Percent fChl, PC algae,insitu|%	31887
-Percent fChl, PE algae,insitu|%	31888
-Percent fChl, grn/brn, insitu|%	31886
-Phosphate, wu|mg/l	00650
-Phosphorus, diss|tons/day	91008
-Phosphorus, wd|lbs/day	81206
-Phosphorus, wf|mg/l	00666
-Phosphorus, wu as P|mg/l	00665
-Phosphorus, wu, est|mg/l	99416
-Phosphorus, wu|lbs/day	91050
-Phosphorus, wu|tons/day	91007
-Phycocyanin, regress|ug/l	32329
-Phycoerythrin regres|ug/l	32337
-Pond storage|US Gal	72024
-Potassium, dissolved|tons/day	81204
-Potassium, wf|mg/l	00935
-Power plant load generation|MW	74008
-Precip, storm dur|min	00117
-Precipitation rate, loc 1|in/hr	00129
-Precipitation rate, loc 2|in/hr	00128
-Precipitation rate, loc 3|in/hr	00127
-Precipitation rate, loc 4|in/hr	00126
-Precipitation rate, loc 5|in/hr	00125
-Precipitation rate, loc 6|in/hr	00124
-Precipitation rate|in/min	72291
-Precipitation rate|in/week	00046
-Precipitation rate|mm/hr	72131
-Precipitation, cumul|in	72192
-Precipitation, cumul|mm	72194
-Precipitation, defined period|in	00193
-Precipitation, loc 1|in	00123
-Precipitation, loc 2|in	00122
-Precipitation, loc 3|in	00121
-Precipitation, loc 4|in	00120
-Precipitation, loc 5|in	00119
-Precipitation, loc 6|in	00118
-Precipitation|in	00045
-Precipitation|mm	99772
-PressReltvManomTank|Count	30214
-PressReltvManomTank|count	30214
-Pressure Bot of Hole|psi	81916
-Pressure, diss gases, %saturation|%	00048
-Pressure, diss gases|mmHg	00047
-Project component|code	84145
-Project number|number	00029
-Pump rate|US Gal/min	91146
-Pumping period|min	72004
-QW deviation index|number	99236
-Radar amplitude|number	72324
-Radar signl to noise|dB	72325
-Rate of change|ft/hr	99264
-Raw sensor value|mV	72166
-Reach averaged width|m	72331
-Reach avg water surface elev|m	72333
-Reach slope|number	72332
-Recov fraction ratio|None	81908
-Redox potential|mV	00090
-Reference absorbance|AU/cm	72224
-Reference number|number	99256
-Relative fCO, water, in situ|RFU	32324
-Relative fChl, water, in situ|RFU	32315
-Relative fDOM, water, in situ|RFU	32322
-Relative fFL, water, in situ|RFU	32344
-Relative fOB, water, in situ|RFU	32340
-Relative fPC, water, in situ|RFU	32321
-Relative fPE, water, in situ|RFU	32323
-Relative fRWT, water, in situ|RFU	32343
-Relative fWW, water, in situ|RFU	32342
-Relative humidity|%	00052
-Reservoir elevation|ft	00062
-Reservoir storage, live|%	72121
-Reservoir storage, total|%	72120
-Reservoir storage|Acre-ft	00054
-Reservoir storage|Kacre-ft	72036
-Reservoir storage|M US Gal	72022
-Reservoir storage|Mft^3	72023
-Reservoir storage|ft^3/s-day	72021
-Respiration|mg/m^2/d	70968
-Rhodamine WT, wu|ug/l	07084
-Rn_222 CE, air, unf|dpm/l	22029
-Rn_222 CE, wu|dpm/l	22031
-Rn_222, air, unfltrd|dpm/l	22028
-Rn_222, wu|dpm/l	22030
-Runoff total, flow event|ft^3	72328
-SAC|dB/m	72239
-SAR, w, regression|number	90856
-SAR, water|None	00931
-SCB|dB	72238
-SS load, regres ss|tons/day	80297
-SS load, regres turb|tons/day	80298
-SS v_dia >63um LISST|um	72247
-SS vol diam LISST|um	72245
-SSC vol >63um LISST|ul/l	72246
-SSC volumetric LISST|ul/l	72244
-SW elevation diff|ft	99064
-Salinity at 25C|mg/ml	00096
-Salinity, wu, at 25C|None	90860
-Salinity|ppt	00480
-Salt front location|mi	72216
-Sample accnt number|number	00008
-Sample description|code	81906
-Sample event|code	99260
-Sample frequency|code	82373
-Sample length|in	00024
-Sample purpose|code	71999
-Sample variance, cal|number	99261
-Sample volume|US Gal	32001
-Sampler type|code	84164
-Sampling condition|code	72006
-Sampling depth|ft	00003
-Sampling depth|m	00098
-SatWaterVapPres,calc|kPa	72127
-Sediment_generated noise 0,5_1,0kHz|dB	72301
-Sediment_generated noise 0_0,5kHz|dB	72300
-Sediment_generated noise 1,0_1,5kHz|dB	72302
-Sediment_generated noise 1,5_2,0kHz|dB	72303
-Sediment_generated noise 2,0_2,5kHz|dB	72304
-Sediment_generated noise 2,5_3,0kHz|dB	72305
-Sediment_generated noise 3,0_3,5kHz|dB	72306
-Sediment_generated noise 3,5_4,0kHz|dB	72307
-Sediment_generated noise 4,0_4,5kHz|dB	72308
-Sediment_generated noise 4,5_5,0kHz|dB	72309
-Sediment_generated noise 5,0_5,5kHz|dB	72310
-Sediment_generated noise 5,5_6,0kHz|dB	72311
-Sediment_generated noise 6,0_6,5kHz|dB	72312
-Sediment_generated noise 6,5_7,0kHz|dB	72313
-Sediment_generated noise 7,0_7,5kHz|dB	72314
-Sediment_generated noise 7,5_8,0kHz|dB	72315
-Sediment_generated noise 8,0_8,5kHz|dB	72316
-Sediment_generated noise 8,5_9,0kHz|dB	72317
-Sediment_generated noise 9,0_9,5kHz|dB	72318
-Sediment_generated noise 9,5_10kHz|dB	72319
-Selenium, wf|ug/l	01145
-Sensible_heat flux|W/m^2	62969
-Sensor lens condition|code	99267
-Sensor offset, WL|ft	72278
-Sensor velocity|ft/s	72254
-Shortwave light, up|W/m^2	72185
-Shortwave light,down|W/m^2	72186
-Shortwave solar rad|W/m^2	72179
-Shovl sturgeon, tag|count/hr	31724
-Shovl sturgeon, unq|count/hr	31729
-Shut in pressure|psi	81913
-Signal strength|None	99968
-SignalSedMarklandMet|Count	30215
-SignalSedMarklandMet|count	30215
-Significant wave ht|m	72286
-Significant wave pd|s	72287
-Silica, dissolved|tons/day	81200
-Silica, wf|mg/l	00955
-Silica, wu, field|mg/l	99131
-Silver carp, tagged|count/hr	31721
-Silver carp, unique|count/hr	31726
-Snow depth|ft	72198
-Snow depth|in	82300
-Snow depth|m	72189
-Snowpack sublimation|mm	72206
-Sodium, dissolved|tons/day	81203
-Sodium, wf, estim|mg/l	99398
-Sodium, wf|mg/l	00930
-Soil heat flux, calc|W/m^2	72132
-Soil infiltration,cumul,unsat|cm	72334
-Soil moisture|%	74207
-Soil water matric pt|bar	72223
-Soil water matric pt|neg Bar	72133
-Soil_heat flux|W/m^2	62967
-Solar Radiation, ave|W/m^2	99986
-Solar Radiation, ave|kW/m^2	72252
-Solar Radiation, tot|MJ/m^2	99987
-Solar radiation down|W/m^2	62608
-Solar radiation, net|cal/cm^2/min	46516
-Solar radiation,down|cal/cm^2/min	46515
-Solar radiation|cal/cm^2/d	00030
-SpecCond,NonTempCorr|uS/cm	00402
-SpecCond,wu25degCLab|uS/cm	90095
-Specific cond at 25C|uS/cm	00095
-Specific gravity|None	72013
-Stage, tide f, datum|ft	72170
-Stage, tide f, datum|m	72171
-Standard dev, NOS|ft	72281
-Standard error, SSC|mg/l	99245
-Standard error, SSL|tons/day	99251
-Standard error, log SSC|log mg/l	99244
-Standard error, log SSL|log tons/day	99250
-Starting time|hhmm	82073
-Std dev of wind dir|deg	72126
-Storm serial number|number	00134
-Stream flow event|None	81799
-Stream level, NAVD|ft	63160
-Stream level, NAVD|m	63161
-Stream level, NGVD|ft	63158
-Stream level, NGVD|m	63159
-Stream stage|m	00072
-Stream velocity, point|ft/s	81904
-Stream velocity, point|m/s	72190
-Stream velocity|ft/s	00055
-Stream velocity|m/s	72149
-Stream velocity|mph	72321
-Stream width|ft	00004
-Streambed elevation, NAVD88|ft	72330
-Streamflow, daily|Acre-ft	74082
-Streamflow, severity|code	01351
-Sulfate, dissolved|tons/day	70291
-Sulfate, wf estim by regress|mg/l	99405
-Sulfate, wf|mg/l	00945
-Surface area|Acre	00053
-Surface area|ft^2	00051
-Surface area|mi^2	00049
-Surface velocity|ft/s	72322
-Surface velocity|m/s	72323
-Sus sed load regress|lbs/s	80295
-Sus sed load regress|tons/s	80296
-SusSedLoad > 62,5sd|tons/day	80221
-Susp sediment,wu,est|mg/l	99409
-Susp slds, ignition|mg/l	00540
-Susp solids at 105C|tons/day	91055
-Susp solids at 110C|tons/day	91017
-Susp solids dry at 110C|mg/l	70299
-Suspended solids, estimated|mg/l	99402
-Suspended solids|B	00530
-Suspended solids|mg/l	00530
-Suspnd sed <0,0625mm,sd|%	70331
-Suspnd sed <0,063mm,dir|%	69359
-Suspnd sed <0,125mm,dir|%	69355
-Suspnd sed <0,25mm,dir|%	69351
-Suspnd sed <0,5mm,dir|%	69347
-Suspnd sedmnt conc,  sensor|mg/l	80299
-Suspnd sedmnt conc|mg/l	80154
-Suspnd sedmnt disch|tons/day	80155
-TOC, wu|tons/day	83557
-TOC,water,insitu,est|mg/l	99135
-Temp #1, Aquatrak|degC	99229
-Temp #1, Aquatrak|degF	72282
-Temp #2, Aquatrak|degC	99230
-Temp #2, Aquatrak|degF	72283
-Temp, internal, DCP|degC	45587
-Temp, internal, DCP|degF	45588
-Temperature, air|degC	00020
-Temperature, air|degF	00021
-Temperature, area_weight, avg|degC	90010
-Temperature, equip shelter|degC	45589
-Temperature, equip shelter|degF	45590
-Temperature, evap pan, 24|degC	00013
-Temperature, evap pan, 48|degC	00012
-Temperature, intragrav water|degC	85583
-Temperature, sensor|degC	72176
-Temperature, snow|degC	81029
-Temperature, soil|degC	72253
-Temperature, soil|degF	62846
-Temperature, volcan vent gas|degC	50011
-Temperature, water|degC	00010
-Temperature, water|degF	00011
-Temperature, wetbulb|degC	00014
-Thermal survey durat|d	72163
-Thermal survey start|hhmm	72162
-Tidal WL, NOS|ft	72276
-Tidal elev, NOS|ft	72279
-Tide stage|ft	62623
-Tide stage|m	62624
-Time max wind speed|hhmm	99965
-Time of travel|hr	00100
-Time period, vol soil moist|ms	99232
-Total nitrogen, wf, estim|mg/l	99410
-Total nitrogen, wu, conc|mg/l	00600
-Total nitrogen, wu|lbs/day	91058
-Total sediment conc|mg/l	80180
-Total sediment disch|tons/day	80156
-Total solids, estimated|mg/l	99403
-Transducer excitaton|mV	75971
-Transducer signal|mV	75972
-Tree sap flow|g/hr	72242
-Turbidity, FBRU|_FBRU	72213
-Turbidity, FBU|_FBU	63682
-Turbidity, FNMU|_FNMU	63684
-Turbidity, FNRU|_FNRU	63681
-Turbidity, FNU|_FNU	63680
-Turbidity, NTMU|_NTMU	63679
-Turbidity, NTRU|_NTRU	63676
-Turbidity, NTU|_NTU	00076
-Type of QA data|code	99111
-UV fluoresce,270/340|RFU	32292
-UV fluoresce,370/460|RFU	32291
-UV fluoresce,370/470|RFU	32293
-UV fluoresce,370/520|RFU	32294
-Upper 90% limit, SSC|mg/l	99246
-Upper 90% limit, SSL|tons/day	99252
-Upper 95% limit, SSC|mg/l	99248
-Upper 95% limit, SSL|tons/day	99254
-Velocity to calc ITR|ft/s	72196
-Velocity, tide fltrd|ft/s	72168
-Velocity, tide fltrd|m/s	72169
-Visible radiation|uE/m^2/s	72184
-Voltage ratio|None	99263
-VoltageHzdTripSwitch|V	30216
-Voltage|V	61035
-Volume of water, total|l	72270
-VolumeWaterFiltered|l	71994
-WHIRLIGIG BEETLES|Count	93822
-WL above marsh|ft	72251
-WL,gage datum,BPcorr|ft	72293
-Water content, snow|in	81026
-Water corrected backscatter|dB	72295
-Water level, depth LSD|ft	72019
-Water level, depth LSD|m	30210
-Water level, depth MP|ft	61055
-Water pressure|psi	72151
-Water vapor density|g/m^3	72182
-WaterVaporPres, calc|kPa	72125
-Wave height, Fourier|ft	72172
-Wave hght, nearshore|ft	70224
-Wave period, Fourier|s	72173
-Weighing bucket weight|g	91170
-Well purging condition|code	84143
-Wet exposure time|s	72152
-Wind direction|deg	00036
-Wind gust direction|deg	61729
-Wind gust speed|kn	61727
-Wind gust speed|m/s	72269
-Wind gust speed|mph	61728
-Wind run|mi	00196
-Wind speed|kn	82127
-Wind speed|m/s	62625
-Wind speed|mph	00035
-Wiper activations|Count	99262
-Withdrawal, GW|M US Gal/d	81028
-Withdrawal, GW|M US Gal/mnth	72050
-Xsec loc, DS from lb|ft	00009
-Xsec loc, US % from rb|%	00002
-Xsec loc, US from rb|ft	00001
-Yttrium, ss>62,5u, t|mg/kg	35014
-Zinc, wf|ug/l	01090
-Zinc, wu,recov|ug/l	01092
-fChl grn/brn, water, in situ|ug/l	31883
-fChl, PC algae, water, insitu|ug/l	31884
-fChl, PE algae, water, insitu|ug/l	31885
-fChl, water, in situ|ug/l	32316
-fDOM, w, in situ|mg/l	32330
-fDOM, water, in situ|QSE	32295
-fFL, water, in situ|ug/l	32345
-fOB, water, in situ|ug/l	32341
-fPC, water, in situ|ug/l	32319
-fPE, water, in situ|ug/l	32336
-fRWT, water, in situ|mg/l	99132
-pH|pH Units	00400
+parameter	parm_cd	datum	unit
+ADVM S/N ratio|number	99237	null	null
+ADVM std dev|number	99239	null	null
+ADVM std error, vel|cm/s	99242	null	null
+ADVM std error, vel|ft/s	99240	null	null
+ANC, wu, estim by regression|mg/l	99400	null	null
+ANC, wu,fxdEP,CaCO3,fld|mg/l	00410	null	null
+Absolute pressure|ftH2O	72165	null	null
+Absolute pressure|mmHg	72241	null	null
+Absolute pressure|psi	72203	null	null
+Absorbance, 254 nm, intens|AU/cm	50624	null	null
+Absorbance, 254 nm|AU	32327	null	null
+Absorbance, 350 nm|AU	32328	null	null
+Acoustic noise level|count	72296	null	null
+Air gap|ft	72320	null	null
+Air pressure|ftH2O	72164	null	null
+Air pressure|inH2O	62605	null	null
+Air pressure|inHg	62603	null	null
+Air pressure|kPa	62607	null	null
+Air pressure|mbar	75969	null	null
+Air pressure|mmHg	00025	null	null
+Alachlor, wu|ug/l	77825	null	null
+Albedo|None	72207	null	null
+Altitude above MSL|ft	00042	null	null
+Altitude, LSD|ft	72000	null	null
+Aluminum, wf|ug/l	01106	null	null
+Aluminum, wu,recov|ug/l	01105	null	null
+Ammonia, dissolved as N|lbs/day	62961	null	null
+Ammonia, dissolved as N|tons/day	91014	null	null
+Ammonia, wf as N|mg/l	00608	null	null
+Ammonia, wf, estim regress|mg/l	99412	null	null
+Ammonia, wu as NH4|mg/l	71845	null	null
+Ammonia, wu as N|mg/l	00610	null	null
+Ammonia, wu, field as N|mg/l	99123	null	null
+Ammonia, wu|lbs/day	91048	null	null
+Area, cross_section|ft^2	82632	null	null
+Area, cross_section|m^2	72191	null	null
+Atmos press, corr|inH2O	62604	null	null
+Atmos press, corr|inHg	62602	null	null
+Atmos press, corr|kPa	62606	null	null
+Atrazine, dissolved|g/d	50007	null	null
+Atrazine, wf, estim regress|ug/l	99408	null	null
+Atrazine, wf|ug/l	39632	null	null
+Attenuation corrected backscatter|count	72297	null	null
+Attenuation turbidty|_ATU	63678	null	null
+Autosampler count|Count	99234	null	null
+Available memory|Kbytes	99257	null	null
+BLUE_GREEN ALGAE|Cell/ml	98232	null	null
+BOD, 5 day, 20 deg|mg/l	00310	null	null
+BOD, 5day,20degC, wu|tons/day	91016	null	null
+BP, uncorrected|psi	72204	null	null
+Backscatter turbidty|_BU	63677	null	null
+Bed sedmnt <4mm, fd|%	69000	null	null
+Bedload sediment|tons/day	80225	null	null
+Bedload transport rate, regression|Mg/d	72298	null	null
+Bedload transport rate, regression|tons/day	72299	null	null
+Bicarbonate, diss|tons/day	81205	null	null
+Bicarbonate, wu,fx,f|mg/l	00440	null	null
+Bighead carp, tagged|count/hr	31720	null	null
+Bighead carp, unique|count/hr	31725	null	null
+Blocked exposure tim|s	72155	null	null
+Bromide, wf|mg/l	71870	null	null
+Bulk conductance, sl|dS/m	72205	null	null
+Burst coeff of var|%	72262	null	null
+Burst standard dev as N|mg/l	72261	null	null
+CDOM, wf, field|QSE	32314	null	null
+CDOM|mg/l	32289	null	null
+CO2 at water surface|ppmv	72240	null	null
+CO2, water, diss, in situ|mg/l	99141	null	null
+Cadmium, wf|ug/l	01025	null	null
+Cadmium, wu|ug/l	01027	null	null
+Calcium, dissolved|tons/day	81201	null	null
+Calcium, wf, estim|mg/l	99399	null	null
+Calcium, wf|mg/l	00915	null	null
+Cations minus anions|mEq	00401	null	null
+Chl uncor, regress|ug/l	32334	null	null
+Chloride, dissolved|tons/day	70290	null	null
+Chloride, slb, dd|mg/kg	82476	null	null
+Chloride, wf, estim|mg/l	99404	null	null
+Chloride, wf|mg/l	00940	null	null
+Chloride, wu|mg/l	99220	null	null
+Chlorine residual,wu|mg/l	50060	null	null
+ChlorineFreeAvail,wu|mg/l	50064	null	null
+Chloro a, phyto, cf|ug/l	70953	null	null
+Chlorophyll a, fluor|ug/l	92217	null	null
+Chlorophyll a, fm,c|ug/l	32209	null	null
+Chlorophyll a, regress|ug/l	32317	null	null
+Chlorophyll a, total|ug/l	32284	null	null
+Chlorophyll a, tri,u|ug/l	32210	null	null
+Chlorophyll a,fm,unc|ug/l	32217	null	null
+Chlorophylls,phy,unc|ug/l	32234	null	null
+Chlrphyl a, cryptoph|ug/l	32287	null	null
+Chlrphyl a, cyanobac|ug/l	32286	null	null
+Chlrphyl a, diatoms|ug/l	32288	null	null
+Chlrphyl a, green al|ug/l	32285	null	null
+Circuit quality|code	99259	null	null
+Cloud cover|%	00032	null	null
+Collector lid cycles|number	72158	null	null
+Color|PCU	00080	null	null
+Compaction, aquifer system|ft	50012	null	null
+Compaction, sediment|ft	70309	null	null
+Copper, wf|ug/l	01040	null	null
+Copper, wu,recov|ug/l	01042	null	null
+Cyanobac PC, regress|Cell/ml	32335	null	null
+Cyanobac PC, water, in situ|Cell/ml	95202	null	null
+Cyanobac PE, regress|Cell/ml	32339	null	null
+Cyanobac PE, water, in situ|Cell/ml	32338	null	null
+DCP battery voltage|V	70969	null	null
+DEPRECATED ANC, wu,fxdEP,CaCO3,lab|mg/l	90410	null	null
+DEPRECATED Carbon dioxide, water|mg/l	00405	null	null
+DEPRECATED Chlorophyll a, IVF|ug/l	65231	null	null
+DEPRECATED Chlorophyll fluoresce, in situ|RFU	32283	null	null
+DEPRECATED Chlorophyll, in situ|ug/l	62361	null	null
+DEPRECATED Chlorophylls fluoresce,in situ|RFU	32320	null	null
+DEPRECATED Chlorophylls,in situ|ug/l	32318	null	null
+DEPRECATED Cyanobact, Hydrolab|Cell/ml	95201	null	null
+DEPRECATED Cyanobacteria, IVF|IVFU	95204	null	null
+DEPRECATED Cyanobacteria, SCUFA|ug/l	95203	null	null
+DEPRECATED PCB 51, bs<2mm|ug/kg	62393	null	null
+DEPRECATED Sample volume, schedule 1394|ml	99940	null	null
+DEPRECATED Set number, schedule 2001|number	99818	null	null
+DEPRECATED SpecCond,25degC,fld|uS/cm	00094	null	null
+DEPRECATED Tidal stage code|code	00067	null	null
+DEPRECATED Turbidity, FormAttenu|_FAU	63683	null	null
+DEPRECATED Turbidity, Hellige|mg/l	00075	null	null
+DEPRECATED Turbidity, Jackson|_JTU	00070	null	null
+DO sensor charge|number	99233	null	null
+DOC,water,insitu,reg|mg/l	99134	null	null
+Dark measurement|Count	32325	null	null
+Datalogger scan time|s	72156	null	null
+Datum offset, elevWL|ft	72277	null	null
+Depth to bottom|ft	81903	null	null
+Depth, hole, LSD|ft	72001	null	null
+Depth, sensor, uncorrected|ft	99268	null	null
+Depth, sensor, uncorrected|m	99269	null	null
+Depth, sensor|ft	72147	null	null
+Depth, sensor|m	72148	null	null
+Depth, water column|ft	72199	null	null
+Depth, water column|m	72178	null	null
+Depth, well, LSD|ft	72008	null	null
+DepthTopSmplngIntrvl|m	82047	null	null
+DiagCodeTatlrAcousti|number	50294	null	null
+Dial reading|number	82072	null	null
+Dielectric permittiv|None	72259	null	null
+Direction,StreamFlow|deg	70227	null	null
+Discharge factor|None	72258	null	null
+Discharge, GW|cm/d	72177	null	null
+Discharge, cumulative|Acre-ft	72272	null	null
+Discharge, instant|ft^3/s	00061	null	null
+Discharge, instant|m^3/s	30209	null	null
+Discharge,tide fltrd|US Gal/min	72139	null	null
+Discharge,tide fltrd|ft^3/s	72137	null	null
+Discharge,tide fltrd|m^3/s	72138	null	null
+Discharge|US Gal/min	50042	null	null
+Discharge|ft^3/d	72243	null	null
+Discharge|ft^3/s	00060	null	null
+Discharge|m^3/s	30208	null	null
+Diss oxygen saturtn|%	00301	null	null
+Diss solids at 105C|mg/l	00515	null	null
+Diss solids dry at 180C|mg/l	70300	null	null
+Diss solids, calcd|mg/l	70301	null	null
+Diss solids, estim|mg/l	99401	null	null
+Dissolved oxygen|mg/l	00300	null	null
+Dissolved solids conc|tons/Acre-ft	70303	null	null
+Dissolved solids|tons/day	70302	null	null
+DistObsPntSamplngLoc|ft	50417	null	null
+DistObsPntStrmBot|ft	50415	null	null
+DistObsrvPntSampLoc|ft	49956	null	null
+Distance from outlet|ft	72029	null	null
+Distance to 1st bin|None	99966	null	null
+Distance, snow surf|cm	99243	null	null
+Dry exposure time|s	72153	null	null
+E coli, by regr|Count/100ml	99407	null	null
+ET method|code	72161	null	null
+EXTERNAL ONLY Arsenic, wf|ug/l	01000	null	null
+EXTERNAL ONLY Chlorophyll a, phyto, cs meth|ug/l	70951	null	null
+EXTERNAL ONLY E coli, DSTM, water|MPN/100ml	50468	null	null
+EXTERNAL ONLY Pheophytin a, phytoplankton|ug/l	62360	null	null
+EXTERNAL ONLY Phycocyanins, wf|ug/l	52905	null	null
+EXTERNAL ONLY Total coliforms, DSTM, water|MPN/100ml	50569	null	null
+EXTERNAL ONLY pH, wf, lab|pH Units	00408	null	null
+Elapsed time, storm|hr	00135	null	null
+Electric current|A	99258	null	null
+ElectricalResistance|Ohm	99231	null	null
+Elev, NAVD88, BPcorr|ft	72292	null	null
+Elevation of sample|ft	72106	null	null
+Elevation, GW, ASVD02|ft	72227	 ASVD02	ft
+Elevation, GW, ASVD62|ft	72226	 ASVD62	ft
+Elevation, GW, GUVD04|ft	72229	 GUVD04	ft
+Elevation, GW, GUVD63|ft	72228	 GUVD63	ft
+Elevation, GW, HILOCAL|ft	72230	 HILOCAL	ft
+Elevation, GW, MSL|ft	72150	 MSL	ft
+Elevation, GW, NAVD88|ft	62611	 NAVD88	ft
+Elevation, GW, NAVD88|m	62613	 NAVD88	m
+Elevation, GW, NGVD29|ft	62610	 NGVD29	ft
+Elevation, GW, NGVD29|m	62612	 NGVD29	m
+Elevation, GW, NMVD03|ft	72231	 NMVD03	ft
+Elevation, GW, PRVD02|ft	72232	 PRVD02	ft
+Elevation, NAVD88|ft	72335	null	null
+Elevation, NAVD88|m	72336	null	null
+Elevation, NGVD29|ft	72020	null	null
+Elevation, NGVD29|m	30211	null	null
+Elevation, correct BP, NGVD29|ft	62600	 NGVD29	ft
+Elevation, lake/res, IGLD|ft	72214	null	null
+Elevation, lake/res, IGLD|m	72215	null	null
+Elevation, lake/res, NAVD88|ft	62615	null	null
+Elevation, lake/res, NAVD88|m	62617	null	null
+Elevation, lake/res, NGVD29|ft	62614	null	null
+Elevation, lake/res, NGVD29|m	62616	null	null
+Elevation, lake/res, USBRKB|ft	72275	null	null
+Elevation, ocean/est, NAVD88|ft	62620	null	null
+Elevation, ocean/est, NAVD88|m	62622	null	null
+Elevation, ocean/est, NGVD29|ft	62619	null	null
+Elevation, ocean/est, NGVD29|m	62621	null	null
+Elevation, scour hole, NGVD|ft	72274	null	null
+Elevation, water, inc, NGVD29|ft	62601	 NGVD29	ft
+Enterococci, DSTM, water|MPN/100ml	99601	null	null
+Equip alarm status|code	99235	null	null
+Evaporation Rate|in/day	00050	null	null
+Evaporation,accumltd|in	00197	null	null
+Evaporation|mm	72200	null	null
+Evapotranspiration rate|in/day	72135	null	null
+Evapotranspiration rate|mm/d	72159	null	null
+Evapotranspiration, total|in	72180	null	null
+Fall rated|ft	72256	null	null
+Fall ratio|None	72257	null	null
+Fecal coli, by regr|Count/100ml	99406	null	null
+Fit RMSE|None	72260	null	null
+Float Garbage, svrty|code	01320	null	null
+Flow rate, instantaneous|M US Gal/d	50051	null	null
+Flow rate, instantaneous|US Gal/min	00059	null	null
+Flow rate, well|US Gal/d	00056	null	null
+Flow rate, well|US Gal/min	00058	null	null
+Flow rate|l/s	74072	null	null
+Flow total, CmpstPer|K US Gal	50052	null	null
+Flow total, CmpstPer|ft^3	72327	null	null
+Flow, conduit or TP|M US Gal/d	50050	null	null
+Flow|None	00164	null	null
+Fluorescence Trnsmsn|%	32290	null	null
+Fluorescence,650_700|%	64094	null	null
+Fluoride, wf|mg/l	00950	null	null
+Gage height|ft	00065	null	null
+Gage height|m	99065	null	null
+GageHeightAboveDatum|m	30207	null	null
+Gain control, AVM|dB	50292	null	null
+Gas bubbles,severity|code	01310	null	null
+Gate opening, height|ft	45592	null	null
+Gate opening, height|m	45591	null	null
+Gate opening, width|ft	45585	null	null
+Gate openings|ft	45700	null	null
+Good velc sampl, AVM|%	50293	null	null
+Good/ total ET|number	72160	null	null
+Half hours with ET|Count	72248	null	null
+Hardness, water, as CaCO3|mg/l	00900	null	null
+HeatFluxDenstyChange|W/m^2	72134	null	null
+Horizontal width|m	72236	null	null
+Hyb asian carp, tag|count/hr	31722	null	null
+Hyb asian carp, unq|count/hr	31727	null	null
+Hydrolyzable_P, diss|lbs/day	83551	null	null
+Hydrolyzable_P,f,est as P|mg/l	99423	null	null
+Hydrostatic head dif|mm	72136	null	null
+Ice thickness|ft	82130	null	null
+Illumination|lm/ft^2	30267	null	null
+Incident light total|uE/m^2	00201	null	null
+Incident light|uE/m^2/s	00200	null	null
+IndividualsInSample|number	81614	null	null
+Inorganic_N w, diss as N|mg/l	51186	null	null
+Inorganic_N, w, diss as N|tons/day	51187	null	null
+Instrument heading|deg	99969	null	null
+Instrument pitch|None	99970	null	null
+Instrument roll|None	99971	null	null
+Intake width|mm	72237	null	null
+Iron, wf|ug/l	01046	null	null
+Iron, wu,recov|ug/l	01045	null	null
+Isodrin, sur OCSS,ss|%	99991	null	null
+LOI of susp solids, rate|tons/day	91056	null	null
+LOI of susp solids|mg/l	00535	null	null
+Lake/res elev, NYBCD|ft	72264	null	null
+Lake/res elev, NYBCD|m	72265	null	null
+Lake/reservoir stage|m	62618	null	null
+Latent_heat flux|W/m^2	62968	null	null
+Latitude of sample|dms	91110	null	null
+Length of exposure|d	00022	null	null
+Light measurement|Count	32326	null	null
+LockageCntOfOpenings|Count	45586	null	null
+Loctn ADVM cell begin|ft	99198	null	null
+Loctn ADVM cell begin|m	99199	null	null
+Loctn ADVM cell end|ft	99238	null	null
+Loctn ADVM cell end|m	99241	null	null
+Loctn in X_sec,depth|%	00005	null	null
+Longitude of sample|dms	91111	null	null
+Longwave radtn, down|W/m^2	72175	null	null
+Longwave radtn, up|W/m^2	72174	null	null
+Lower 90% limit, SSC|mg/l	99247	null	null
+Lower 90% limit, SSL|tons/day	99253	null	null
+Lower 95% limit, SSC|mg/l	99249	null	null
+Lower 95% limit, SSL|tons/day	99255	null	null
+Magnesium, dissolved|tons/day	81202	null	null
+Magnesium, wf|mg/l	00925	null	null
+Manganese, wu, regression|ug/l	99099	null	null
+Marsh mat elevation|ft	72250	null	null
+Matric potential|cm	72167	null	null
+Maximum wave height|m	72288	null	null
+Mean depth of stream|ft	00064	null	null
+Mean water velocity|ft/s	72255	null	null
+Mean water velocity|mph	72294	null	null
+Mean wave direction|deg	72289	null	null
+Mean wave height|m	72284	null	null
+Mean wave period|s	72285	null	null
+Measurement absorb|AU/cm	72225	null	null
+Metolachlor, diss|g/d	50006	null	null
+Metolachlor, wf|ug/l	39415	null	null
+Missed exposure time|s	72154	null	null
+Modeled ET data|%	72249	null	null
+Moisture content, dw|%	00495	null	null
+Moisture content, soil fract|number	72181	null	null
+MoistureContent,soil|%	46311	null	null
+Mult carp spp, tag|count/hr	31723	null	null
+Mult carp spp, unq|count/hr	31728	null	null
+NH3 (un_ionized), wu as N|mg/l	00619	null	null
+NH3+orgN, wf, estim regress|mg/l	99413	null	null
+NH3+orgN, wu as N|lbs/day	91057	null	null
+NH3+orgN, wu, conc as N|mg/l	00625	null	null
+NH3+organic_N, wu|tons/day	91013	null	null
+NO3+NO2, dissolved as N|lbs/day	91061	null	null
+NO3+NO2, w, total as N|tons/day	83554	null	null
+NO3+NO2, wf as N|mg/l	00631	null	null
+NO3+NO2, wu as N|lbs/day	91049	null	null
+NO3+NO2, wu, conc as N|mg/l	00630	null	null
+NO3+NO2,water,insitu as N|mg/l	99133	null	null
+NO3:PO4 mole ratio|None	99139	null	null
+Net longwave radtn|W/m^2	72202	null	null
+Net radiation upward|W/m^2	72193	null	null
+Net radiation|W/m^2	72124	null	null
+Net shortwave radtn|W/m^2	72201	null	null
+Net solar radiation|W/m^2	62609	null	null
+Nitrate, dissolved|tons/day	91006	null	null
+Nitrate, in situ as N|mg/l	99137	null	null
+Nitrate, in situ|umol/l	99136	null	null
+Nitrate, w, in situ|mg/l	51290	null	null
+Nitrate, wf as N|mg/l	00618	null	null
+Nitrate, wf, estim regress|mg/l	99411	null	null
+Nitrate, wu as N|mg/l	00620	null	null
+Nitrate, wu, conc, field|umol/l	99130	null	null
+Nitrate, wu, field as N|mg/l	99124	null	null
+Nitrate, wu, field|mg/l	51185	null	null
+Nitrate, wu|mg/l	71850	null	null
+Nitrite, dissolved|tons/day	91012	null	null
+Nitrite, wf as N|mg/l	00613	null	null
+No of outliers, AQT|number	99228	null	null
+No of outliers, NOS|number	72280	null	null
+No of pings per meas|number	99967	null	null
+No of sampling pts|Count	00063	null	null
+No. of sampling pts.|count	00063	null	null
+Number of dry days|d	00132	null	null
+OPDC|number	72157	null	null
+Observed elev diff|ft	99067	null	null
+Open pressure|psi	81912	null	null
+Opposite direction|%	72326	null	null
+Organic carbon, diss|tons/day	83552	null	null
+Organic carbon, ss,t|mg/l	00689	null	null
+Organic carbon, ss|tons/day	83553	null	null
+Organic carbon, wf|mg/l	00681	null	null
+Organic carbon, wu|mg/l	00680	null	null
+Organic nitrogen, wu|lbs/day	91047	null	null
+OrthoPO4, in situ as P|mg/l	51289	null	null
+OrthoPO4, wf, field as P|mg/l	51288	null	null
+Orthophosphate, diss as PO4|lbs/day	83556	null	null
+Orthophosphate, diss as P|lbs/day	83555	null	null
+Orthophosphate, diss|lbs/day	91060	null	null
+Orthophosphate, wf as P|mg/l	00671	null	null
+Orthophosphate, wf, estim|mg/l	99415	null	null
+Orthophosphate, wf,f|mg/l	99122	null	null
+Orthophosphate, wu as P|mg/l	70507	null	null
+Orthophosphate, wu, estim|mg/l	99414	null	null
+Orthophosphate, wu|lbs/day	91059	null	null
+PAR, average|umol/m2/s	99988	null	null
+PAR, total|mmol/m^2	99989	null	null
+PCBs, wu, rate|g/d	04116	null	null
+PCBs, wu|ug/l	39516	null	null
+PET(PriestleyTaylor)|mm/hr	72129	null	null
+PET, Penman method|mm/hr	72130	null	null
+PLHF, Penman method|W/m^2	72128	null	null
+Pavement friction|code	99266	null	null
+Pavement surface condition|code	99265	null	null
+Pavement surface temperature|degC	72329	null	null
+Peak wave direction|deg	72290	null	null
+Percent fChl, PC algae,insitu|%	31887	null	null
+Percent fChl, PE algae,insitu|%	31888	null	null
+Percent fChl, grn/brn, insitu|%	31886	null	null
+Phosphate, wu|mg/l	00650	null	null
+Phosphorus, diss|tons/day	91008	null	null
+Phosphorus, wd|lbs/day	81206	null	null
+Phosphorus, wf|mg/l	00666	null	null
+Phosphorus, wu as P|mg/l	00665	null	null
+Phosphorus, wu, est|mg/l	99416	null	null
+Phosphorus, wu|lbs/day	91050	null	null
+Phosphorus, wu|tons/day	91007	null	null
+Phycocyanin, regress|ug/l	32329	null	null
+Phycoerythrin regres|ug/l	32337	null	null
+Pond storage|US Gal	72024	null	null
+Potassium, dissolved|tons/day	81204	null	null
+Potassium, wf|mg/l	00935	null	null
+Power plant load generation|MW	74008	null	null
+Precip, storm dur|min	00117	null	null
+Precipitation rate, loc 1|in/hr	00129	null	null
+Precipitation rate, loc 2|in/hr	00128	null	null
+Precipitation rate, loc 3|in/hr	00127	null	null
+Precipitation rate, loc 4|in/hr	00126	null	null
+Precipitation rate, loc 5|in/hr	00125	null	null
+Precipitation rate, loc 6|in/hr	00124	null	null
+Precipitation rate|in/min	72291	null	null
+Precipitation rate|in/week	00046	null	null
+Precipitation rate|mm/hr	72131	null	null
+Precipitation, cumul|in	72192	null	null
+Precipitation, cumul|mm	72194	null	null
+Precipitation, defined period|in	00193	null	null
+Precipitation, loc 1|in	00123	null	null
+Precipitation, loc 2|in	00122	null	null
+Precipitation, loc 3|in	00121	null	null
+Precipitation, loc 4|in	00120	null	null
+Precipitation, loc 5|in	00119	null	null
+Precipitation, loc 6|in	00118	null	null
+Precipitation|in	00045	null	null
+Precipitation|mm	99772	null	null
+PressReltvManomTank|Count	30214	null	null
+PressReltvManomTank|count	30214	null	null
+Pressure Bot of Hole|psi	81916	null	null
+Pressure, diss gases, %saturation|%	00048	null	null
+Pressure, diss gases|mmHg	00047	null	null
+Project component|code	84145	null	null
+Project number|number	00029	null	null
+Pump rate|US Gal/min	91146	null	null
+Pumping period|min	72004	null	null
+QW deviation index|number	99236	null	null
+Radar amplitude|number	72324	null	null
+Radar signl to noise|dB	72325	null	null
+Rate of change|ft/hr	99264	null	null
+Raw sensor value|mV	72166	null	null
+Reach averaged width|m	72331	null	null
+Reach avg water surface elev|m	72333	null	null
+Reach slope|number	72332	null	null
+Recov fraction ratio|None	81908	null	null
+Redox potential|mV	00090	null	null
+Reference absorbance|AU/cm	72224	null	null
+Reference number|number	99256	null	null
+Relative fCO, water, in situ|RFU	32324	null	null
+Relative fChl, water, in situ|RFU	32315	null	null
+Relative fDOM, water, in situ|RFU	32322	null	null
+Relative fFL, water, in situ|RFU	32344	null	null
+Relative fOB, water, in situ|RFU	32340	null	null
+Relative fPC, water, in situ|RFU	32321	null	null
+Relative fPE, water, in situ|RFU	32323	null	null
+Relative fRWT, water, in situ|RFU	32343	null	null
+Relative fWW, water, in situ|RFU	32342	null	null
+Relative humidity|%	00052	null	null
+Reservoir elevation|ft	00062	null	null
+Reservoir storage, live|%	72121	null	null
+Reservoir storage, total|%	72120	null	null
+Reservoir storage|Acre-ft	00054	null	null
+Reservoir storage|Kacre-ft	72036	null	null
+Reservoir storage|M US Gal	72022	null	null
+Reservoir storage|Mft^3	72023	null	null
+Reservoir storage|ft^3/s-day	72021	null	null
+Respiration|mg/m^2/d	70968	null	null
+Rhodamine WT, wu|ug/l	07084	null	null
+Rn_222 CE, air, unf|dpm/l	22029	null	null
+Rn_222 CE, wu|dpm/l	22031	null	null
+Rn_222, air, unfltrd|dpm/l	22028	null	null
+Rn_222, wu|dpm/l	22030	null	null
+Runoff total, flow event|ft^3	72328	null	null
+SAC|dB/m	72239	null	null
+SAR, w, regression|number	90856	null	null
+SAR, water|None	00931	null	null
+SCB|dB	72238	null	null
+SS load, regres ss|tons/day	80297	null	null
+SS load, regres turb|tons/day	80298	null	null
+SS v_dia >63um LISST|um	72247	null	null
+SS vol diam LISST|um	72245	null	null
+SSC vol >63um LISST|ul/l	72246	null	null
+SSC volumetric LISST|ul/l	72244	null	null
+SW elevation diff|ft	99064	null	null
+Salinity at 25C|mg/ml	00096	null	null
+Salinity, wu, at 25C|None	90860	null	null
+Salinity|ppt	00480	null	null
+Salt front location|mi	72216	null	null
+Sample accnt number|number	00008	null	null
+Sample description|code	81906	null	null
+Sample event|code	99260	null	null
+Sample frequency|code	82373	null	null
+Sample length|in	00024	null	null
+Sample purpose|code	71999	null	null
+Sample variance, cal|number	99261	null	null
+Sample volume|US Gal	32001	null	null
+Sampler type|code	84164	null	null
+Sampling condition|code	72006	null	null
+Sampling depth|ft	00003	null	null
+Sampling depth|m	00098	null	null
+SatWaterVapPres,calc|kPa	72127	null	null
+Sediment_generated noise 0,5_1,0kHz|dB	72301	null	null
+Sediment_generated noise 0_0,5kHz|dB	72300	null	null
+Sediment_generated noise 1,0_1,5kHz|dB	72302	null	null
+Sediment_generated noise 1,5_2,0kHz|dB	72303	null	null
+Sediment_generated noise 2,0_2,5kHz|dB	72304	null	null
+Sediment_generated noise 2,5_3,0kHz|dB	72305	null	null
+Sediment_generated noise 3,0_3,5kHz|dB	72306	null	null
+Sediment_generated noise 3,5_4,0kHz|dB	72307	null	null
+Sediment_generated noise 4,0_4,5kHz|dB	72308	null	null
+Sediment_generated noise 4,5_5,0kHz|dB	72309	null	null
+Sediment_generated noise 5,0_5,5kHz|dB	72310	null	null
+Sediment_generated noise 5,5_6,0kHz|dB	72311	null	null
+Sediment_generated noise 6,0_6,5kHz|dB	72312	null	null
+Sediment_generated noise 6,5_7,0kHz|dB	72313	null	null
+Sediment_generated noise 7,0_7,5kHz|dB	72314	null	null
+Sediment_generated noise 7,5_8,0kHz|dB	72315	null	null
+Sediment_generated noise 8,0_8,5kHz|dB	72316	null	null
+Sediment_generated noise 8,5_9,0kHz|dB	72317	null	null
+Sediment_generated noise 9,0_9,5kHz|dB	72318	null	null
+Sediment_generated noise 9,5_10kHz|dB	72319	null	null
+Selenium, wf|ug/l	01145	null	null
+Sensible_heat flux|W/m^2	62969	null	null
+Sensor lens condition|code	99267	null	null
+Sensor offset, WL|ft	72278	null	null
+Sensor velocity|ft/s	72254	null	null
+Shortwave light, up|W/m^2	72185	null	null
+Shortwave light,down|W/m^2	72186	null	null
+Shortwave solar rad|W/m^2	72179	null	null
+Shovl sturgeon, tag|count/hr	31724	null	null
+Shovl sturgeon, unq|count/hr	31729	null	null
+Shut in pressure|psi	81913	null	null
+Signal strength|None	99968	null	null
+SignalSedMarklandMet|Count	30215	null	null
+SignalSedMarklandMet|count	30215	null	null
+Significant wave ht|m	72286	null	null
+Significant wave pd|s	72287	null	null
+Silica, dissolved|tons/day	81200	null	null
+Silica, wf|mg/l	00955	null	null
+Silica, wu, field|mg/l	99131	null	null
+Silver carp, tagged|count/hr	31721	null	null
+Silver carp, unique|count/hr	31726	null	null
+Snow depth|ft	72198	null	null
+Snow depth|in	82300	null	null
+Snow depth|m	72189	null	null
+Snowpack sublimation|mm	72206	null	null
+Sodium, dissolved|tons/day	81203	null	null
+Sodium, wf, estim|mg/l	99398	null	null
+Sodium, wf|mg/l	00930	null	null
+Soil heat flux, calc|W/m^2	72132	null	null
+Soil infiltration,cumul,unsat|cm	72334	null	null
+Soil moisture|%	74207	null	null
+Soil water matric pt|bar	72223	null	null
+Soil water matric pt|neg Bar	72133	null	null
+Soil_heat flux|W/m^2	62967	null	null
+Solar Radiation, ave|W/m^2	99986	null	null
+Solar Radiation, ave|kW/m^2	72252	null	null
+Solar Radiation, tot|MJ/m^2	99987	null	null
+Solar radiation down|W/m^2	62608	null	null
+Solar radiation, net|cal/cm^2/min	46516	null	null
+Solar radiation,down|cal/cm^2/min	46515	null	null
+Solar radiation|cal/cm^2/d	00030	null	null
+SpecCond,NonTempCorr|uS/cm	00402	null	null
+SpecCond,wu25degCLab|uS/cm	90095	null	null
+Specific cond at 25C|uS/cm	00095	null	null
+Specific gravity|None	72013	null	null
+Stage, tide f, datum|ft	72170	null	null
+Stage, tide f, datum|m	72171	null	null
+Standard dev, NOS|ft	72281	null	null
+Standard error, SSC|mg/l	99245	null	null
+Standard error, SSL|tons/day	99251	null	null
+Standard error, log SSC|log mg/l	99244	null	null
+Standard error, log SSL|log tons/day	99250	null	null
+Starting time|hhmm	82073	null	null
+Std dev of wind dir|deg	72126	null	null
+Storm serial number|number	00134	null	null
+Stream flow event|None	81799	null	null
+Stream level, NAVD|ft	63160	null	null
+Stream level, NAVD|m	63161	null	null
+Stream level, NGVD|ft	63158	null	null
+Stream level, NGVD|m	63159	null	null
+Stream stage|m	00072	null	null
+Stream velocity, point|ft/s	81904	null	null
+Stream velocity, point|m/s	72190	null	null
+Stream velocity|ft/s	00055	null	null
+Stream velocity|m/s	72149	null	null
+Stream velocity|mph	72321	null	null
+Stream width|ft	00004	null	null
+Streambed elevation, NAVD88|ft	72330	null	null
+Streamflow, daily|Acre-ft	74082	null	null
+Streamflow, severity|code	01351	null	null
+Sulfate, dissolved|tons/day	70291	null	null
+Sulfate, wf estim by regress|mg/l	99405	null	null
+Sulfate, wf|mg/l	00945	null	null
+Surface area|Acre	00053	null	null
+Surface area|ft^2	00051	null	null
+Surface area|mi^2	00049	null	null
+Surface velocity|ft/s	72322	null	null
+Surface velocity|m/s	72323	null	null
+Sus sed load regress|lbs/s	80295	null	null
+Sus sed load regress|tons/s	80296	null	null
+SusSedLoad > 62,5sd|tons/day	80221	null	null
+Susp sediment,wu,est|mg/l	99409	null	null
+Susp slds, ignition|mg/l	00540	null	null
+Susp solids at 105C|tons/day	91055	null	null
+Susp solids at 110C|tons/day	91017	null	null
+Susp solids dry at 110C|mg/l	70299	null	null
+Suspended solids, estimated|mg/l	99402	null	null
+Suspended solids|B	00530	null	null
+Suspended solids|mg/l	00530	null	null
+Suspnd sed <0,0625mm,sd|%	70331	null	null
+Suspnd sed <0,063mm,dir|%	69359	null	null
+Suspnd sed <0,125mm,dir|%	69355	null	null
+Suspnd sed <0,25mm,dir|%	69351	null	null
+Suspnd sed <0,5mm,dir|%	69347	null	null
+Suspnd sedmnt conc,  sensor|mg/l	80299	null	null
+Suspnd sedmnt conc|mg/l	80154	null	null
+Suspnd sedmnt disch|tons/day	80155	null	null
+TOC, wu|tons/day	83557	null	null
+TOC,water,insitu,est|mg/l	99135	null	null
+Temp #1, Aquatrak|degC	99229	null	null
+Temp #1, Aquatrak|degF	72282	null	null
+Temp #2, Aquatrak|degC	99230	null	null
+Temp #2, Aquatrak|degF	72283	null	null
+Temp, internal, DCP|degC	45587	null	null
+Temp, internal, DCP|degF	45588	null	null
+Temperature, air|degC	00020	null	null
+Temperature, air|degF	00021	null	null
+Temperature, area_weight, avg|degC	90010	null	null
+Temperature, equip shelter|degC	45589	null	null
+Temperature, equip shelter|degF	45590	null	null
+Temperature, evap pan, 24|degC	00013	null	null
+Temperature, evap pan, 48|degC	00012	null	null
+Temperature, intragrav water|degC	85583	null	null
+Temperature, sensor|degC	72176	null	null
+Temperature, snow|degC	81029	null	null
+Temperature, soil|degC	72253	null	null
+Temperature, soil|degF	62846	null	null
+Temperature, volcan vent gas|degC	50011	null	null
+Temperature, water|degC	00010	null	null
+Temperature, water|degF	00011	null	null
+Temperature, wetbulb|degC	00014	null	null
+Thermal survey durat|d	72163	null	null
+Thermal survey start|hhmm	72162	null	null
+Tidal WL, NOS|ft	72276	null	null
+Tidal elev, NOS|ft	72279	null	null
+Tide stage|ft	62623	null	null
+Tide stage|m	62624	null	null
+Time max wind speed|hhmm	99965	null	null
+Time of travel|hr	00100	null	null
+Time period, vol soil moist|ms	99232	null	null
+Total nitrogen, wf, estim|mg/l	99410	null	null
+Total nitrogen, wu, conc|mg/l	00600	null	null
+Total nitrogen, wu|lbs/day	91058	null	null
+Total sediment conc|mg/l	80180	null	null
+Total sediment disch|tons/day	80156	null	null
+Total solids, estimated|mg/l	99403	null	null
+Transducer excitaton|mV	75971	null	null
+Transducer signal|mV	75972	null	null
+Tree sap flow|g/hr	72242	null	null
+Turbidity, FBRU|_FBRU	72213	null	null
+Turbidity, FBU|_FBU	63682	null	null
+Turbidity, FNMU|_FNMU	63684	null	null
+Turbidity, FNRU|_FNRU	63681	null	null
+Turbidity, FNU|_FNU	63680	null	null
+Turbidity, NTMU|_NTMU	63679	null	null
+Turbidity, NTRU|_NTRU	63676	null	null
+Turbidity, NTU|_NTU	00076	null	null
+Type of QA data|code	99111	null	null
+UV fluoresce,270/340|RFU	32292	null	null
+UV fluoresce,370/460|RFU	32291	null	null
+UV fluoresce,370/470|RFU	32293	null	null
+UV fluoresce,370/520|RFU	32294	null	null
+Upper 90% limit, SSC|mg/l	99246	null	null
+Upper 90% limit, SSL|tons/day	99252	null	null
+Upper 95% limit, SSC|mg/l	99248	null	null
+Upper 95% limit, SSL|tons/day	99254	null	null
+Velocity to calc ITR|ft/s	72196	null	null
+Velocity, tide fltrd|ft/s	72168	null	null
+Velocity, tide fltrd|m/s	72169	null	null
+Visible radiation|uE/m^2/s	72184	null	null
+Voltage ratio|None	99263	null	null
+VoltageHzdTripSwitch|V	30216	null	null
+Voltage|V	61035	null	null
+Volume of water, total|l	72270	null	null
+VolumeWaterFiltered|l	71994	null	null
+WHIRLIGIG BEETLES|Count	93822	null	null
+WL above marsh|ft	72251	null	null
+WL,gage datum,BPcorr|ft	72293	null	null
+Water content, snow|in	81026	null	null
+Water corrected backscatter|dB	72295	null	null
+Water level, depth LSD|ft	72019	 depth LSD	ft
+Water level, depth LSD|m	30210	 depth LSD	m
+Water level, depth MP|ft	61055	 depth MP	ft
+Water pressure|psi	72151	null	null
+Water vapor density|g/m^3	72182	null	null
+WaterVaporPres, calc|kPa	72125	null	null
+Wave height, Fourier|ft	72172	null	null
+Wave hght, nearshore|ft	70224	null	null
+Wave period, Fourier|s	72173	null	null
+Weighing bucket weight|g	91170	null	null
+Well purging condition|code	84143	null	null
+Wet exposure time|s	72152	null	null
+Wind direction|deg	00036	null	null
+Wind gust direction|deg	61729	null	null
+Wind gust speed|kn	61727	null	null
+Wind gust speed|m/s	72269	null	null
+Wind gust speed|mph	61728	null	null
+Wind run|mi	00196	null	null
+Wind speed|kn	82127	null	null
+Wind speed|m/s	62625	null	null
+Wind speed|mph	00035	null	null
+Wiper activations|Count	99262	null	null
+Withdrawal, GW|M US Gal/d	81028	null	null
+Withdrawal, GW|M US Gal/mnth	72050	null	null
+Xsec loc, DS from lb|ft	00009	null	null
+Xsec loc, US % from rb|%	00002	null	null
+Xsec loc, US from rb|ft	00001	null	null
+Yttrium, ss>62,5u, t|mg/kg	35014	null	null
+Zinc, wf|ug/l	01090	null	null
+Zinc, wu,recov|ug/l	01092	null	null
+fChl grn/brn, water, in situ|ug/l	31883	null	null
+fChl, PC algae, water, insitu|ug/l	31884	null	null
+fChl, PE algae, water, insitu|ug/l	31885	null	null
+fChl, water, in situ|ug/l	32316	null	null
+fDOM, w, in situ|mg/l	32330	null	null
+fDOM, water, in situ|QSE	32295	null	null
+fFL, water, in situ|ug/l	32345	null	null
+fOB, water, in situ|ug/l	32341	null	null
+fPC, water, in situ|ug/l	32319	null	null
+fPE, water, in situ|ug/l	32336	null	null
+fRWT, water, in situ|mg/l	99132	null	null
+pH|pH Units	00400	null	null

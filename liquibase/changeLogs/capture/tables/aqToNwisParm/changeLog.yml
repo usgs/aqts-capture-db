@@ -20,3 +20,18 @@ databaseChangeLog:
             path: aqToNwisParm.sql
             relativeToChangelogFile: true
         - rollback: drop table if exists ${AQTS_SCHEMA_NAME}.aq_to_nwis_parm;
+
+  - changeSet:
+      author: ayan
+      id: "alter.table.${AQTS_SCHEMA_NAME}.aq_to_nwis_parm.add.datum_unit"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - not:
+          - columnExists:
+              schemaName: ${AQTS_SCHEMA_NAME}
+              tableName: aq_to_nwis_parm
+              columnName: datum
+      changes:
+        - sql: alter table ${AQTS_SCHEMA_NAME}.aq_to_nwis_parm add column if not exists datum character varying (20), add column if not exists unit character varying (20);
+        - rollback: alter table ${AQTS_SCHEMA_NAME}.aq_to_nwis_parm drop column datum, drop column unit;
