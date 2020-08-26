@@ -30,5 +30,5 @@ create unlogged table if not exists ${AQTS_SCHEMA_NAME}.discrete_ground_water
 ,reading_qualifiers                      text
 ,ground_water_measurement                text
 ,primary key (discrete_ground_water_id)
-,constraint discrete_ground_water_ak unique (field_visit_identifier,location_identifier,parameter,monitoring_method,field_visit_time,field_visit_value)
+,constraint discrete_ground_water_ak unique (field_visit_identifier,location_identifier,parameter,monitoring_method,field_visit_time)
 );
