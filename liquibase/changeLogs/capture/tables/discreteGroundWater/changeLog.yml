@@ -52,7 +52,7 @@ databaseChangeLog:
 
   - changeSet:
       author: ssoper
-      id: "alter.table.${AQTS_SCHEMA_NAME}.discrete_ground_water.add.constraint.discrete_ground_water_ak"
+      id: "alter.table.${AQTS_SCHEMA_NAME}.discrete_ground_water.add.constraint.discrete_ground_water_ak_v2"
       preConditions:
         - onFail: MARK_RAN
         - onError: HALT
@@ -60,7 +60,7 @@ databaseChangeLog:
             - constraintExists:
                 schemaName: ${AQTS_SCHEMA_NAME}
                 tableName: discrete_ground_water
-                constraintName: discrete_ground_water_ak
+                constraintName: discrete_ground_water_ak_v2
       changes:
-        - sql: alter table ${AQTS_SCHEMA_NAME}.discrete_ground_water add constraint discrete_ground_water_ak unique (field_visit_identifier,location_identifier,parameter,monitoring_method,field_visit_time, datum);
-        - rollback: alter table ${AQTS_SCHEMA_NAME}.discrete_ground_water drop constraint discrete_ground_water_ak;
+        - sql: alter table ${AQTS_SCHEMA_NAME}.discrete_ground_water add constraint discrete_ground_water_ak_v2 unique (field_visit_identifier,location_identifier,parameter,monitoring_method,field_visit_time, datum);
+        - rollback: alter table ${AQTS_SCHEMA_NAME}.discrete_ground_water drop constraint discrete_ground_water_ak_v2;
