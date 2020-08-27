@@ -20,3 +20,47 @@ databaseChangeLog:
             path: discreteGroundWater.sql
             relativeToChangelogFile: true
         - rollback: drop table if exists ${AQTS_SCHEMA_NAME}.discrete_ground_water;
+
+  - changeSet:
+      author: ssoper
+      id: "alter.table.${AQTS_SCHEMA_NAME}.discrete_ground_water.add.column.datum"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - not:
+            - columnExists:
+                schemaName: ${AQTS_SCHEMA_NAME}
+                tableName: discrete_ground_water
+                columnName: datum
+      changes:
+        - sql: alter table ${AQTS_SCHEMA_NAME}.discrete_ground_water add column if not exists datum character varying (20);
+        - rollback: alter table ${AQTS_SCHEMA_NAME}.discrete_ground_water drop column datum;
+
+  - changeSet:
+      author: ssoper
+      id: "alter.table.${AQTS_SCHEMA_NAME}.discrete_ground_water.drop.constraint.if.exists.discrete_ground_water_ak"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - constraintExists:
+            schemaName: ${AQTS_SCHEMA_NAME}
+            tableName: discrete_ground_water
+            constraintName: discrete_ground_water_ak
+      changes:
+        - sql: alter table ${AQTS_SCHEMA_NAME}.discrete_ground_water drop constraint if exists discrete_ground_water_ak;
+        - rollback: alter table ${AQTS_SCHEMA_NAME}.discrete_ground_water add constraint discrete_ground_water_ak unique (field_visit_identifier,location_identifier,parameter,monitoring_method,field_visit_time);
+
+  - changeSet:
+      author: ssoper
+      id: "alter.table.${AQTS_SCHEMA_NAME}.discrete_ground_water.add.constraint.discrete_ground_water_ak_v2"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - not:
+            - constraintExists:
+                schemaName: ${AQTS_SCHEMA_NAME}
+                tableName: discrete_ground_water
+                constraintName: discrete_ground_water_ak_v2
+      changes:
+        - sql: alter table ${AQTS_SCHEMA_NAME}.discrete_ground_water add constraint discrete_ground_water_ak_v2 unique (field_visit_identifier,location_identifier,parameter,monitoring_method,field_visit_time, datum);
+        - rollback: alter table ${AQTS_SCHEMA_NAME}.discrete_ground_water drop constraint discrete_ground_water_ak_v2;
