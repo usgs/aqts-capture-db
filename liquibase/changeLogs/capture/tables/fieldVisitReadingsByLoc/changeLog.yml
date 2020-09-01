@@ -117,5 +117,5 @@ databaseChangeLog:
                 tableName: field_visit_readings_by_loc
                 columnName: location_identifier
       changes:
-        - sql: alter table ${AQTS_SCHEMA_NAME}.field_visit_readings_by_loc add column if not exists location_identifier character varying (20);
+        - sql: alter table ${AQTS_SCHEMA_NAME}.field_visit_readings_by_loc add column if not exists location_identifier text;
         - rollback: alter table ${AQTS_SCHEMA_NAME}.field_visit_readings_by_loc drop column location_identifier;
