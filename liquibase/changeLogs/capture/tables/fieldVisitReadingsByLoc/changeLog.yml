@@ -104,3 +104,18 @@ databaseChangeLog:
       changes:
         - sql: create table if not exists ${AQTS_SCHEMA_NAME}.field_visit_readings_by_loc_december partition of ${AQTS_SCHEMA_NAME}.field_visit_readings_by_loc for values in (12);
         - rollback: drop table if exists ${AQTS_SCHEMA_NAME}.field_visit_readings_by_loc_december;
+
+  - changeSet:
+      author: ssoper
+      id: "alter.table.${AQTS_SCHEMA_NAME}.field_visit_readings_by_loc.add.column.location_identifier"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - not:
+            - columnExists:
+                schemaName: ${AQTS_SCHEMA_NAME}
+                tableName: field_visit_readings_by_loc
+                columnName: location_identifier
+      changes:
+        - sql: alter table ${AQTS_SCHEMA_NAME}.field_visit_readings_by_loc add column if not exists location_identifier character varying (20);
+        - rollback: alter table ${AQTS_SCHEMA_NAME}.field_visit_readings_by_loc drop column location_identifier;
