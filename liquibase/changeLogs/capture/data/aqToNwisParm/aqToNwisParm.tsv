@@ -184,23 +184,23 @@ Electric current|A	99258	null	null
 ElectricalResistance|Ohm	99231	null	null
 Elev, NAVD88, BPcorr|ft	72292	null	null
 Elevation of sample|ft	72106	null	null
-Elevation, GW, ASVD02|ft	72227	 ASVD02	ft
-Elevation, GW, ASVD62|ft	72226	 ASVD62	ft
-Elevation, GW, GUVD04|ft	72229	 GUVD04	ft
-Elevation, GW, GUVD63|ft	72228	 GUVD63	ft
-Elevation, GW, HILOCAL|ft	72230	 HILOCAL	ft
-Elevation, GW, MSL|ft	72150	 MSL	ft
-Elevation, GW, NAVD88|ft	62611	 NAVD88	ft
-Elevation, GW, NAVD88|m	62613	 NAVD88	m
-Elevation, GW, NGVD29|ft	62610	 NGVD29	ft
-Elevation, GW, NGVD29|m	62612	 NGVD29	m
-Elevation, GW, NMVD03|ft	72231	 NMVD03	ft
-Elevation, GW, PRVD02|ft	72232	 PRVD02	ft
+Elevation, GW, ASVD02|ft	72227	ASVD02	ft
+Elevation, GW, ASVD62|ft	72226	ASVD62	ft
+Elevation, GW, GUVD04|ft	72229	GUVD04	ft
+Elevation, GW, GUVD63|ft	72228	GUVD63	ft
+Elevation, GW, HILOCAL|ft	72230	HILOCAL	ft
+Elevation, GW, MSL|ft	72150	MSL	ft
+Elevation, GW, NAVD88|ft	62611	NAVD88	ft
+Elevation, GW, NAVD88|m	62613	NAVD88	m
+Elevation, GW, NGVD29|ft	62610	NGVD29	ft
+Elevation, GW, NGVD29|m	62612	NGVD29	m
+Elevation, GW, NMVD03|ft	72231	NMVD03	ft
+Elevation, GW, PRVD02|ft	72232	PRVD02	ft
 Elevation, NAVD88|ft	72335	null	null
 Elevation, NAVD88|m	72336	null	null
 Elevation, NGVD29|ft	72020	null	null
 Elevation, NGVD29|m	30211	null	null
-Elevation, correct BP, NGVD29|ft	62600	 NGVD29	ft
+Elevation, correct BP, NGVD29|ft	62600	NGVD29	ft
 Elevation, lake/res, IGLD|ft	72214	null	null
 Elevation, lake/res, IGLD|m	72215	null	null
 Elevation, lake/res, NAVD88|ft	62615	null	null
@@ -213,7 +213,7 @@ Elevation, ocean/est, NAVD88|m	62622	null	null
 Elevation, ocean/est, NGVD29|ft	62619	null	null
 Elevation, ocean/est, NGVD29|m	62621	null	null
 Elevation, scour hole, NGVD|ft	72274	null	null
-Elevation, water, inc, NGVD29|ft	62601	 NGVD29	ft
+Elevation, water, inc, NGVD29|ft	62601	NGVD29	ft
 Enterococci, DSTM, water|MPN/100ml	99601	null	null
 Equip alarm status|code	99235	null	null
 Evaporation Rate|in/day	00050	null	null
@@ -687,9 +687,9 @@ WL above marsh|ft	72251	null	null
 WL,gage datum,BPcorr|ft	72293	null	null
 Water content, snow|in	81026	null	null
 Water corrected backscatter|dB	72295	null	null
-Water level, depth LSD|ft	72019	 depth LSD	ft
-Water level, depth LSD|m	30210	 depth LSD	m
-Water level, depth MP|ft	61055	 depth MP	ft
+Water level, depth LSD|ft	72019	depth LSD	ft
+Water level, depth LSD|m	30210	depth LSD	m
+Water level, depth MP|ft	61055	depth MP	ft
 Water pressure|psi	72151	null	null
 Water vapor density|g/m^3	72182	null	null
 WaterVaporPres, calc|kPa	72125	null	null
