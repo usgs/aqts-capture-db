@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Changed
 -   Moved to GitHub
+-   Added uuid column to json_data table with index
 
 ### Added
 -   Docker Hub

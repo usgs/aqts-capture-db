@@ -105,3 +105,18 @@ databaseChangeLog:
       changes:
         - sql: create table if not exists ${AQTS_SCHEMA_NAME}.json_data_december partition of ${AQTS_SCHEMA_NAME}.json_data for values in (12);
         - rollback: drop table if exists ${AQTS_SCHEMA_NAME}.json_data_december;
+
+  - changeSet:
+      author: kkehl
+      id: "alter.table.${AQTS_SCHEMA_NAME}.json_data.uuid"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - not:
+            - columnExists:
+                schemaName: ${AQTS_SCHEMA_NAME}
+                tableName: json_data
+                columnName: uuid
+      changes:
+        - sql: alter table ${AQTS_SCHEMA_NAME}.json_data add column if not exists uuid character(36);
+        - rollback: alter table ${AQTS_SCHEMA_NAME}.json_data drop column uuid;
