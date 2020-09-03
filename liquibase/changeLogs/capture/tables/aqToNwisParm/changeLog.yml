@@ -50,3 +50,32 @@ databaseChangeLog:
       changes:
         - sql: alter table ${AQTS_SCHEMA_NAME}.aq_to_nwis_parm add column if not exists unit character varying (20);
         - rollback: alter table ${AQTS_SCHEMA_NAME}.aq_to_nwis_parm drop column unit;
+
+  - changeSet:
+      author: ssoper
+      id: "alter.table.${AQTS_SCHEMA_NAME}.aq_to_nwis_parm.drop.constraint.if.exists.aq_to_nwis_parm_ak"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - constraintExists:
+            schemaName: ${AQTS_SCHEMA_NAME}
+            tableName: aq_to_nwis_parm
+            constraintName: aq_to_nwis_parm_ak
+      changes:
+        - sql: alter table ${AQTS_SCHEMA_NAME}.aq_to_nwis_parm drop constraint if exists aq_to_nwis_parm_ak;
+        - rollback: alter table ${AQTS_SCHEMA_NAME}.aq_to_nwis_parm add constraint aq_to_nwis_parm_ak unique (parameter);
+
+  - changeSet:
+      author: ssoper
+      id: "alter.table.${AQTS_SCHEMA_NAME}.aq_to_nwis_parm.add.constraint.aq_to_nwis_parm_ak_v2"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - not:
+            - constraintExists:
+                schemaName: ${AQTS_SCHEMA_NAME}
+                tableName: aq_to_nwis_parm
+                constraintName: aq_to_nwis_parm_v2
+      changes:
+        - sql: alter table ${AQTS_SCHEMA_NAME}.aq_to_nwis_parm add constraint aq_to_nwis_parm_ak_v2 unique (parameter,datum);
+        - rollback: alter table ${AQTS_SCHEMA_NAME}.aq_to_nwis_parm drop constraint aq_to_nwis_parm_ak_v2;

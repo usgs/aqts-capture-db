@@ -688,6 +688,7 @@ WL,gage datum,BPcorr|ft	72293	null	null
 Water content, snow|in	81026	null	null
 Water corrected backscatter|dB	72295	null	null
 Water level, depth LSD|ft	72019	depth LSD	ft
+Water level, depth LSD|ft	72019	Local Assumed Datum	ft
 Water level, depth LSD|m	30210	depth LSD	m
 Water level, depth MP|ft	61055	depth MP	ft
 Water pressure|psi	72151	null	null
