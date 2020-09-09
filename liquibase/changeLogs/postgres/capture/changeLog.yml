@@ -17,3 +17,13 @@ databaseChangeLog:
       changes:
         - sql: create schema ${AQTS_SCHEMA_NAME} authorization ${AQTS_SCHEMA_OWNER_USERNAME};
         - rollback: drop schema if exists ${AQTS_SCHEMA_NAME} cascade;
+
+  - changeSet:
+      author: kkehl
+      id: "create.extension.aws_s3.${AQTS_SCHEMA_NAME}"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+      changes:
+        - sql: create extension if not exists aws_s3 cascade;
+        - rollback: drop extension if exists aws_s3 cascade;
