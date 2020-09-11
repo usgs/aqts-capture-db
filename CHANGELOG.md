@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 -   Moved to GitHub
 -   Added uuid column to json_data table with index
+-   Add creation of aws_s3 extension to z1_postgres_liquibase.sh
 
 ### Added
 -   Docker Hub
