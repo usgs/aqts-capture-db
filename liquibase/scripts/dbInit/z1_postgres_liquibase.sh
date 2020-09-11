@@ -34,5 +34,3 @@ ${LIQUIBASE_HOME}/liquibase \
 	update \
 	-DAQTS_SCHEMA_OWNER_USERNAME=${AQTS_SCHEMA_OWNER_USERNAME} \
 	-DAQTS_SCHEMA_NAME=${AQTS_SCHEMA_NAME}
-
-sudo -u postgres psql ${AQTS_DATABASE_NAME} -c "create extension if not exists aws_s3 cascade"
