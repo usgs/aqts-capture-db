@@ -1,0 +1,13 @@
+databaseChangeLog:
+  - preConditions:
+      - dbms:
+          type: postgresql
+      - runningAs:
+          username: ${AQTS_SCHEMA_OWNER_USERNAME}
+
+  - changeSet:
+      author: eorosz
+      id: "create.index.${AQTS_SCHEMA_NAME}.discrete_ground_water_location_identifier"
+      changes:
+        - sql: create index if not exists discrete_ground_water_location_identifier on ${AQTS_SCHEMA_NAME}.discrete_ground_water (location_identifier);
+        - rollback: drop index if exists ${AQTS_SCHEMA_NAME}.discrete_ground_water_location_identifier;
