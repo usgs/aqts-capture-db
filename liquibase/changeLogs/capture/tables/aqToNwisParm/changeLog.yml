@@ -79,3 +79,33 @@ databaseChangeLog:
       changes:
         - sql: alter table ${AQTS_SCHEMA_NAME}.aq_to_nwis_parm add constraint aq_to_nwis_parm_ak_v2 unique (parameter,datum);
         - rollback: alter table ${AQTS_SCHEMA_NAME}.aq_to_nwis_parm drop constraint aq_to_nwis_parm_ak_v2;
+
+  - changeSet:
+      author: ssoper
+      id: "alter.table.${AQTS_SCHEMA_NAME}.aq_to_nwis_parm.add.above_datum"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - not:
+            - columnExists:
+                schemaName: ${AQTS_SCHEMA_NAME}
+                tableName: aq_to_nwis_parm
+                columnName: above_datum
+      changes:
+        - sql: alter table ${AQTS_SCHEMA_NAME}.aq_to_nwis_parm add column if not exists above_datum boolean;
+        - rollback: alter table ${AQTS_SCHEMA_NAME}.aq_to_nwis_parm drop column above_datum;
+
+  - changeSet:
+      author: ssoper
+      id: "alter.table.${AQTS_SCHEMA_NAME}.aq_to_nwis_parm.add.below_land_surface"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - not:
+            - columnExists:
+                schemaName: ${AQTS_SCHEMA_NAME}
+                tableName: aq_to_nwis_parm
+                columnName: below_land_surface
+      changes:
+        - sql: alter table ${AQTS_SCHEMA_NAME}.aq_to_nwis_parm add column if not exists below_land_surface boolean;
+        - rollback: alter table ${AQTS_SCHEMA_NAME}.aq_to_nwis_parm drop column below_land_surface;
