@@ -130,7 +130,7 @@ Dark measurement|Count	32325	null	null	null	null
 Datalogger scan time|s	72156	null	null	null	null
 Datum offset, elevWL|ft	72277	null	null	null	null
 Depth to bottom|ft	81903	null	null	null	null
-Depth, hole, LSD|ft	72001	null	null	null	null	true	false
+Depth, hole, LSD|ft	72001	null	null	null	null
 Depth, sensor, uncorrected|ft	99268	null	null	null	null
 Depth, sensor, uncorrected|m	99269	null	null	null	null
 Depth, sensor|ft	72147	null	null	null	null
@@ -189,7 +189,7 @@ Elevation, GW, ASVD62|ft	72226	ASVD62	ft	false	true
 Elevation, GW, GUVD04|ft	72229	GUVD04	ft	false	true
 Elevation, GW, GUVD63|ft	72228	GUVD63	ft	false	true
 Elevation, GW, HILOCAL|ft	72230	HILOCAL	ft	false	true
-Elevation, GW, MSL|ft	72150	MSL	ft	TODO	TODO
+Elevation, GW, MSL|ft	72150	MSL	ft	true	false
 Elevation, GW, NAVD88|ft	62611	NAVD88	ft	true	false
 Elevation, GW, NAVD88|m	62613	NAVD88	m	true	false
 Elevation, GW, NGVD29|ft	62610	NGVD29	ft	true	false
@@ -690,7 +690,7 @@ Water corrected backscatter|dB	72295	null	null	null	null
 Water level, depth LSD|ft	72019	depth LSD	ft	false	true
 Water level, depth LSD|ft	72019	Local Assumed Datum	ft	false	true
 Water level, depth LSD|m	30210	depth LSD	m	false	true
-Water level, depth MP|ft	61055	depth MP	ft	TODO	TODO
+Water level, depth MP|ft	61055	depth MP	ft	false	true
 Water pressure|psi	72151	null	null	null	null
 Water vapor density|g/m^3	72182	null	null	null	null
 WaterVaporPres, calc|kPa	72125	null	null	null	null
