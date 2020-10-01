@@ -23,6 +23,15 @@ databaseChangeLog:
 
   - changeSet:
       author: ssoper
+      id: "alter.table.${AQTS_SCHEMA_NAME}.field_visit_header_info.alter.column.completed_work.type.jsonb"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+      changes:
+        - sql: alter table ${AQTS_SCHEMA_NAME}.field_visit_header_info alter column completed_work type jsonb using completed_work::jsonb;
+
+  - changeSet:
+      author: ssoper
       id: "create.table.${AQTS_SCHEMA_NAME}.field_visit_header_info_january.partition"
       changes:
         - sql: create table if not exists ${AQTS_SCHEMA_NAME}.field_visit_header_info_january partition of ${AQTS_SCHEMA_NAME}.field_visit_header_info for values in (1);
