@@ -64,3 +64,12 @@ databaseChangeLog:
       changes:
         - sql: alter table ${AQTS_SCHEMA_NAME}.discrete_ground_water add constraint discrete_ground_water_ak_v2 unique (field_visit_identifier,location_identifier,parameter,monitoring_method,field_visit_time, datum);
         - rollback: alter table ${AQTS_SCHEMA_NAME}.discrete_ground_water drop constraint discrete_ground_water_ak_v2;
+
+  - changeSet:
+      author: ssoper
+      id: "alter.table.${AQTS_SCHEMA_NAME}.discrete_ground_water.alter.column.completed_work.type.jsonb"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+      changes:
+        - sql: alter table ${AQTS_SCHEMA_NAME}.discrete_ground_water alter column completed_work type jsonb using completed_work::jsonb;
