@@ -49,6 +49,7 @@ pipeline {
           env.AQTS_SCHEMA_OWNER_PASSWORD = secretsJson.SCHEMA_OWNER_PASSWORD
 
           sh '''
+            echo $AQTS_DATABASE_ADDRESS
             export POSTGRES_PASSWORD=$(/usr/local/bin/aws ssm get-parameter --name "/NWCAPPG_SU_PW" --query "Parameter.Value"  --with-decryption --output text --region "us-west-2")
 
             export LIQUIBASE_HOME=$WORKSPACE/rc
