@@ -19,7 +19,7 @@ pipeline {
     }
     stage('Git Clone') {
       steps {
-        checkout([$class: 'GitSCM', branches: [[name: '*/master']],
+        checkout([$class: 'GitSCM', branches: [[name: '*/tmp']],
         doGenerateSubmoduleConfigurations: false,
         userRemoteConfigs: [[credentialsId: 'CIDA-Jenkins-GitHub',
         url: 'https://github.com/usgs/aqts-capture-db.git']]])
