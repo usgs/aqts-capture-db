@@ -75,7 +75,7 @@ databaseChangeLog:
             - constraintExists:
                 schemaName: ${AQTS_SCHEMA_NAME}
                 tableName: aq_to_nwis_parm
-                constraintName: aq_to_nwis_parm_v2
+                constraintName: aq_to_nwis_parm_ak_v2
       changes:
         - sql: alter table ${AQTS_SCHEMA_NAME}.aq_to_nwis_parm add constraint aq_to_nwis_parm_ak_v2 unique (parameter,datum);
         - rollback: alter table ${AQTS_SCHEMA_NAME}.aq_to_nwis_parm drop constraint aq_to_nwis_parm_ak_v2;
