@@ -1,0 +1,23 @@
+aqts_monitoring_method	nwis_method_description	nwis_method_code
+Computation by NWIS algorithm	Other.	Z
+GW level, acoustic pulse	Acoustic Pulse measurement.	P
+GW level, analog/graphic recorder	Analog or graphic recorder.	B
+GW level, airline	Airline measurement.	A
+GW level, calib airline	Calibrated airline measurement.	C
+GW level, calib elect cable	Calibrated electric cable.	W
+GW level, calib electric tape	Calibrated electric-tape measurement.	V
+GW level, calib pressure gage	Calibrated pressure-gage measurement.	H
+GW level, calib steel tape	Steel-tape measurement.	S
+GW level, electric cable	Uncalibrated electric cable.	X
+GW level, encoder	Other.	Z
+GW level, electric tape	Electric-tape measurement.	T
+GW level, differential GPS	Differential Global Positioning System.	D
+GW level, interface meter	Other.	Z
+GW level, logs	Interpreted from geophysical logs.	L
+GW level, manometer	Manometer measurement.	M
+GW level, nonrecording gage	Nonrecording gage.	N
+GW level, estim, report, observ	Observed.	O
+GW level, pressure gage	Pressure-gage measurement.	G
+GW level, pressure transducer	Transducer.	F
+GW level, steel tape	Steel-tape measurement.	S
+GW level,unvented press transdcr	Transducer.	F

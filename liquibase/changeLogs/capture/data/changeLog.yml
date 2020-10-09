@@ -16,3 +16,7 @@ databaseChangeLog:
   - include:
       file: "dataTypeMapping/changeLog.yml"
       relativeToChangelogFile: true
+
+  - include:
+      file: "aqToNwisMethodCode/changeLog.yml"
+      relativeToChangelogFile: true
