@@ -1,0 +1,23 @@
+databaseChangeLog:
+  - preConditions:
+      - dbms:
+          type: PostgreSQL
+      - runningAs:
+          username: ${AQTS_SCHEMA_OWNER_USERNAME}
+
+  - changeSet:
+      author: ssoper
+      id: "load.${AQTS_SCHEMA_NAME}.aq_to_nwis_method_code"
+      runOnChange: true
+      changes:
+        - delete:
+            schemaName: ${AQTS_SCHEMA_NAME}
+            tableName: aq_to_nwis_method_code
+        - loadData:
+            encoding: UTF-8
+            file: aqToNwisMethodCode.tsv
+            relativeToChangelogFile: true
+            separator: \t
+            schemaName: ${AQTS_SCHEMA_NAME}
+            tableName: aq_to_nwis_method_code
+        - rollback: select 'no rollback - you must restore previous aqToNwisMethodCode.tsv and rerun manually'

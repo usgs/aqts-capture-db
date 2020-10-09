@@ -10,6 +10,10 @@ databaseChangeLog:
       relativeToChangelogFile: true
 
   - include:
+      file: "aqToNwisMethodCode/changeLog.yml"
+      relativeToChangelogFile: true
+
+  - include:
       file: "aqToNwisParm/changeLog.yml"
       relativeToChangelogFile: true
 

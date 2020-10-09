@@ -1,0 +1,22 @@
+databaseChangeLog:
+  - preConditions:
+      - dbms:
+          type: postgresql
+      - runningAs:
+          username: ${AQTS_SCHEMA_OWNER_USERNAME}
+
+  - changeSet:
+      author: ssoper
+      id: "create.table.${AQTS_SCHEMA_NAME}.aq_to_nwis_method_code"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - not:
+            - tableExists:
+                schemaName: ${AQTS_SCHEMA_NAME}
+                tableName: aq_to_nwis_method_code
+      changes:
+        - sqlFile:
+            path: aqToNwisMethodCode.sql
+            relativeToChangelogFile: true
+        - rollback: drop table if exists ${AQTS_SCHEMA_NAME}.aq_to_nwis_method_code;

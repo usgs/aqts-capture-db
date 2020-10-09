@@ -64,3 +64,27 @@ databaseChangeLog:
       changes:
         - sql: alter table ${AQTS_SCHEMA_NAME}.discrete_ground_water add constraint discrete_ground_water_ak_v2 unique (field_visit_identifier,location_identifier,parameter,monitoring_method,field_visit_time, datum);
         - rollback: alter table ${AQTS_SCHEMA_NAME}.discrete_ground_water drop constraint discrete_ground_water_ak_v2;
+
+  - changeSet:
+      author: ssoper
+      id: "alter.table.${AQTS_SCHEMA_NAME}.discrete_ground_water.alter.column.completed_work.type.jsonb"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+      changes:
+        - sql: alter table ${AQTS_SCHEMA_NAME}.discrete_ground_water alter column completed_work type jsonb using completed_work::jsonb;
+
+  - changeSet:
+      author: ssoper
+      id: "alter.table.${AQTS_SCHEMA_NAME}.discrete_ground_water.add.nwis_method_code"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - not:
+            - columnExists:
+                schemaName: ${AQTS_SCHEMA_NAME}
+                tableName: discrete_ground_water
+                columnName: nwis_method_code
+      changes:
+        - sql: alter table ${AQTS_SCHEMA_NAME}.discrete_ground_water add column if not exists nwis_method_code character varying (1);
+        - rollback: alter table ${AQTS_SCHEMA_NAME}.discrete_ground_water drop column nwis_method_code;
