@@ -104,3 +104,17 @@ databaseChangeLog:
       changes:
         - sql: create table if not exists ${AQTS_SCHEMA_NAME}.datum_converted_values_december partition of ${AQTS_SCHEMA_NAME}.datum_converted_values for values in (12);
         - rollback: drop table if exists ${AQTS_SCHEMA_NAME}.datum_converted_values_december;
+
+  - changeSet:
+      author: eorosz
+      id: "alter.table.${AQTS_SCHEMA_NAME}.datum_converted_values.add.col.field_visit_time"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - not:
+          - columnExists:
+              schemaName: ${AQTS_SCHEMA_NAME}
+              tableName: datum_converted_values
+              columnName: field_visit_time
+      changes:
+        - sql: alter table ${AQTS_SCHEMA_NAME}.datum_converted_values add column if not exists field_visit_time timestamp;
