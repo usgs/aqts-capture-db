@@ -88,3 +88,34 @@ databaseChangeLog:
       changes:
         - sql: alter table ${AQTS_SCHEMA_NAME}.discrete_ground_water add column if not exists nwis_method_code character varying (1);
         - rollback: alter table ${AQTS_SCHEMA_NAME}.discrete_ground_water drop column nwis_method_code;
+
+# The Aquarius ApprovalLevel is to be a 4 digit code, but a 10 vchar will hopefully avoid future issues
+  - changeSet:
+      author: eeverman
+      id: "alter.table.${AQTS_SCHEMA_NAME}.discrete_ground_water.add.approval_level"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - not:
+            - columnExists:
+                schemaName: ${AQTS_SCHEMA_NAME}
+                tableName: discrete_ground_water
+                columnName: approval_level
+      changes:
+        - sql: alter table ${AQTS_SCHEMA_NAME}.discrete_ground_water add column if not exists approval_level character varying (10);
+        - rollback: alter table ${AQTS_SCHEMA_NAME}.discrete_ground_water drop column approval_level;
+
+  - changeSet:
+      author: eeverman
+      id: "alter.table.${AQTS_SCHEMA_NAME}.discrete_ground_water.add.approval_level_description"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - not:
+            - columnExists:
+                schemaName: ${AQTS_SCHEMA_NAME}
+                tableName: discrete_ground_water
+                columnName: approval_level_description
+      changes:
+        - sql: alter table ${AQTS_SCHEMA_NAME}.discrete_ground_water add column if not exists approval_level_description text;
+        - rollback: alter table ${AQTS_SCHEMA_NAME}.discrete_ground_water drop column approval_level_description;
