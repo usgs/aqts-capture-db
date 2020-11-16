@@ -54,8 +54,6 @@ pipeline {
             export LIQUIBASE_HOME=$WORKSPACE/rc
             export LIQUIBASE_WORKSPACE=$WORKSPACE/liquibase/changeLogs
 
-            chmod +x $WORKSPACE/liquibase/scripts/dbInit/z1_postgres_liquibase.sh
-            chmod +x $WORKSPACE/liquibase/scripts/dbInit/z2_rc_liquibase.sh
             $WORKSPACE/liquibase/scripts/dbInit/z1_postgres_liquibase.sh
             $WORKSPACE/liquibase/scripts/dbInit/z2_rc_liquibase.sh
           '''
