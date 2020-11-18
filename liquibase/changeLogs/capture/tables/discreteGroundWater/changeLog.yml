@@ -119,3 +119,33 @@ databaseChangeLog:
       changes:
         - sql: alter table ${AQTS_SCHEMA_NAME}.discrete_ground_water add column if not exists approval_level_description text;
         - rollback: alter table ${AQTS_SCHEMA_NAME}.discrete_ground_water drop column approval_level_description;
+
+  - changeSet:
+      author: ayan
+      id: "alter.table.${AQTS_SCHEMA_NAME}.discrete_ground_water.add.created_at"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - not:
+            - columnExists:
+                schemaName: ${AQTS_SCHEMA_NAME}
+                tableName: discrete_ground_water
+                columnName: created_at
+      changes:
+        - sql: alter table ${AQTS_SCHEMA_NAME}.discrete_ground_water add column if not exists created_at timestamptz not null default now();
+        - rollback: alter table ${AQTS_SCHEMA_NAME}.discrete_ground_water drop column created_at;
+
+  - changeSet:
+      author: ayan
+      id: "alter.table.${AQTS_SCHEMA_NAME}.discrete_ground_water.add.updated_at"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - not:
+            - columnExists:
+                schemaName: ${AQTS_SCHEMA_NAME}
+                tableName: discrete_ground_water
+                columnName: updated_at
+      changes:
+        - sql: alter table ${AQTS_SCHEMA_NAME}.discrete_ground_water add column if not exists updated_at timestamptz not null default now();
+        - rollback: alter table ${AQTS_SCHEMA_NAME}.discrete_ground_water drop column updated_at;

@@ -1,0 +1,16 @@
+databaseChangeLog:
+  - preConditions:
+    - dbms:
+        type: postgresql
+    - runningAs:
+        username: ${AQTS_SCHEMA_OWNER_USERNAME}
+
+  - changeSet:
+      author: ayan
+      id: "create.function.${AQTS_SCHEMA_NAME}.trigger_set_timestamp"
+      changes:
+        - sqlFile:
+            path: trigger_set_timestamp.sql
+            relativeToChangeLogFile: true
+            splitStatements: false
+        - rollback: drop function if exists ${AQTS_SCHEMA_NAME}.trigger_set_timestamp();

@@ -20,3 +20,33 @@ databaseChangeLog:
             path: groundwaterStatisticalDailyValue.sql
             relativeToChangelogFile: true
         - rollback: drop table if exists ${AQTS_SCHEMA_NAME}.groundwater_statistical_daily_value;
+
+  - changeSet:
+      author: ayan
+      id: "alter.table.${AQTS_SCHEMA_NAME}.groundwater_statistical_daily_value.add.created_at"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - not:
+            - columnExists:
+                schemaName: ${AQTS_SCHEMA_NAME}
+                tableName: groundwater_statistical_daily_value
+                columnName: created_at
+      changes:
+        - sql: alter table ${AQTS_SCHEMA_NAME}.groundwater_statistical_daily_value add column if not exists created_at timestamptz not null default now();
+        - rollback: alter table ${AQTS_SCHEMA_NAME}.groundwater_statistical_daily_value drop column created_at;
+
+  - changeSet:
+      author: ayan
+      id: "alter.table.${AQTS_SCHEMA_NAME}.groundwater_statistical_daily_value.add.updated_at"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - not:
+            - columnExists:
+                schemaName: ${AQTS_SCHEMA_NAME}
+                tableName: groundwater_statistical_daily_value
+                columnName: updated_at
+      changes:
+        - sql: alter table ${AQTS_SCHEMA_NAME}.groundwater_statistical_daily_value add column if not exists updated_at timestamptz not null default now();
+        - rollback: alter table ${AQTS_SCHEMA_NAME}.groundwater_statistical_daily_value drop column updated_at;

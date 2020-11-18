@@ -12,3 +12,7 @@ databaseChangeLog:
   - include:
       file: "pruneTimeSeriesData/changeLog.yml"
       relativeToChangelogFile: true
+
+  - include:
+      file: "triggerSetTimestamp/changeLog.yml"
+      relativeToChangelogFile: true
