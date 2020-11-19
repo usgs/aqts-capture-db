@@ -10,7 +10,7 @@ databaseChangeLog:
       id: "create.function.${AQTS_SCHEMA_NAME}.trigger_set_timestamp"
       changes:
         - sqlFile:
-            path: trigger_set_timestamp.sql
+            path: triggerSetTimestamp.sql
             relativeToChangeLogFile: true
             splitStatements: false
         - rollback: drop function if exists ${AQTS_SCHEMA_NAME}.trigger_set_timestamp();
