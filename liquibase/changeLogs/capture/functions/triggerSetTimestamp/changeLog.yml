@@ -11,6 +11,6 @@ databaseChangeLog:
       changes:
         - sqlFile:
             path: triggerSetTimestamp.sql
-            relativeToChangeLogFile: true
+            relativeToChangelogFile: true
             splitStatements: false
         - rollback: drop function if exists ${AQTS_SCHEMA_NAME}.trigger_set_timestamp();
