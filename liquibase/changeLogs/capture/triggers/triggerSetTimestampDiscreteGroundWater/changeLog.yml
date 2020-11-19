@@ -1,0 +1,16 @@
+databaseChangeLog:
+  - preConditions:
+      - dbms:
+          type: postgresql
+      - runningAs:
+          username: ${AQTS_SCHEMA_OWNER_USERNAME}
+
+  - changeSet:
+      author: ayan
+      id: "create.trigger.${AQTS_SCHEMA_NAME}.set_timestamp_discrete_ground_water"
+      changes:
+        - sqlFile:
+            path: triggerSetTimestampGroundwaterStatisticalDailyValue.sql
+            relativeToChangeLogFile: true
+            splitStatements: false
+        - rollback: drop trigger if exists set_timestamp_discrete_ground_water on ${AQTS_SCHEMA_NAME}.discrete_ground_water;
