@@ -11,6 +11,6 @@ databaseChangeLog:
       changes:
         - sqlFile:
             path: triggerSetTimestampGroundwaterStatisticalDailyValue.sql
-            relativeToChangeLogFile: true
+            relativeToChangelogFile: true
             splitStatements: false
         - rollback: drop trigger if exists set_timestamp_discrete_ground_water on ${AQTS_SCHEMA_NAME}.discrete_ground_water;
