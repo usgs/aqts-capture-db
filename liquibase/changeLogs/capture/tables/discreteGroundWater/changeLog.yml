@@ -149,3 +149,19 @@ databaseChangeLog:
       changes:
         - sql: alter table ${AQTS_SCHEMA_NAME}.discrete_ground_water add column if not exists updated_at timestamptz not null default now();
         - rollback: alter table ${AQTS_SCHEMA_NAME}.discrete_ground_water drop column updated_at;
+
+  # After changes to use reading_qualifiers (plural) reading_qualifier is no longer needed
+  - changeSet:
+      author: eeverman
+      id: "alter.table.${AQTS_SCHEMA_NAME}.discrete_ground_water.drop.reading_qualifier"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - columnExists:
+            schemaName: ${AQTS_SCHEMA_NAME}
+            tableName: discrete_ground_water
+            columnName: reading_qualifier
+      changes:
+        - sql: alter table ${AQTS_SCHEMA_NAME}.discrete_ground_water drop column if exists reading_qualifier;
+        - rollback: alter table ${AQTS_SCHEMA_NAME}.discrete_ground_water add column if not exists reading_qualifier text;
+
