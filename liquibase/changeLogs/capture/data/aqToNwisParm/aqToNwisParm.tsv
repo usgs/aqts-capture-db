@@ -190,6 +190,7 @@ Elevation, GW, GUVD04|ft	72229	GUVD04	ft	false	true
 Elevation, GW, GUVD63|ft	72228	GUVD63	ft	false	true
 Elevation, GW, HILOCAL|ft	72230	HILOCAL	ft	false	true
 Elevation, GW, MSL|ft	72150	MSL	ft	true	false
+Elevation, GW, LMSL|ft	72150	LMSL	ft	true	false
 Elevation, GW, NAVD88|ft	62611	NAVD88	ft	true	false
 Elevation, GW, NAVD88|m	62613	NAVD88	m	true	false
 Elevation, GW, NGVD29|ft	62610	NGVD29	ft	true	false
