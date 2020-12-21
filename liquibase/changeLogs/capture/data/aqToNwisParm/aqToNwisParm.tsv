@@ -184,19 +184,19 @@ Electric current|A	99258	null	null	null	null
 ElectricalResistance|Ohm	99231	null	null	null	null
 Elev, NAVD88, BPcorr|ft	72292	null	null	null	null
 Elevation of sample|ft	72106	null	null	null	null
-Elevation, GW, ASVD02|ft	72227	ASVD02	ft	false	true
-Elevation, GW, ASVD62|ft	72226	ASVD62	ft	false	true
-Elevation, GW, GUVD04|ft	72229	GUVD04	ft	false	true
-Elevation, GW, GUVD63|ft	72228	GUVD63	ft	false	true
-Elevation, GW, HILOCAL|ft	72230	HILOCAL	ft	false	true
+Elevation, GW, ASVD02|ft	72227	ASVD02	ft	true	false
+Elevation, GW, ASVD62|ft	72226	ASVD62	ft	true	false
+Elevation, GW, GUVD04|ft	72229	GUVD04	ft	true	false
+Elevation, GW, GUVD63|ft	72228	GUVD63	ft	true	false
+Elevation, GW, HILOCAL|ft	72230	HILOCAL	ft	true	false
 Elevation, GW, MSL|ft	72150	MSL	ft	true	false
 Elevation, GW, LMSL|ft	72150	LMSL	ft	true	false
 Elevation, GW, NAVD88|ft	62611	NAVD88	ft	true	false
 Elevation, GW, NAVD88|m	62613	NAVD88	m	true	false
 Elevation, GW, NGVD29|ft	62610	NGVD29	ft	true	false
 Elevation, GW, NGVD29|m	62612	NGVD29	m	true	false
-Elevation, GW, NMVD03|ft	72231	NMVD03	ft	false	true
-Elevation, GW, PRVD02|ft	72232	PRVD02	ft	false	true
+Elevation, GW, NMVD03|ft	72231	NMVD03	ft	true	false
+Elevation, GW, PRVD02|ft	72232	PRVD02	ft	true	false
 Elevation, NAVD88|ft	72335	null	null	null	null
 Elevation, NAVD88|m	72336	null	null	null	null
 Elevation, NGVD29|ft	72020	null	null	null	null
