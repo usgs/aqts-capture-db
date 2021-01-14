@@ -51,7 +51,7 @@ pipeline {
               break
             default:
               mappedStage = "$DEPLOY_STAGE"
-              env.AQTS_DB_OWNER_PASSWORD = secretsJson.AQTS_DB_OWNER_PASSWORD
+              env.AQTS_DB_OWNER_PASSWORD = secretsJson.DB_OWNER_PASSWORD
           }
           env.AQTS_DATABASE_ADDRESS = secretsJson.DATABASE_ADDRESS
           env.AQTS_DATABASE_NAME = secretsJson.DATABASE_NAME
