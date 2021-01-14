@@ -37,9 +37,21 @@ pipeline {
     stage('Run liquibase') {
       steps {
         script {
-
+          def mappedStage = ""
+          def deployStage = "$DEPLOY_STAGE"
           def secretsString = sh(script: '/usr/local/bin/aws ssm get-parameter --name "/aws/reference/secretsmanager/NWCAPTURE-DB-$DEPLOY_STAGE" --query "Parameter.Value" --with-decryption --output text --region "us-west-2"', returnStdout: true).trim()
           def secretsJson =  readJSON text: secretsString
+          switch(deployStage) {
+            case "PROD-EXTERNAL":
+              mappedStage = "legacy-production-external"
+              def dbAdminSecret = sh(script: '/usr/local/bin/aws secretsmanager get-secret-value --secret-id "/aqts-capture-db-$MAPPED_STAGE/$MAPPED_STAGE/rds-admin-password" --region "us-west-2"', returnStdout: true).trim()
+              def dbAdminSecretJson = readJSON text: dbAdminSecret
+              env.POSTGRES_PASSWORD = dbAdminSecretJson.SecretString
+              break
+            default:
+              mappedStage = "$DEPLOY_STAGE"
+              env.POSTGRES_PASSWORD = secretsJson.POSTGRES_PASSWORD
+          }
           env.AQTS_DATABASE_ADDRESS = secretsJson.DATABASE_ADDRESS
           env.AQTS_DATABASE_NAME = secretsJson.DATABASE_NAME
           env.AQTS_DB_OWNER_USERNAME = secretsJson.DB_OWNER_USERNAME
